@@ -3,5 +3,5 @@
 # the broken version. It should complete cleanly.
 set -e
 cd "$(dirname "$0")"
-javac UnboundedCacheFixed.java
+javac -encoding UTF-8 UnboundedCacheFixed.java
 java -Xmx64m UnboundedCacheFixed

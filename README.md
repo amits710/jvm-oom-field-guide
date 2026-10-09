@@ -8,7 +8,7 @@ you would at 3 AM, and then fix.
 ## Who this is for
 
 Data engineers running JVM pipelines (Spark, Flink, Kafka Streams, or plain Java
-services chewing through records). You do not need to be a GC tuning expert — you
+services chewing through records). You don't need to be a GC tuning expert — you
 need to recognize the failure signatures fast and know which lever to pull.
 
 ## How each scenario is organized
@@ -43,12 +43,10 @@ cd ../fixed
 ## Roadmap
 
 - [x] **01 — Unbounded in-memory cache** (this repo starts here)
-- [ ] **02 — Oversized batch accumulation** (collecting a whole dataset before writing)
-- [ ] **03 — Leaked connections / unclosed result sets**
-- [ ] **04 — Static collection that grows forever**
-- [ ] **05 — ThreadLocal leaks in pooled threads**
-- [ ] **06 — Humongous object churn under G1**
-- [ ] **07 — Shuffle-style sort blowing past heap**
+- [x] **02 — Oversized batch accumulation** (one unit of work bigger than the heap)
+- [ ] **03 — Report-builder retention** (accumulating output, not input)
+- [ ] **04 — ThreadLocal leaks in pooled threads**
+- [ ] **05 — Leaked connections / unclosed result sets**
 
 ## A note on the examples
 

@@ -40,6 +40,12 @@ cd ../fixed
 ./run.sh        # watch the same workload survive
 ```
 
+## Verifying the whole repo
+
+```sh
+./test.sh         # all 5 broken scenarios must OOM, all 5 fixed must complete
+```
+
 ## Roadmap
 
 - [x] **01 — Unbounded in-memory cache** (this repo starts here)

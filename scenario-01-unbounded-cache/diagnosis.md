@@ -7,9 +7,9 @@ see the classic retention signature. Old-gen occupancy climbs monotonically;
 repeated full GCs reclaim very little, leaving the heap close to capacity:
 
 ```
-[0.412s][info][gc] GC(3) Pause Full (Allocation Failure) 61M->58M(64M) 38.204ms
-[0.489s][info][gc] GC(4) Pause Full (Allocation Failure) 61M->60M(64M) 44.917ms
-[0.571s][info][gc] GC(5) Pause Full (Allocation Failure) 62M->61M(64M) 51.330ms
+[0.412s][info][gc] GC(4) Pause Full (Allocation Failure) 61M->58M(64M) 38.204ms
+[0.489s][info][gc] GC(5) Pause Full (Allocation Failure) 61M->60M(64M) 44.917ms
+[0.571s][info][gc] GC(6) Pause Full (Allocation Failure) 62M->61M(64M) 51.330ms
 Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
 ```
 
@@ -23,7 +23,7 @@ Read it like this:
   Healthy pressure looks different: full GCs that actually drop occupancy.
 - The run ends with `java.lang.OutOfMemoryError: Java heap space` (not
   `GC overhead limit exceeded` — that one is HotSpot's safeguard: ~98% of time
-  in GC recovering <2% of heap across five consecutive collections).
+  in GC recovering <2% of heap over consecutive collections).
 
 This pattern is strong evidence that the JVM is retaining a large amount of
 live data — but retained memory is not automatically a leak. It could be an

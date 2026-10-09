@@ -44,9 +44,9 @@ cd ../fixed
 
 - [x] **01 — Unbounded in-memory cache** (this repo starts here)
 - [x] **02 — Oversized batch accumulation** (one unit of work bigger than the heap)
-- [ ] **03 — Report-builder retention** (accumulating output, not input)
-- [ ] **04 — ThreadLocal leaks in pooled threads**
-- [ ] **05 — Leaked connections / unclosed result sets**
+- [x] **03 — Report-builder retention** (accumulating output, not input)
+- [x] **04 — ThreadLocal leaks in pooled threads**
+- [x] **05 — Leaked connections / unclosed result sets**
 
 ## A note on the examples
 

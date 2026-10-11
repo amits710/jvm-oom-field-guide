@@ -21,6 +21,12 @@
 set -u
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"
+case "$ROOT" in
+  *[[:space:]]*)
+    echo "error: repository path contains whitespace: $ROOT" >&2
+    echo "the runner builds JVM flags by word splitting; move the repo to a path without spaces" >&2
+    exit 2 ;;
+esac
 . "$ROOT/common.sh"
 
 usage() {
@@ -76,9 +82,12 @@ run_one() { # $1=mode, $@=program args
     echo "compilation failed; not running" >&2; return 2
   }
   echo "--- running: java <shared flags> $CLASS $* ---" >&2
+  _flags="$(jvm_flags "$GCLOG")" || {
+    echo "cannot compute JVM flags; not running" >&2; return 2
+  }
   # shellcheck disable=SC2086  # intentional word splitting of the flag list
   # -cp .:.. so shared scenario classes (one directory up) are visible.
-  java $(jvm_flags "$GCLOG") -cp ".:.." "$CLASS" "$@"
+  java $_flags -cp ".:.." "$CLASS" "$@"
 }
 
 case "$MODE" in
@@ -102,8 +111,11 @@ case "$MODE" in
     OOMFG_TEST=0
     OOMFG_EXTRA_FLAGS="-XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=$DUMP"
     if [ "${OOMFG_JFR:-0}" = "1" ]; then
-      OOMFG_EXTRA_FLAGS="$OOMFG_EXTRA_FLAGS -XX:+FlightRecorder -XX:StartFlightRecording=filename=$OUTDIR/${SCENARIO}-${STAMP}.jfr,maxsize=50m"
+      OOMFG_EXTRA_FLAGS="$OOMFG_EXTRA_FLAGS -XX:StartFlightRecording=filename=$OUTDIR/${SCENARIO}-${STAMP}.jfr,maxsize=50m"
       echo "diagnose: JFR recording to $OUTDIR/${SCENARIO}-${STAMP}.jfr (bounded 50m)" >&2
+      echo "diagnose: note: the heap dump is the primary evidence for the retaining path;" >&2
+      echo "diagnose: JFR gives complementary allocation/GC/timing info, but a short default" >&2
+      echo "diagnose: recording may not contain enough allocation-stack or old-object detail" >&2
     fi
     export OOMFG_EXTRA_FLAGS OOMFG_TEST
     echo "diagnose: heap dump will be written to $DUMP" >&2

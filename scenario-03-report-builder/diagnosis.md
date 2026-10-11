@@ -1,11 +1,17 @@
 # Scenario 03 — Diagnosis: the report-builder retention
 
+> [Back to the field guide root](../../README.md)
+
 ## The GC log signature
 
-Run the broken version (`./run.sh` enables GC logging to `gc.log`) and you'll
-see a staircase — the same rising post-GC floor as scenario 01. Young
-collections reclaim less and less; full collections take over and reclaim
-nothing; the JVM gives up after ~100 full GCs:
+Run the broken version (`./run.sh` enables GC logging to
+`scenario-03-report-builder-broken-gc.log`) and you'll see a staircase — the
+same rising post-GC floor as scenario 01. Young collections reclaim less and
+less; full collections take over and reclaim nothing; the JVM gives up.
+
+Representative output from OpenJDK 21 with Parallel GC on Linux. Exact GC
+lines and OutOfMemoryError detail messages can differ by JDK, collector, and
+operating system.
 
 ```
 [0.057s][info][gc] GC(0) Pause Young (Allocation Failure) 16M->8M(61M) 4.880ms
@@ -83,9 +89,12 @@ will have:
 3. **"We'll write it at the end."** Listen for the design smell: collect all
    results in memory, then serialize / upload / return. The flush-at-the-end
    is the bug wearing a plan as a disguise.
-4. **Restarts buy time, like scenario 01.** The staircase rebuilds after every
-   restart. Unlike 02, the same input won't kill it instantly — it takes the
-   full run to accumulate.
+4. **Restarts buy time — but that is a clue, not a diagnosis.** The staircase
+   rebuilds after every restart, like scenario 01. Unlike 02, the same input
+   won't kill it instantly — it takes the full run to accumulate. A
+   repeatable post-restart growth curve suggests cumulative retention;
+   confirm with the post-GC live-set trend and the heap dump (is the
+   retainer the output?) before redesigning.
 
 ## The 2-minute triage checklist
 
@@ -107,10 +116,20 @@ When a pipeline OOMs on a staircase and the input side looks clean:
 
 ## The fix (what `fixed/` demonstrates)
 
-Stream each summary to a temp file via `BufferedWriter` as soon as it's
-produced, instead of appending it to an in-memory list. Live heap stays flat
-no matter how many records arrive; the file holds the report. In production
-the same idea wears different clothes — a streaming JSON/XML writer, a
-database batch insert, an S3 multipart upload — but the principle is
-identical: **never hold the whole output in memory just because you haven't
-written it yet.**
+Stream each summary to a file via a buffered stream as soon as it's
+produced, instead of appending it to an in-memory list. The fixed version
+generates byte-for-byte identical summaries to the broken version (same
+deterministic `makeSummary`) — the experiment isolates retention, not
+content — and prints the record count, total bytes, CRC32, and output path
+so you can verify the report is complete. Live heap stays flat no matter how
+many records arrive; the file holds the report.
+
+One honest limitation: streaming works when the output can be emitted
+incrementally. If the final output requires a global sort, deduplication, or
+reordering, the production fix is chunking, external sorting, spill files, or
+partitioned merging — not naive streaming.
+
+In production the same idea wears different clothes — a streaming JSON/XML
+writer, a database batch insert, an S3 multipart upload — but the principle
+is identical: **never hold the whole output in memory just because you
+haven't written it yet.**

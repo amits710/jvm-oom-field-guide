@@ -64,11 +64,16 @@ Eclipse MAT or JDK Mission Control:
   `ArrayList` ← `ThreadLocal$ThreadLocalMap$Entry` ← `ThreadLocalMap` ←
   `Thread` (the pool worker). The thread is the root: as long as the pool
   keeps the thread alive, everything the thread ever touched stays alive.
-- **The weak-key trap:** `ThreadLocalMap` keys are weak references, values
-  are strong. Even if the `ThreadLocal` key itself were garbage-collected,
-  the *value* (your list) stays pinned until the thread dies or someone
-  calls `remove()`. This is why "but I nulled the ThreadLocal!" doesn't save
-  you — and why `remove()` beats `clear()`.
+- **The weak-key trap:** `ThreadLocalMap` keys are weak references, while
+  values are strong references. If a key becomes unreachable, the associated
+  value may remain until a later `ThreadLocalMap` operation happens to expunge
+  the stale entry, or until the thread terminates. Once the key itself is
+  unreachable, application code generally cannot invoke `remove()` through
+  that lost key — and OpenJDK opportunistically scans for and removes stale
+  entries during map operations, so do not depend on that cleanup either.
+  This is why "but I nulled the ThreadLocal!" doesn't save you: call
+  `remove()` in `finally` while the `ThreadLocal` is still reachable — and
+  why `remove()` beats `clear()`.
 - **Histogram:** `byte[]` dominates, same as scenarios 01 and 02. The payload
   type never identifies the leak; the root path does.
 

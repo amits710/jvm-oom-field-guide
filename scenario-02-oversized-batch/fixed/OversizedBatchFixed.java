@@ -4,43 +4,79 @@ import java.util.List;
 /**
  * SCENARIO 02 (fixed): the oversized batch, chunked.
  *
- * Same total workload as the broken version — 250K records per batch — but
- * each batch is read and processed in bounded chunks of 5,000 records. A
- * chunk's worth of payloads (~5 MB) fits comfortably under the 64 MB heap,
- * and each chunk becomes garbage before the next one is read.
+ * Identical workload to the broken version — same --batches, same
+ * --batch-size, same --payload-bytes — but each batch is read and processed
+ * in bounded chunks (--chunk-size). A chunk's worth of payloads fits
+ * comfortably under the 64 MB heap, and each chunk becomes garbage before
+ * the next one is read, so all batches complete.
+ *
+ * Note the scoping discipline: each chunk's list is local to processChunk(),
+ * so it becomes unreachable the moment the method returns. No explicit
+ * nulling of locals — prefer narrow scopes and helper methods over assigning
+ * locals to null; nulling is occasionally useful in unusually long methods,
+ * but it should not be taught as the general memory-management pattern.
  *
  * The principle: size the unit of work for the heap, not for the input.
  * In production this is a fetch size / chunk size / page size config, a
  * streaming cursor instead of "SELECT *", or a spill-to-disk sort — anything
  * that bounds live memory independent of partition size.
  *
- *   javac OversizedBatchFixed.java && java -Xmx64m OversizedBatchFixed
+ *   ./run.sh [--batches 3] [--batch-size 250000] [--payload-bytes 1024] [--chunk-size 5000]
  */
 public class OversizedBatchFixed {
 
-    private static final int BATCH_SIZE = 250_000;   // same logical batch as broken
-    private static final int CHUNK_SIZE = 5_000;     // ...but read in bounded chunks
-    private static final int PAYLOAD_BYTES = 1024;
-    private static final int BATCHES = 3;            // a few batches, to prove the point
-
     public static void main(String[] args) {
-        for (int batch = 1; batch <= BATCHES; batch++) {
-            long checksum = 0;
-            int remaining = BATCH_SIZE;
-            while (remaining > 0) {
-                int n = Math.min(CHUNK_SIZE, remaining);
-                List<byte[]> chunk = new ArrayList<>(n);
-                for (int i = 0; i < n; i++) {
-                    chunk.add(new byte[PAYLOAD_BYTES]);
-                }
-                for (byte[] r : chunk) {
-                    checksum += r.length;
-                }
-                chunk = null;   // chunk is garbage before the next one is read
-                remaining -= n;
+        int batches = 3;
+        int batchSize = 250_000;
+        int payloadBytes = 1024;
+        int chunkSize = 5_000;
+        for (int i = 0; i < args.length; i++) {
+            switch (args[i]) {
+                case "--batches":       batches      = Integer.parseInt(args[++i]); break;
+                case "--batch-size":    batchSize    = Integer.parseInt(args[++i]); break;
+                case "--payload-bytes": payloadBytes = Integer.parseInt(args[++i]); break;
+                case "--chunk-size":    chunkSize    = Integer.parseInt(args[++i]); break;
+                default: throw new IllegalArgumentException("unknown arg: " + args[i]);
             }
+        }
+        System.out.println("STARTED scenario-02-oversized-batch(fixed) batches=" + batches
+                + " batchSize=" + batchSize + " payloadBytes=" + payloadBytes
+                + " chunkSize=" + chunkSize);
+
+        for (int batch = 1; batch <= batches; batch++) {
+            long checksum = processBatch(batchSize, chunkSize, payloadBytes);
             System.out.println("batch " + batch + " done, checksum=" + checksum);
         }
-        System.out.println("all " + BATCHES + " batches processed, heap survived.");
+        System.out.println("COMPLETED batches=" + batches
+                + " recordsPerBatch=" + batchSize
+                + " payloadBytes=" + payloadBytes
+                + " totalRecords=" + ((long) batches * batchSize));
+    }
+
+    private static long processBatch(int batchSize, int chunkSize, int payloadBytes) {
+        long checksum = 0;
+        int remaining = batchSize;
+        while (remaining > 0) {
+            int n = Math.min(chunkSize, remaining);
+            checksum += processChunk(n, payloadBytes);
+            remaining -= n;
+        }
+        return checksum;
+    }
+
+    /**
+     * Reads and processes one bounded chunk. The chunk list is method-local:
+     * it becomes eligible for collection as soon as this method returns.
+     */
+    private static long processChunk(int n, int payloadBytes) {
+        List<byte[]> chunk = new ArrayList<>(n);
+        for (int i = 0; i < n; i++) {
+            chunk.add(new byte[payloadBytes]);
+        }
+        long sum = 0;
+        for (byte[] r : chunk) {
+            sum += r.length;
+        }
+        return sum;
     }
 }

@@ -1,10 +1,16 @@
 # Scenario 05 — Diagnosis: the leaked connection
 
+> [Back to the field guide root](../../README.md)
+
 ## The GC log signature
 
-Run the broken version (`./run.sh` enables GC logging to `gc.log`) and you'll
-see a staircase — a rising post-GC floor across consecutive collections,
-ending at capacity:
+Run the broken version (`./run.sh` enables GC logging to
+`scenario-05-leaked-connections-broken-gc.log`) and you'll see a staircase —
+a rising post-GC floor across consecutive collections, ending at capacity.
+
+Representative output from OpenJDK 21 with Parallel GC on Linux. Exact GC
+lines and OutOfMemoryError detail messages can differ by JDK, collector, and
+operating system.
 
 ```
 [0.105s][info][gc] GC(0) Pause Young (Allocation Failure) 15M->15M(61M) 19.193ms
@@ -72,16 +78,22 @@ will have:
    Graph heap against request count — a leak's clock is measured in work,
    not wall time.
 2. **Resource-exhaustion warnings nearby.** Connection-pool exhaustion,
-   "too many open files," socket timeouts — the JVM OOM is often the *second*
-   symptom. The pool complaining first is the tell that resources, not data,
-   are the problem.
+   "too many open files," socket timeouts — in production, the JVM OOM is
+   often the *second* symptom, not the first. Real unclosed resources
+   usually surface as pool, file-descriptor, socket, or direct-memory
+   pressure before they ever show up as Java heap growth. The pool
+   complaining first is the tell that resources, not data, are the problem —
+   and if you only watch the heap, you'll misdiagnose it as a cache leak.
 3. **The staircase again — but slower.** In production the leak is usually
    one connection per request, so the floor rises over hours, not 0.2
    seconds. Same shape, different timescale. Graph post-GC old-gen occupancy
    against request count and the 1:1 ratio shows up.
-4. **Restarts "fix" it temporarily.** Like scenario 01, the clock resets on
-   restart — but unlike 01, the fix is not a bigger heap or an eviction
-   policy. More heap just buys more leaked connections.
+4. **Restarts buy time — but that is a clue, not a diagnosis.** Like
+   scenario 01, the clock resets on restart — but unlike 01, the fix is not
+   a bigger heap or an eviction policy. A repeatable post-restart growth
+   curve suggests cumulative retention; confirm with the heap dump (resource
+   class growing 1:1 with work, rooted in a static registry) before
+   redesigning. More heap just buys more leaked connections.
 
 ## The 2-minute triage checklist
 

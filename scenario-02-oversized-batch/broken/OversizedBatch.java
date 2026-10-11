@@ -19,37 +19,48 @@ import java.util.List;
  * post-GC floor across the whole run). Here it dies on a cliff — one steep
  * climb inside a single batch, then OutOfMemoryError.
  *
- * Run with a small heap and watch it die during the FIRST batch:
- *   javac OversizedBatch.java && java -Xmx64m OversizedBatch
+ * Accepts the same workload parameters as the fixed version (--batches,
+ * --batch-size, --payload-bytes). The broken version dies reading the FIRST
+ * batch; the fixed version processes every batch by chunking.
+ *
+ *   ./run.sh [--batches 3] [--batch-size 250000] [--payload-bytes 1024]
  */
 public class OversizedBatch {
 
-    // Records per batch. Sized for the input partition, not for the heap.
-    // 250K records x ~1 KB each ~= 250 MB live — far past a 64 MB heap.
-    private static final int BATCH_SIZE = 250_000;
-    private static final int PAYLOAD_BYTES = 1024;
-
     public static void main(String[] args) {
-        int batch = 0;
-        try {
-            while (true) {
-                batch++;
-                System.out.println("reading batch " + batch + " (" + BATCH_SIZE + " records)...");
-                List<byte[]> records = new ArrayList<>(BATCH_SIZE);
-                for (int i = 0; i < BATCH_SIZE; i++) {
-                    records.add(new byte[PAYLOAD_BYTES]); // one record's payload
-                }
-                // "Process" the batch, then release it before the next one.
-                long checksum = 0;
-                for (byte[] r : records) {
-                    checksum += r.length;
-                }
-                System.out.println("batch " + batch + " done, checksum=" + checksum);
-                records = null; // batch is garbage now — the NEXT batch is the problem, not this one
+        int batches = 3;
+        int batchSize = 250_000;
+        int payloadBytes = 1024;
+        for (int i = 0; i < args.length; i++) {
+            switch (args[i]) {
+                case "--batches":       batches      = Integer.parseInt(args[++i]); break;
+                case "--batch-size":    batchSize    = Integer.parseInt(args[++i]); break;
+                case "--payload-bytes": payloadBytes = Integer.parseInt(args[++i]); break;
+                default: throw new IllegalArgumentException("unknown arg: " + args[i]);
             }
-        } catch (OutOfMemoryError e) {
-            System.err.println("OutOfMemoryError while reading batch " + batch + ".");
-            throw e; // rethrow: the stack trace is part of the lesson
         }
+        System.out.println("STARTED scenario-02-oversized-batch batches=" + batches
+                + " batchSize=" + batchSize + " payloadBytes=" + payloadBytes
+                + " (expect OutOfMemoryError)");
+
+        // No try/catch around the OutOfMemoryError: the raw error and stack
+        // trace are the lesson. Allocating a diagnostic message on an
+        // exhausted heap can itself throw.
+        for (int batch = 1; batch <= batches; batch++) {
+            System.out.println("reading batch " + batch + " (" + batchSize + " records)...");
+            List<byte[]> records = new ArrayList<>(batchSize);
+            for (int i = 0; i < batchSize; i++) {
+                records.add(new byte[payloadBytes]); // one record's payload
+            }
+            // "Process" the batch, then release it before the next one.
+            long checksum = 0;
+            for (byte[] r : records) {
+                checksum += r.length;
+            }
+            System.out.println("batch " + batch + " done, checksum=" + checksum);
+            records = null; // batch is garbage now — the NEXT batch is the problem, not this one
+        }
+        System.out.println("finished all " + batches + " batches without OOM"
+                + " (unexpected for the broken version — was the heap enlarged?)");
     }
 }

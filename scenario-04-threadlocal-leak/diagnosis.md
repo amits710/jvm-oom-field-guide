@@ -1,10 +1,16 @@
-# Scenario 04 — Diagnosis: the ThreadLocal leak in pooled threads
+# Scenario 04 — Diagnosis: growing ThreadLocal state retained by pooled threads
+
+> [Back to the field guide root](../../README.md)
 
 ## The GC log signature
 
-Run the broken version (`./run.sh` enables GC logging to `gc.log`) and you'll
-see a staircase — rising post-GC floor, full GCs reclaiming nothing, then
-death:
+Run the broken version (`./run.sh` enables GC logging to
+`scenario-04-threadlocal-leak-broken-gc.log`) and you'll see a staircase —
+rising post-GC floor, full GCs reclaiming nothing, then death.
+
+Representative output from OpenJDK 21 with Parallel GC on Linux. Exact GC
+lines and OutOfMemoryError detail messages can differ by JDK, collector, and
+operating system.
 
 ```
 [0.497s][info][gc] GC(62) Pause Full (Allocation Failure) 58M->58M(61M) 10.832ms
@@ -78,9 +84,12 @@ will have:
 2. **Heap grows with request count, not wall-clock time.** Traffic spike on
    Tuesday → OOM on Tuesday. Correlate heap growth with throughput, and the
    pool is your prime suspect.
-3. **Restarts "fix" it temporarily.** Killing the JVM kills the pool threads,
-   which drops every ThreadLocalMap with them. Same as scenario 01's restart
-   test — but here the re-accumulation tracks the request rate.
+3. **Restarts buy time — but that is a clue, not a diagnosis.** Killing the
+   JVM kills the pool threads, which drops every ThreadLocalMap with them —
+   so the curve restarts, like scenario 01. A repeatable post-restart growth
+   curve suggests cumulative retention; here the re-accumulation tracks the
+   request rate. Confirm with the heap dump (N per-thread retainers through
+   `ThreadLocalMap`) rather than the restart behavior alone.
 4. **The usual disguises.** Request contexts, per-request buffers,
    `SimpleDateFormat` instances, logging MDC maps, ORM sessions — anything
    someone put in a `ThreadLocal` "temporarily" inside a task that runs on a
@@ -110,8 +119,11 @@ Each task cleans up in a `finally` block: `BUFFER.remove()`. The thread
 keeps its slot in the pool; the task's garbage becomes collectable the
 moment the task ends. `remove()` — not just `clear()` — is the canonical
 fix: it drops the entry from the `ThreadLocalMap` entirely, so neither the
-value nor a stale weak key lingers. The principle: **a ThreadLocal's
-lifetime must match the task's, not the thread's.** In production this is
-try/finally around every ThreadLocal use, a servlet filter or interceptor
-that cleans up per request — or, best of all, not using ThreadLocal for
-request-scoped data in the first place.
+value nor a stale weak key lingers. (The lab submits one task at a time and
+retains no `Future`s, so the executor queue can never become a competing OOM
+source — the per-thread lists are the only retention path under test.)
+
+The principle: **a ThreadLocal's lifetime must match the task's, not the
+thread's.** In production this is try/finally around every ThreadLocal use,
+a servlet filter or interceptor that cleans up per request — or, best of
+all, not using ThreadLocal for request-scoped data in the first place.

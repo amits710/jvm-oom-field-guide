@@ -1,8 +1,7 @@
 #!/bin/sh
-# Reproduces scenario 03: report-builder retention.
-# -Xmx64m keeps the heap small so the OOM lands in seconds, not hours.
-# GC logging is on so you see the failure signature described in diagnosis.md.
-set -e
+# Reproduces scenario 03 via the shared root runner, so the JVM flags (-Xms/-Xmx,
+# collector, GC logging) are identical to the other version's.
+# Program arguments are passed through, e.g.: ./run.sh --items 500000
+set -u
 cd "$(dirname "$0")"
-javac -encoding UTF-8 ReportBuilder.java
-java -Xmx64m -XX:+UseParallelGC -Xlog:gc*:file=gc.log:time,uptime,level,tags ReportBuilder
+exec ../../run.sh scenario-03-report-builder broken "$@"

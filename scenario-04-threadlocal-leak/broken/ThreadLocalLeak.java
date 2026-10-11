@@ -1,12 +1,10 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 
 /**
- * SCENARIO 04 (broken): the ThreadLocal leak in pooled threads.
+ * SCENARIO 04 (broken): growing ThreadLocal state retained by pooled threads.
  *
  * Models a depressingly common service pattern: a fixed thread pool where
  * each task stashes a payload in a per-thread buffer held in a static
@@ -15,6 +13,12 @@ import java.util.concurrent.Future;
  * request-scoped, but the pool reuses threads, so each thread's list grows
  * with every task it executes. Unbounded retention, rooted in thread
  * lifecycle rather than in any collection you can see.
+ *
+ * (A note on naming: the classic "stale weak key" ThreadLocalMap subtlety —
+ * weak keys, strong values — is real, but it is NOT what this lab shows.
+ * Here the ThreadLocal is statically reachable and every thread is alive;
+ * the failure is simply per-task state outliving the task. The stale-key
+ * variation is covered as an advanced note in diagnosis.md.)
  *
  * This is distinct from scenario 01 (a cache that never evicts) and 02 (one
  * batch bigger than the heap). Nothing here is cached and no single unit of
@@ -25,8 +29,13 @@ import java.util.concurrent.Future;
  * under load" — tests use fresh threads or few requests; production pools
  * reuse the same threads for thousands of tasks.
  *
- * Run with a small heap and watch the pool threads eat it task by task:
- *   javac ThreadLocalLeak.java && java -Xmx64m ThreadLocalLeak
+ * One task is submitted and awaited at a time, and no Future is retained:
+ * the executor queue can never become a competing OOM source, and the ONLY
+ * thing growing in the heap is each worker thread's list. A worker thread's
+ * OutOfMemoryError surfaces wrapped in ExecutionException — the "Caused by"
+ * line is the real error.
+ *
+ *   ./run.sh [--pool-size 4] [--tasks 3000] [--payload-bytes 32768]
  */
 public class ThreadLocalLeak {
 
@@ -35,43 +44,43 @@ public class ThreadLocalLeak {
     private static final ThreadLocal<List<byte[]>> BUFFER =
             ThreadLocal.withInitial(ArrayList::new);
 
-    private static final int POOL_SIZE = 4;
-    private static final int TASKS = 3_000;
-    private static final int PAYLOAD_BYTES = 32 * 1024; // 32 KB per task
-
     public static void main(String[] args) throws Exception {
-        ExecutorService pool = Executors.newFixedThreadPool(POOL_SIZE);
-        List<Future<?>> futures = new ArrayList<>(TASKS);
-        int submitted = 0;
+        int poolSize = 4;
+        int tasks = 3000;
+        int payloadBytes = 32 * 1024; // 32 KB per task
+        for (int i = 0; i < args.length; i++) {
+            switch (args[i]) {
+                case "--pool-size":     poolSize     = Integer.parseInt(args[++i]); break;
+                case "--tasks":         tasks        = Integer.parseInt(args[++i]); break;
+                case "--payload-bytes": payloadBytes = Integer.parseInt(args[++i]); break;
+                default: throw new IllegalArgumentException("unknown arg: " + args[i]);
+            }
+        }
+        System.out.println("STARTED scenario-04-threadlocal-leak poolSize=" + poolSize
+                + " tasks=" + tasks + " payloadBytes=" + payloadBytes
+                + " (expect OutOfMemoryError)");
+
+        ExecutorService pool = Executors.newFixedThreadPool(poolSize);
         try {
-            for (int i = 0; i < TASKS; i++) {
-                futures.add(pool.submit(() -> {
+            for (int i = 0; i < tasks; i++) {
+                // Submit one task and wait for it. No task queue builds up,
+                // no Future is retained — the per-thread lists are the only
+                // retention path in this program.
+                final int bytes = payloadBytes;
+                pool.submit(() -> {
                     // Simulate per-task buffering. In production this is the
                     // request context, the batch scratch space, the thing
                     // someone put in a ThreadLocal "temporarily."
-                    BUFFER.get().add(new byte[PAYLOAD_BYTES]);
-                }));
-                submitted++;
-                if (submitted % 200 == 0) {
-                    System.out.println("submitted " + submitted + " tasks...");
+                    BUFFER.get().add(new byte[bytes]);
+                }).get();
+                if ((i + 1) % 500 == 0) {
+                    System.out.println("completed " + (i + 1) + " tasks...");
                 }
             }
-            for (Future<?> f : futures) {
-                f.get(); // surfaces a worker thread's OOM as ExecutionException
-            }
-            System.out.println("all " + TASKS + " tasks done — heap survived?!");
-        } catch (ExecutionException e) {
-            Throwable cause = e.getCause();
-            if (cause instanceof OutOfMemoryError) {
-                System.err.println("OutOfMemoryError after " + submitted + " tasks submitted.");
-                throw (OutOfMemoryError) cause; // rethrow: the stack trace is part of the lesson
-            }
-            throw new RuntimeException(cause);
-        } catch (OutOfMemoryError e) {
-            System.err.println("OutOfMemoryError after " + submitted + " tasks submitted.");
-            throw e; // rethrow: the stack trace is part of the lesson
+            System.out.println("finished all " + tasks + " tasks without OOM"
+                    + " (unexpected for the broken version — was the heap enlarged?)");
         } finally {
-            pool.shutdownNow();
+            pool.shutdownNow(); // no catch: the error propagates, the pool still shuts down
         }
     }
 }

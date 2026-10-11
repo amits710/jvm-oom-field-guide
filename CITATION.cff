@@ -1,0 +1,27 @@
+# This file enables GitHub's "Cite this repository" button.
+# See https://citation-file-format.github.io/ for the format reference.
+cff-version: 1.2.0
+title: "JVM Heap OOM Field Guide"
+message: "If you use this repository in your work, please cite it as follows."
+type: software
+license: Apache-2.0
+version: 1.0.0
+authors:
+  - family-names: "Sonar"
+    given-names: "Amit"
+url: "https://github.com/amits710/jvm-oom-field-guide"
+repository-code: "https://github.com/amits710/jvm-oom-field-guide"
+abstract: >-
+  Five reproducible Java heap OutOfMemoryError failure patterns for data
+  pipelines and backend services. Each scenario pairs a broken reproduction
+  with a diagnosis guide (GC-log signature, heap-dump clues, triage
+  checklist) and a fixed version running the identical workload under
+  identical JVM flags.
+keywords:
+  - java
+  - jvm
+  - outofmemoryerror
+  - garbage-collection
+  - heap-dump
+  - memory-leak
+  - data-engineering

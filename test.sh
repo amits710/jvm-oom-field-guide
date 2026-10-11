@@ -1,1 +1,204 @@
-IyEvYmluL3NoCiMgRnVsbCB2ZXJpZmljYXRpb24gZm9yIHRoZSBKVk0gSGVhcCBPT00gRmllbGQgR3VpZGUuCiMKIyAgIC4vdGVzdC5zaAojCiMgRXZlcnkgYnJva2VuLyBwcm9ncmFtIG11c3QgZGllIHdpdGggT3V0T2ZNZW1vcnlFcnJvcjsgZXZlcnkgZml4ZWQvIHByb2dyYW0KIyBtdXN0IGNvbXBsZXRlIGFuZCBwcmludCBpdHMgY29tcGxldGlvbiBtYXJrZXIgd2l0aCB0aGUgZXhwZWN0ZWQgY291bnRzLgojIEJyb2tlbiBydW5zIHVzZSAtWFg6K0V4aXRPbk91dE9mTWVtb3J5RXJyb3IgKHZpYSBPT01GR19URVNUPTEsIHNlZQojIGNvbW1vbi5zaCkgc28gdGhlIHN1aXRlIGlzIGZhc3QgYW5kIGRldGVybWluaXN0aWM7IHRoZSBhc3NlcnRpb25zIG5ldmVyCiMgZGVwZW5kIG9uIGEgc3BlY2lmaWMgT09NIGRldGFpbCBtZXNzYWdlLCBvbmx5IG9uICJPdXRPZk1lbW9yeUVycm9yIiBwbHVzCiMgdGhlIHByb2dyYW0ncyBvd24gU1RBUlRFRCBtYXJrZXIgYW5kIGEgbm9uemVybywgbm9uLXRpbWVvdXQgZXhpdCBjb2RlLgpzZXQgLXUKClJPT1Q9IiQoY2QgIiQoZGlybmFtZSAiJDAiKSIgJiYgcHdkKSIKLiAiJFJPT1QvY29tbW9uLnNoIgpleHBvcnQgT09NRkdfVEVTVD0xCgpQQVNTPTA7IEZBSUw9MApUTVBCQVNFPSIkKG1rdGVtcCAtZCAiJHtUTVBESVI6LS90bXB9L29vbWZnLXRlc3QuWFhYWFhYIikiCmNsZWFudXAoKSB7CiAgaWYgWyAiJEZBSUwiIC1lcSAwIF07IHRoZW4KICAgIHJtIC1yZiAiJFRNUEJBU0UiCiAgZWxzZQogICAgZWNobyAiRkFJTFVSRVMgUFJFU0VOVCDigJQgdGVzdCBhcnRpZmFjdHMgcHJlc2VydmVkIGluOiAkVE1QQkFTRSIgPiYyCiAgZmkKfQp0cmFwIGNsZWFudXAgRVhJVAoKcGFzcygpIHsgUEFTUz0kKChQQVNTICsgMSkpOyBlY2hvICJQQVNTICAkMSI7IH0KZmFpbCgpIHsgRkFJTD0kKChGQUlMICsgMSkpOyBlY2hvICJGQUlMICAkMSI7IFsgLW4gIiR7MjotfSIgXSAmJiBlY2hvICIgICAgICAkMiI7IH0KCiMgLS0tLS0tLS0tLSBlbnZpcm9ubWVudCB2YWxpZGF0aW9uIC0tLS0tLS0tLS0KZm9yIGNtZCBpbiBqYXZhIGphdmFjIG1rdGVtcCBncmVwOyBkbwogIGNvbW1hbmQgLXYgIiRjbWQiID4vZGV2L251bGwgMj4mMSB8fCB7IGVjaG8gIm1pc3NpbmcgcmVxdWlyZWQgY29tbWFuZDogJGNtZCIgPiYyOyBleGl0IDI7IH0KZG9uZQpfSkFWQV9NQUpPUj0iJChqYXZhIC12ZXJzaW9uIDI+JjEgfCBoZWFkIC0xIHwgc2VkICdzLy4qdmVyc2lvbiAiXChbMC05XVswLTldKlwpLiovXDEvJykiCmlmIFsgIiR7X0pBVkFfTUFKT1I6LTB9IiAtbHQgMTEgXTsgdGhlbgogIGVjaG8gIkpESyAxMSsgcmVxdWlyZWQgKGZvdW5kIG1ham9yIHZlcnNpb246ICR7X0pBVkFfTUFKT1I6LXVua25vd259KSIgPiYyOyBleGl0IDIKZmkKZWNobyAidGVzdGluZyB3aXRoOiAkKGphdmEgLXZlcnNpb24gMj4mMSB8IGhlYWQgLTEpIgoKIyBQcmVmZXIgR05VIHRpbWVvdXQ7IG1hY09TIG1heSBoYXZlIGd0aW1lb3V0IChjb3JldXRpbHMpLiBXaXRoIG5laXRoZXIsCiMgcnVuIGRpcmVjdGx5IOKAlCBDSSBqb2JzIHNldCB0aGVpciBvd24gdGltZW91dC1taW51dGVzIGFzIGEgYmFja3N0b3AuCmlmIGNvbW1hbmQgLXYgdGltZW91dCA+L2Rldi9udWxsIDI+JjE7IHRoZW4KICBUSU1FT1VUPSJ0aW1lb3V0IDE4MCIKZWxpZiBjb21tYW5kIC12IGd0aW1lb3V0ID4vZGV2L251bGwgMj4mMTsgdGhlbgogIFRJTUVPVVQ9Imd0aW1lb3V0IDE4MCIKZWxzZQogIFRJTUVPVVQ9IiIKICBlY2hvICJub3RlOiBubyB0aW1lb3V0L2d0aW1lb3V0IGZvdW5kOyBydW5uaW5nIHN0ZXBzIHdpdGhvdXQgYSBwZXItc3RlcCBsaW1pdCIgPiYyCmZpCgpjb21waWxlX29uZSgpIHsgIyAkMT13b3JrZGlyICQyLi4uPWphdmEgc291cmNlIHBhdGhzIChleHRyYSBzaGFyZWQgc291cmNlcyBhbGxvd2VkKQogIF93PSIkMSI7IHNoaWZ0CiAgIyBzaGVsbGNoZWNrIGRpc2FibGU9U0MyMDg2ICAjIGludGVudGlvbmFsOiBlbXB0eSBleHRyYSBzb3VyY2VzIHZhbmlzaAogIGlmICEgamF2YWMgLWVuY29kaW5nIFVURi04IC1kICIkX3cvY2xhc3NlcyIgIiRAIiA+IiRfdy9qYXZhYy5sb2ciIDI+JjE7IHRoZW4KICAgIHJldHVybiAxCiAgZmkKfQoKIyBFeHRyYSBzaGFyZWQgc291cmNlcyBmb3IgYSBzY2VuYXJpbyAoZS5nLiBzY2VuYXJpby0wMydzIFN1bW1hcnlDb2RlYy5qYXZhKS4KIyBQcmludHMgdGhlIHBhdGgsIG9yIG5vdGhpbmcuCnNjZW5hcmlvX2V4dHJhX3NyYygpIHsgIyAkMT1zY2VuYXJpby1kaXIKICBpZiBbIC1mICIkUk9PVC8kMS9TdW1tYXJ5Q29kZWMuamF2YSIgXTsgdGhlbgogICAgcHJpbnRmICclcycgIiRST09ULyQxL1N1bW1hcnlDb2RlYy5qYXZhIgogIGZpCn0KCmNoZWNrX2Jyb2tlbigpIHsgIyAkMT1sYWJlbCAkMj1zY2VuYXJpby1kaXIgJDM9Y2xhc3MgJDQ9c3RhcnQtbWFya2VyIFskNS4uLj1wcm9ncmFtIGFyZ3NdCiAgbGFiZWw9IiQxIjsgc2NlbmFyaW89IiQyIjsgY2xhc3M9IiQzIjsgbWFya2VyPSIkNCI7IHNoaWZ0IDQKICBkaXI9IiRUTVBCQVNFLyRsYWJlbC1icm9rZW4iOyBta2RpciAtcCAiJGRpci9jbGFzc2VzIgogICMgc2hlbGxjaGVjayBkaXNhYmxlPVNDMjA4NiAgIyBpbnRlbnRpb25hbDogZW1wdHkgZXh0cmEgc291cmNlcyB2YW5pc2gKICBpZiAhIGNvbXBpbGVfb25lICIkZGlyIiAiJFJPT1QvJHNjZW5hcmlvL2Jyb2tlbi8kY2xhc3MuamF2YSIgJChzY2VuYXJpb19leHRyYV9zcmMgIiRzY2VuYXJpbyIpOyB0aGVuCiAgICBmYWlsICIkbGFiZWwgKGJyb2tlbiBkaWQgbm90IGNvbXBpbGUpIjsgc2VkICdzL14vICAgICAgLycgIiRkaXIvamF2YWMubG9nIjsgcmV0dXJuCiAgZmkKICAjIHNoZWxsY2hlY2sgZGlzYWJsZT1TQzIwODYgICMgaW50ZW50aW9uYWwgc3BsaXR0aW5nIG9mIFRJTUVPVVQgYW5kIGZsYWcgbGlzdAogICRUSU1FT1VUIGphdmEgJChqdm1fZmxhZ3MgIiRkaXIvZ2MubG9nIikgLWNwICIkZGlyL2NsYXNzZXMiICIkY2xhc3MiICIkQCIgXAogICAgPiIkZGlyL3N0ZG91dC5sb2ciIDI+IiRkaXIvc3RkZXJyLmxvZyIKICBjb2RlPSQ/CiAgaWYgWyAiJGNvZGUiIC1lcSAwIF07IHRoZW4KICAgIGZhaWwgIiRsYWJlbCAoYnJva2VuIGV4aXRlZCAwIOKAlCBleHBlY3RlZCBPdXRPZk1lbW9yeUVycm9yKSI7IHJldHVybgogIGZpCiAgaWYgWyAiJGNvZGUiIC1lcSAxMjQgXTsgdGhlbgogICAgZmFpbCAiJGxhYmVsIChicm9rZW4gVElNRUQgT1VUIGluc3RlYWQgb2YgT09NaW5nKSI7IHJldHVybgogIGZpCiAgIyBOb3RlOiB3aXRoIC1YWDorRXhpdE9uT3V0T2ZNZW1vcnlFcnJvciBIb3RTcG90IHByaW50cwogICMgIlRlcm1pbmF0aW5nIGR1ZSB0byBqYXZhLmxhbmcuT3V0T2ZNZW1vcnlFcnJvcjogLi4uIiB0byBzdGRvdXQsIG5vdAogICMgc3RkZXJyIOKAlCBzbyBjaGVjayBib3RoIHN0cmVhbXMuIChXaXRob3V0IHRoZSBmbGFnLCB0aGUgc3RhY2sgdHJhY2UgZ29lcwogICMgdG8gc3RkZXJyIGFzIHVzdWFsLikKICBpZiAhIGdyZXAgLXEgIk91dE9mTWVtb3J5RXJyb3IiICIkZGlyL3N0ZGVyci5sb2ciICIkZGlyL3N0ZG91dC5sb2ciIDI+L2Rldi9udWxsOyB0aGVuCiAgICBmYWlsICIkbGFiZWwgKG5laXRoZXIgc3RyZWFtIGNvbnRhaW5zIE91dE9mTWVtb3J5RXJyb3IpIjsgdGFpbCAtNCAiJGRpci9zdGRvdXQubG9nIiB8IHNlZCAncy9eLyAgICAgIC8nOyByZXR1cm4KICBmaQogIGlmICEgZ3JlcCAtcSAiJG1hcmtlciIgIiRkaXIvc3Rkb3V0LmxvZyI7IHRoZW4KICAgIGZhaWwgIiRsYWJlbCAoc3Rkb3V0IG1pc3Npbmcgc3RhcnQgbWFya2VyICckbWFya2VyJykiOyByZXR1cm4KICBmaQogIHBhc3MgIiRsYWJlbCAoYnJva2VuIE9PTXMgYXMgZXhwZWN0ZWQsIGV4aXQ9JGNvZGUpIgp9CgpjaGVja19maXhlZCgpIHsgIyAkMT1sYWJlbCAkMj1zY2VuYXJpby1kaXIgJDM9Y2xhc3MgJDQ9Y29tcGxldGlvbi1ncmVwIFskNS4uLj1wcm9ncmFtIGFyZ3NdCiAgbGFiZWw9IiQxIjsgc2NlbmFyaW89IiQyIjsgY2xhc3M9IiQzIjsgZXhwZWN0PSIkNCI7IHNoaWZ0IDQKICBkaXI9IiRUTVBCQVNFLyRsYWJlbC1maXhlZCI7IG1rZGlyIC1wICIkZGlyL2NsYXNzZXMiCiAgIyBzaGVsbGNoZWNrIGRpc2FibGU9U0MyMDg2ICAjIGludGVudGlvbmFsOiBlbXB0eSBleHRyYSBzb3VyY2VzIHZhbmlzaAogIGlmICEgY29tcGlsZV9vbmUgIiRkaXIiICIkUk9PVC8kc2NlbmFyaW8vZml4ZWQvJGNsYXNzLmphdmEiICQoc2NlbmFyaW9fZXh0cmFfc3JjICIkc2NlbmFyaW8iKTsgdGhlbgogICAgZmFpbCAiJGxhYmVsIChmaXhlZCBkaWQgbm90IGNvbXBpbGUpIjsgc2VkICdzL14vICAgICAgLycgIiRkaXIvamF2YWMubG9nIjsgcmV0dXJuCiAgZmkKICAjIHNoZWxsY2hlY2sgZGlzYWJsZT1TQzIwODYKICAkVElNRU9VVCBqYXZhICQoanZtX2ZsYWdzICIkZGlyL2djLmxvZyIpIC1jcCAiJGRpci9jbGFzc2VzIiAiJGNsYXNzIiAiJEAiIFwKICAgID4iJGRpci9zdGRvdXQubG9nIiAyPiIkZGlyL3N0ZGVyci5sb2ciCiAgY29kZT0kPwogIGlmIGdyZXAgLXEgIk91dE9mTWVtb3J5RXJyb3IiICIkZGlyL3N0ZGVyci5sb2ciICIkZGlyL3N0ZG91dC5sb2ciIDI+L2Rldi9udWxsOyB0aGVuCiAgICBmYWlsICIkbGFiZWwgKGZpeGVkIE9PTWVkISkiOyB0YWlsIC00ICIkZGlyL3N0ZGVyci5sb2ciIHwgc2VkICdzL14vICAgICAgLyc7IHJldHVybgogIGZpCiAgaWYgWyAiJGNvZGUiIC1lcSAxMjQgXTsgdGhlbgogICAgZmFpbCAiJGxhYmVsIChmaXhlZCBUSU1FRCBPVVQpIjsgcmV0dXJuCiAgZmkKICBpZiBbICIkY29kZSIgLW5lIDAgXTsgdGhlbgogICAgZmFpbCAiJGxhYmVsIChmaXhlZCBleGl0ZWQgJGNvZGUpIjsgdGFpbCAtNCAiJGRpci9zdGRlcnIubG9nIiB8IHNlZCAncy9eLyAgICAgIC8nOyByZXR1cm4KICBmaQogIGlmICEgZ3JlcCAtcSAiJGV4cGVjdCIgIiRkaXIvc3Rkb3V0LmxvZyI7IHRoZW4KICAgIGZhaWwgIiRsYWJlbCAoc3Rkb3V0IG1pc3NpbmcgZXhwZWN0ZWQgJyRleHBlY3QnKSI7IHRhaWwgLTQgIiRkaXIvc3Rkb3V0LmxvZyIgfCBzZWQgJ3MvXi8gICAgICAvJzsgcmV0dXJuCiAgZmkKICBwYXNzICIkbGFiZWwgKGZpeGVkIGNvbXBsZXRlczogJGV4cGVjdCkiCn0KCmVjaG8gIj09PT09PT09PT09PT09PT0gc2NlbmFyaW8gY2hlY2tzID09PT09PT09PT09PT09PT0iCmNoZWNrX2Jyb2tlbiAiMDEtdW5ib3VuZGVkLWNhY2hlIiAgICBzY2VuYXJpby0wMS11bmJvdW5kZWQtY2FjaGUgVW5ib3VuZGVkQ2FjaGUgICAgICAgIlNUQVJURUQgc2NlbmFyaW8tMDEiCmNoZWNrX2ZpeGVkICAiMDEtdW5ib3VuZGVkLWNhY2hlIiAgICBzY2VuYXJpby0wMS11bmJvdW5kZWQtY2FjaGUgVW5ib3VuZGVkQ2FjaGVGaXhlZCAgIkNPTVBMRVRFRCByZWNvcmRzPTEwMDAwMDAiCgpjaGVja19icm9rZW4gIjAyLW92ZXJzaXplZC1iYXRjaCIgICAgc2NlbmFyaW8tMDItb3ZlcnNpemVkLWJhdGNoIE92ZXJzaXplZEJhdGNoICAgICAgICJTVEFSVEVEIHNjZW5hcmlvLTAyIgpjaGVja19maXhlZCAgIjAyLW92ZXJzaXplZC1iYXRjaCIgICAgc2NlbmFyaW8tMDItb3ZlcnNpemVkLWJhdGNoIE92ZXJzaXplZEJhdGNoRml4ZWQgICJDT01QTEVURUQgYmF0Y2hlcz0zIgojIGV2ZXJ5IGJhdGNoIG11c3QgaGF2ZSBwcm9jZXNzZWQgdGhlIGZ1bGwgMjUwayB4IDFLQiB3b3JrbG9hZDoKaWYgWyAiJChncmVwIC1jICdiYXRjaCBbMTIzXSBkb25lLCBjaGVja3N1bT0yNTYwMDAwMDAnICIkVE1QQkFTRS8wMi1vdmVyc2l6ZWQtYmF0Y2gtZml4ZWQvc3Rkb3V0LmxvZyIpIiA9ICIzIiBdOyB0aGVuCiAgcGFzcyAiMDIgcGVyLWJhdGNoIGNoZWNrc3VtcyAoMyB4IDI1NjAwMDAwMCkiCmVsc2UKICBmYWlsICIwMiBwZXItYmF0Y2ggY2hlY2tzdW1zIgpmaQoKY2hlY2tfYnJva2VuICIwMy1yZXBvcnQtYnVpbGRlciIgICAgIHNjZW5hcmlvLTAzLXJlcG9ydC1idWlsZGVyIFJlcG9ydEJ1aWxkZXIgICAgICAgICJTVEFSVEVEIHNjZW5hcmlvLTAzIgpjaGVja19maXhlZCAgIjAzLXJlcG9ydC1idWlsZGVyIiAgICAgc2NlbmFyaW8tMDMtcmVwb3J0LWJ1aWxkZXIgUmVwb3J0QnVpbGRlckZpeGVkICAgIkNPTVBMRVRFRCByZWNvcmRzPTMwMDAwMCBieXRlcz0zMDcyMDAwMDAiIFwKICAtLW91dHB1dCAiJFRNUEJBU0UvMDMtcmVwb3J0LmJpbiIKIyB0aGUgc3RyZWFtZWQgcmVwb3J0IG11c3QgYWN0dWFsbHkgaG9sZCBhbGwgMzAwayB4IDFLQiBzdW1tYXJpZXM6CmlmIFsgLWYgIiRUTVBCQVNFLzAzLXJlcG9ydC5iaW4iIF07IHRoZW4KICBfc3o9JCh3YyAtYyA8ICIkVE1QQkFTRS8wMy1yZXBvcnQuYmluIiB8IHRyIC1kICcgJykKICBpZiBbICIkX3N6IiA9ICIzMDcyMDAwMDAiIF07IHRoZW4KICAgIHBhc3MgIjAzIHJlcG9ydCBmaWxlIGlzIGV4YWN0bHkgMzA3MjAwMDAwIGJ5dGVzIgogIGVsc2UKICAgIGZhaWwgIjAzIHJlcG9ydCBmaWxlIHNpemUgaXMgJF9zeiwgZXhwZWN0ZWQgMzA3MjAwMDAwIgogIGZpCmVsc2UKICBmYWlsICIwMyByZXBvcnQgZmlsZSB3YXMgbm90IGNyZWF0ZWQiCmZpCgpjaGVja19icm9rZW4gIjA0LXRocmVhZGxvY2FsLWxlYWsiICAgc2NlbmFyaW8tMDQtdGhyZWFkbG9jYWwtbGVhayBUaHJlYWRMb2NhbExlYWsgICAgICJTVEFSVEVEIHNjZW5hcmlvLTA0IgpjaGVja19maXhlZCAgIjA0LXRocmVhZGxvY2FsLWxlYWsiICAgc2NlbmFyaW8tMDQtdGhyZWFkbG9jYWwtbGVhayBUaHJlYWRMb2NhbExlYWtGaXhlZCAiQ09NUExFVEVEIHRhc2tzPTMwMDAiCgpjaGVja19icm9rZW4gIjA1LWxlYWtlZC1jb25uZWN0aW9ucyIgc2NlbmFyaW8tMDUtbGVha2VkLWNvbm5lY3Rpb25zIExlYWtlZENvbm5lY3Rpb25zICAgICAgICJTVEFSVEVEIHNjZW5hcmlvLTA1IgpjaGVja19maXhlZCAgIjA1LWxlYWtlZC1jb25uZWN0aW9ucyIgc2NlbmFyaW8tMDUtbGVha2VkLWNvbm5lY3Rpb25zIExlYWtlZENvbm5lY3Rpb25zRml4ZWQgICJDT01QTEVURUQgY29ubmVjdGlvbnM9MTAwMDAwIG9wZW49MCIKCmVjaG8gIj09PT09PT09PT09PT09PT0gQ0xJIHZhbGlkYXRpb24gY2hlY2tzID09PT09PT09PT09PT09PT0iCiMgRXZlcnkgcHJvZ3JhbSBtdXN0IGV4aXQgMiAod2l0aCBhIHVzYWdlIGxpbmUgb24gc3RkZXJyKSBvbiBiYWQgQ0xJIGlucHV0IOKAlAojIG1pc3NpbmcgdmFsdWVzLCB1bmtub3duIGZsYWdzLCB6ZXJvL25lZ2F0aXZlIG51bWJlcnMsIGFuZCBvdmVyZmxvdy4KCmNoZWNrX2NsaV9leGl0MigpIHsgIyAkMT1sYWJlbCAkMj1zY2VuYXJpby1kaXIgJDM9YnJva2VufGZpeGVkICQ0PWNsYXNzIFskNS4uLj1iYWQgYXJnc10KICBsYWJlbD0iJDEiOyBzY2VuYXJpbz0iJDIiOyBzdWJkaXI9IiQzIjsgY2xhc3M9IiQ0Ijsgc2hpZnQgNAogIGRpcj0iJFRNUEJBU0UvJGxhYmVsIjsgbWtkaXIgLXAgIiRkaXIvY2xhc3NlcyIKICAjIHNoZWxsY2hlY2sgZGlzYWJsZT1TQzIwODYgICMgaW50ZW50aW9uYWw6IGVtcHR5IGV4dHJhIHNvdXJjZXMgdmFuaXNoCiAgaWYgISBjb21waWxlX29uZSAiJGRpciIgIiRST09ULyRzY2VuYXJpby8kc3ViZGlyLyRjbGFzcy5qYXZhIiAkKHNjZW5hcmlvX2V4dHJhX3NyYyAiJHNjZW5hcmlvIik7IHRoZW4KICAgIGZhaWwgIiRsYWJlbCAoZGlkIG5vdCBjb21waWxlKSI7IHJldHVybgogIGZpCiAgamF2YSAtY3AgIiRkaXIvY2xhc3NlcyIgIiRjbGFzcyIgIiRAIiA+IiRkaXIvc3Rkb3V0LmxvZyIgMj4iJGRpci9zdGRlcnIubG9nIgogIGNvZGU9JD8KICBpZiBbICIkY29kZSIgLW5lIDIgXTsgdGhlbgogICAgZmFpbCAiJGxhYmVsIChleGl0PSRjb2RlLCBleHBlY3RlZCAyKSI7IHJldHVybgogIGZpCiAgaWYgISBncmVwIC1xICJ1c2FnZToiICIkZGlyL3N0ZGVyci5sb2ciOyB0aGVuCiAgICBmYWlsICIkbGFiZWwgKHN0ZGVyciBtaXNzaW5nIHVzYWdlIGxpbmUpIjsgcmV0dXJuCiAgZmkKICBwYXNzICIkbGFiZWwgKGV4aXQgMiB3aXRoIHVzYWdlKSIKfQoKY2hlY2tfY2xpX2V4aXQyICJjbGktMDEtbWlzc2luZy12YWx1ZSIgIHNjZW5hcmlvLTAxLXVuYm91bmRlZC1jYWNoZSBicm9rZW4gVW5ib3VuZGVkQ2FjaGUgICAgICAtLWl0ZW1zCmNoZWNrX2NsaV9leGl0MiAiY2xpLTAxLXVua25vd24tZmxhZyIgICBzY2VuYXJpby0wMS11bmJvdW5kZWQtY2FjaGUgYnJva2VuIFVuYm91bmRlZENhY2hlICAgICAgLS1ib2d1cwpjaGVja19jbGlfZXhpdDIgImNsaS0wMi16ZXJvIiAgICAgICAgICAgc2NlbmFyaW8tMDItb3ZlcnNpemVkLWJhdGNoIGJyb2tlbiBPdmVyc2l6ZWRCYXRjaCAgICAgIC0tYmF0Y2gtc2l6ZSAwCmNoZWNrX2NsaV9leGl0MiAiY2xpLTAyLW5lZ2F0aXZlIiAgICAgICBzY2VuYXJpby0wMi1vdmVyc2l6ZWQtYmF0Y2ggYnJva2VuIE92ZXJzaXplZEJhdGNoICAgICAgLS1iYXRjaC1zaXplIC0xCmNoZWNrX2NsaV9leGl0MiAiY2xpLTAyLWNodW5rc2l6ZS16ZXJvIiBzY2VuYXJpby0wMi1vdmVyc2l6ZWQtYmF0Y2ggZml4ZWQgIE92ZXJzaXplZEJhdGNoRml4ZWQgLS1jaHVuay1zaXplIDAKY2hlY2tfY2xpX2V4aXQyICJjbGktMDMtdW5rbm93bi1mbGFnIiAgIHNjZW5hcmlvLTAzLXJlcG9ydC1idWlsZGVyICBicm9rZW4gUmVwb3J0QnVpbGRlciAgICAgICAtLW5vcGUKY2hlY2tfY2xpX2V4aXQyICJjbGktMDQtbmVnYXRpdmUiICAgICAgIHNjZW5hcmlvLTA0LXRocmVhZGxvY2FsLWxlYWsgYnJva2VuIFRocmVhZExvY2FsTGVhayAgICAtLXRhc2tzIC01CmNoZWNrX2NsaV9leGl0MiAiY2xpLTA1LW92ZXJmbG93IiAgICAgICBzY2VuYXJpby0wNS1sZWFrZWQtY29ubmVjdGlvbnMgYnJva2VuIExlYWtlZENvbm5lY3Rpb25zIC0tYnVmZmVyLWtiIDMwMDAwMDAKCmVjaG8gIj09PT09PT09PT09PT09PT0gc2hhcmVkLXNvdXJjZSBjaGVja3MgPT09PT09PT09PT09PT09PSIKIyBTdW1tYXJ5Q29kZWMgbXVzdCBleGlzdCBhbmQgYmUgdGhlIHNpbmdsZSBpbXBsZW1lbnRhdGlvbiB1c2VkIGJ5IGJvdGgKIyBzY2VuYXJpby0wMyB2ZXJzaW9ucyAobm8gZHVwbGljYXRlZCBsb2NhbCBjb3BpZXMpLgppZiBbIC1mICIkUk9PVC9zY2VuYXJpby0wMy1yZXBvcnQtYnVpbGRlci9TdW1tYXJ5Q29kZWMuamF2YSIgXSBcCiYmIGdyZXAgLXEgIlN1bW1hcnlDb2RlYy5tYWtlU3VtbWFyeSIgIiRST09UL3NjZW5hcmlvLTAzLXJlcG9ydC1idWlsZGVyL2Jyb2tlbi9SZXBvcnRCdWlsZGVyLmphdmEiIFwKJiYgZ3JlcCAtcSAiU3VtbWFyeUNvZGVjLm1ha2VTdW1tYXJ5IiAiJFJPT1Qvc2NlbmFyaW8tMDMtcmVwb3J0LWJ1aWxkZXIvZml4ZWQvUmVwb3J0QnVpbGRlckZpeGVkLmphdmEiIFwKJiYgISBncmVwIC1xICJzdGF0aWMgYnl0ZVxbXF0gbWFrZVN1bW1hcnkiICIkUk9PVC9zY2VuYXJpby0wMy1yZXBvcnQtYnVpbGRlci9icm9rZW4vUmVwb3J0QnVpbGRlci5qYXZhIiBcCiYmICEgZ3JlcCAtcSAic3RhdGljIGJ5dGVcW1xdIG1ha2VTdW1tYXJ5IiAiJFJPT1Qvc2NlbmFyaW8tMDMtcmVwb3J0LWJ1aWxkZXIvZml4ZWQvUmVwb3J0QnVpbGRlckZpeGVkLmphdmEiOyB0aGVuCiAgcGFzcyAiMDMgU3VtbWFyeUNvZGVjIGlzIHRoZSBzaW5nbGUgc2hhcmVkIGltcGxlbWVudGF0aW9uIgplbHNlCiAgZmFpbCAiMDMgU3VtbWFyeUNvZGVjIHdpcmluZyAoZGVhZCBjb2RlIG9yIGR1cGxpY2F0ZWQgbWFrZVN1bW1hcnkpIgpmaQoKZWNobyAiPT09PT09PT09PT09PT09PT09PSAkUEFTUyBwYXNzZWQsICRGQUlMIGZhaWxlZCA9PT09PT09PT09PT09PT09PT09IgpbICIkRkFJTCIgLWVxIDAgXQo=
+#!/bin/sh
+# Full verification for the JVM Heap OOM Field Guide.
+#
+#   ./test.sh
+#
+# Every broken/ program must die with OutOfMemoryError; every fixed/ program
+# must complete and print its completion marker with the expected counts.
+# Broken runs use -XX:+ExitOnOutOfMemoryError (via OOMFG_TEST=1, see
+# common.sh) so the suite is fast and deterministic; the assertions never
+# depend on a specific OOM detail message, only on "OutOfMemoryError" plus
+# the program's own STARTED marker and a nonzero, non-timeout exit code.
+set -u
+
+ROOT="$(cd "$(dirname "$0")" && pwd)"
+. "$ROOT/common.sh"
+export OOMFG_TEST=1
+
+PASS=0; FAIL=0
+TMPBASE="$(mktemp -d "${TMPDIR:-/tmp}/oomfg-test.XXXXXX")"
+cleanup() {
+  if [ "$FAIL" -eq 0 ]; then
+    rm -rf "$TMPBASE"
+  else
+    echo "FAILURES PRESENT — test artifacts preserved in: $TMPBASE" >&2
+  fi
+}
+trap cleanup EXIT
+
+pass() { PASS=$((PASS + 1)); echo "PASS  $1"; }
+fail() { FAIL=$((FAIL + 1)); echo "FAIL  $1"; [ -n "${2:-}" ] && echo "      $2"; }
+
+# ---------- environment validation ----------
+for cmd in java javac mktemp grep; do
+  command -v "$cmd" >/dev/null 2>&1 || { echo "missing required command: $cmd" >&2; exit 2; }
+done
+_JAVA_MAJOR="$(java -version 2>&1 | head -1 | sed 's/.*version "\([0-9][0-9]*\).*/\1/')"
+if [ "${_JAVA_MAJOR:-0}" -lt 11 ]; then
+  echo "JDK 11+ required (found major version: ${_JAVA_MAJOR:-unknown})" >&2; exit 2
+fi
+echo "testing with: $(java -version 2>&1 | head -1)"
+
+# Prefer GNU timeout; macOS may have gtimeout (coreutils). With neither,
+# run directly — CI jobs set their own timeout-minutes as a backstop.
+if command -v timeout >/dev/null 2>&1; then
+  TIMEOUT="timeout 180"
+elif command -v gtimeout >/dev/null 2>&1; then
+  TIMEOUT="gtimeout 180"
+else
+  TIMEOUT=""
+  echo "note: no timeout/gtimeout found; running steps without a per-step limit" >&2
+fi
+
+compile_one() { # $1=workdir $2...=java source paths (extra shared sources allowed)
+  _w="$1"; shift
+  # shellcheck disable=SC2086  # intentional: empty extra sources vanish
+  if ! javac -encoding UTF-8 -d "$_w/classes" "$@" >"$_w/javac.log" 2>&1; then
+    return 1
+  fi
+}
+
+# Extra shared sources for a scenario (e.g. scenario-03's SummaryCodec.java).
+# Prints the path, or nothing.
+scenario_extra_src() { # $1=scenario-dir
+  if [ -f "$ROOT/$1/SummaryCodec.java" ]; then
+    printf '%s' "$ROOT/$1/SummaryCodec.java"
+  fi
+}
+
+check_broken() { # $1=label $2=scenario-dir $3=class $4=start-marker [$5...=program args]
+  label="$1"; scenario="$2"; class="$3"; marker="$4"; shift 4
+  dir="$TMPBASE/$label-broken"; mkdir -p "$dir/classes"
+  # shellcheck disable=SC2086  # intentional: empty extra sources vanish
+  if ! compile_one "$dir" "$ROOT/$scenario/broken/$class.java" $(scenario_extra_src "$scenario"); then
+    fail "$label (broken did not compile)"; sed 's/^/      /' "$dir/javac.log"; return
+  fi
+  # shellcheck disable=SC2086  # intentional splitting of TIMEOUT and flag list
+  $TIMEOUT java $(jvm_flags "$dir/gc.log") -cp "$dir/classes" "$class" "$@" \
+    >"$dir/stdout.log" 2>"$dir/stderr.log"
+  code=$?
+  if [ "$code" -eq 0 ]; then
+    fail "$label (broken exited 0 — expected OutOfMemoryError)"; return
+  fi
+  if [ "$code" -eq 124 ]; then
+    fail "$label (broken TIMED OUT instead of OOMing)"; return
+  fi
+  # Note: with -XX:+ExitOnOutOfMemoryError HotSpot prints
+  # "Terminating due to java.lang.OutOfMemoryError: ..." to stdout, not
+  # stderr — so check both streams. (Without the flag, the stack trace goes
+  # to stderr as usual.)
+  if ! grep -q "OutOfMemoryError" "$dir/stderr.log" "$dir/stdout.log" 2>/dev/null; then
+    fail "$label (neither stream contains OutOfMemoryError)"; tail -4 "$dir/stdout.log" | sed 's/^/      /'; return
+  fi
+  if ! grep -q "$marker" "$dir/stdout.log"; then
+    fail "$label (stdout missing start marker '$marker')"; return
+  fi
+  pass "$label (broken OOMs as expected, exit=$code)"
+}
+
+check_fixed() { # $1=label $2=scenario-dir $3=class $4=completion-grep [$5...=program args]
+  label="$1"; scenario="$2"; class="$3"; expect="$4"; shift 4
+  dir="$TMPBASE/$label-fixed"; mkdir -p "$dir/classes"
+  # shellcheck disable=SC2086  # intentional: empty extra sources vanish
+  if ! compile_one "$dir" "$ROOT/$scenario/fixed/$class.java" $(scenario_extra_src "$scenario"); then
+    fail "$label (fixed did not compile)"; sed 's/^/      /' "$dir/javac.log"; return
+  fi
+  # shellcheck disable=SC2086
+  $TIMEOUT java $(jvm_flags "$dir/gc.log") -cp "$dir/classes" "$class" "$@" \
+    >"$dir/stdout.log" 2>"$dir/stderr.log"
+  code=$?
+  if grep -q "OutOfMemoryError" "$dir/stderr.log" "$dir/stdout.log" 2>/dev/null; then
+    fail "$label (fixed OOMed!)"; tail -4 "$dir/stderr.log" | sed 's/^/      /'; return
+  fi
+  if [ "$code" -eq 124 ]; then
+    fail "$label (fixed TIMED OUT)"; return
+  fi
+  if [ "$code" -ne 0 ]; then
+    fail "$label (fixed exited $code)"; tail -4 "$dir/stderr.log" | sed 's/^/      /'; return
+  fi
+  if ! grep -q "$expect" "$dir/stdout.log"; then
+    fail "$label (stdout missing expected '$expect')"; tail -4 "$dir/stdout.log" | sed 's/^/      /'; return
+  fi
+  pass "$label (fixed completes: $expect)"
+}
+
+echo "================ scenario checks ================"
+check_broken "01-unbounded-cache"    scenario-01-unbounded-cache UnboundedCache       "STARTED scenario-01"
+check_fixed  "01-unbounded-cache"    scenario-01-unbounded-cache UnboundedCacheFixed  "COMPLETED records=1000000"
+
+check_broken "02-oversized-batch"    scenario-02-oversized-batch OversizedBatch       "STARTED scenario-02"
+check_fixed  "02-oversized-batch"    scenario-02-oversized-batch OversizedBatchFixed  "COMPLETED batches=3"
+# every batch must have processed the full 250k x 1KB workload:
+if [ "$(grep -c 'batch [123] done, checksum=256000000' "$TMPBASE/02-oversized-batch-fixed/stdout.log")" = "3" ]; then
+  pass "02 per-batch checksums (3 x 256000000)"
+else
+  fail "02 per-batch checksums"
+fi
+
+check_broken "03-report-builder"     scenario-03-report-builder ReportBuilder        "STARTED scenario-03"
+check_fixed  "03-report-builder"     scenario-03-report-builder ReportBuilderFixed   "COMPLETED records=300000 bytes=307200000" \
+  --output "$TMPBASE/03-report.bin"
+# the streamed report must actually hold all 300k x 1KB summaries:
+if [ -f "$TMPBASE/03-report.bin" ]; then
+  _sz=$(wc -c < "$TMPBASE/03-report.bin" | tr -d ' ')
+  if [ "$_sz" = "307200000" ]; then
+    pass "03 report file is exactly 307200000 bytes"
+  else
+    fail "03 report file size is $_sz, expected 307200000"
+  fi
+else
+  fail "03 report file was not created"
+fi
+
+check_broken "04-threadlocal-leak"   scenario-04-threadlocal-leak ThreadLocalLeak     "STARTED scenario-04"
+check_fixed  "04-threadlocal-leak"   scenario-04-threadlocal-leak ThreadLocalLeakFixed "COMPLETED tasks=3000"
+
+check_broken "05-leaked-connections" scenario-05-leaked-connections LeakedConnections       "STARTED scenario-05"
+check_fixed  "05-leaked-connections" scenario-05-leaked-connections LeakedConnectionsFixed  "COMPLETED connections=100000 open=0"
+
+echo "================ CLI validation checks ================"
+# Every program must exit 2 (with a usage line on stderr) on bad CLI input —
+# missing values, unknown flags, zero/negative numbers, and overflow.
+
+check_cli_exit2() { # $1=label $2=scenario-dir $3=broken|fixed $4=class [$5...=bad args]
+  label="$1"; scenario="$2"; subdir="$3"; class="$4"; shift 4
+  dir="$TMPBASE/$label"; mkdir -p "$dir/classes"
+  # shellcheck disable=SC2086  # intentional: empty extra sources vanish
+  if ! compile_one "$dir" "$ROOT/$scenario/$subdir/$class.java" $(scenario_extra_src "$scenario"); then
+    fail "$label (did not compile)"; return
+  fi
+  java -cp "$dir/classes" "$class" "$@" >"$dir/stdout.log" 2>"$dir/stderr.log"
+  code=$?
+  if [ "$code" -ne 2 ]; then
+    fail "$label (exit=$code, expected 2)"; return
+  fi
+  if ! grep -q "usage:" "$dir/stderr.log"; then
+    fail "$label (stderr missing usage line)"; return
+  fi
+  pass "$label (exit 2 with usage)"
+}
+
+check_cli_exit2 "cli-01-missing-value"  scenario-01-unbounded-cache broken UnboundedCache      --items
+check_cli_exit2 "cli-01-unknown-flag"   scenario-01-unbounded-cache broken UnboundedCache      --bogus
+check_cli_exit2 "cli-02-zero"           scenario-02-oversized-batch broken OversizedBatch      --batch-size 0
+check_cli_exit2 "cli-02-negative"       scenario-02-oversized-batch broken OversizedBatch      --batch-size -1
+check_cli_exit2 "cli-02-chunksize-zero" scenario-02-oversized-batch fixed  OversizedBatchFixed --chunk-size 0
+check_cli_exit2 "cli-03-unknown-flag"   scenario-03-report-builder  broken ReportBuilder       --nope
+check_cli_exit2 "cli-04-negative"       scenario-04-threadlocal-leak broken ThreadLocalLeak    --tasks -5
+check_cli_exit2 "cli-05-overflow"       scenario-05-leaked-connections broken LeakedConnections --buffer-kb 3000000
+
+echo "================ shared-source checks ================"
+# SummaryCodec must exist and be the single implementation used by both
+# scenario-03 versions (no duplicated local copies).
+if [ -f "$ROOT/scenario-03-report-builder/SummaryCodec.java" ] \
+&& grep -q "SummaryCodec.makeSummary" "$ROOT/scenario-03-report-builder/broken/ReportBuilder.java" \
+&& grep -q "SummaryCodec.makeSummary" "$ROOT/scenario-03-report-builder/fixed/ReportBuilderFixed.java" \
+&& ! grep -q "static byte\[\] makeSummary" "$ROOT/scenario-03-report-builder/broken/ReportBuilder.java" \
+&& ! grep -q "static byte\[\] makeSummary" "$ROOT/scenario-03-report-builder/fixed/ReportBuilderFixed.java"; then
+  pass "03 SummaryCodec is the single shared implementation"
+else
+  fail "03 SummaryCodec wiring (dead code or duplicated makeSummary)"
+fi
+
+echo "=================== $PASS passed, $FAIL failed ==================="
+[ "$FAIL" -eq 0 ]

@@ -17,13 +17,25 @@
 #   OOMFG_JFR=1                           bounded JFR recording (diagnose mode)
 
 # jvm_flags <gc-log-path>: print the shared flags for one run.
+# Returns 2 (with an error on stderr) for an unsupported collector or a
+# gc-log path containing whitespace: the flag list is word-split by callers,
+# so spaces would silently break it, and silently falling back to Parallel GC
+# on a typo (e.g. OOMFG_GC=ZGCC) would invalidate the experiment.
 jvm_flags() {
   _gclog="$1"
+  case "$_gclog" in
+    *[[:space:]]*)
+      echo "jvm_flags: gc-log path contains whitespace, refusing: $_gclog" >&2
+      return 2 ;;
+  esac
   case "${OOMFG_GC:-Parallel}" in
+    Parallel)   _gc="-XX:+UseParallelGC" ;;
     G1)         _gc="-XX:+UseG1GC" ;;
     ZGC)        _gc="-XX:+UseZGC" ;;
     Shenandoah) _gc="-XX:+UseShenandoahGC" ;;
-    Parallel|*) _gc="-XX:+UseParallelGC" ;;
+    *)
+      echo "Unsupported OOMFG_GC: '${OOMFG_GC:-}' (expected Parallel, G1, ZGC, or Shenandoah)" >&2
+      return 2 ;;
   esac
   _heap="${OOMFG_HEAP:-64m}"
   _flags="-Xms${_heap} -Xmx${_heap} ${_gc} -Xlog:gc*:file=${_gclog}:time,level,tags"

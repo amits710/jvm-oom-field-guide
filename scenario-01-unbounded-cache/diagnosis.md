@@ -1,1 +1,117 @@
-IyBTY2VuYXJpbyAwMSDigJQgRGlhZ25vc2lzOiB0aGUgdW5ib3VuZGVkIGluLW1lbW9yeSBjYWNoZQoKPiBbQmFjayB0byB0aGUgZmllbGQgZ3VpZGUgcm9vdF0oLi4vUkVBRE1FLm1kKQoKIyMgVGhlIEdDIGxvZyBzaWduYXR1cmUKClJ1biB0aGUgYnJva2VuIHZlcnNpb24gKGAuL3J1bi5zaGAgZW5hYmxlcyBHQyBsb2dnaW5nIHRvCmBzY2VuYXJpby0wMS11bmJvdW5kZWQtY2FjaGUtYnJva2VuLWdjLmxvZ2ApIGFuZCB5b3UnbGwgc2VlIHRoZSBjbGFzc2ljCnJldGVudGlvbiBzaWduYXR1cmUuIE9sZC1nZW4gb2NjdXBhbmN5IGNsaW1icyBtb25vdG9uaWNhbGx5OyByZXBlYXRlZCBmdWxsCkdDcyByZWNsYWltIHZlcnkgbGl0dGxlLCBsZWF2aW5nIHRoZSBoZWFwIGNsb3NlIHRvIGNhcGFjaXR5LgoKUmVwcmVzZW50YXRpdmUgb3V0cHV0IGZyb20gT3BlbkpESyAyMSB3aXRoIFBhcmFsbGVsIEdDIG9uIExpbnV4LiBFeGFjdCBHQwpsaW5lcyBhbmQgT3V0T2ZNZW1vcnlFcnJvciBkZXRhaWwgbWVzc2FnZXMgY2FuIGRpZmZlciBieSBKREssIGNvbGxlY3RvciwgYW5kCm9wZXJhdGluZyBzeXN0ZW0uCgpgYGAKWzAuNDEyc11baW5mb11bZ2NdIEdDKDQpIFBhdXNlIEZ1bGwgKEFsbG9jYXRpb24gRmFpbHVyZSkgNjFNLT41OE0oNjRNKSAzOC4yMDRtcwpbMC40ODlzXVtpbmZvXVtnY10gR0MoNSkgUGF1c2UgRnVsbCAoQWxsb2NhdGlvbiBGYWlsdXJlKSA2MU0tPjYwTSg2NE0pIDQ0LjkxN21zClswLjU3MXNdW2luZm9dW2djXSBHQyg2KSBQYXVzZSBGdWxsIChBbGxvY2F0aW9uIEZhaWx1cmUpIDYyTS0+NjFNKDY0TSkgNTEuMzMwbXMKRXhjZXB0aW9uIGluIHRocmVhZCAibWFpbiIgamF2YS5sYW5nLk91dE9mTWVtb3J5RXJyb3I6IEphdmEgaGVhcCBzcGFjZQpgYGAKClJlYWQgaXQgbGlrZSB0aGlzOgoKLSBgNjFNLT41OE0oNjRNKWAg4oCUIGhlYXAgdXNhZ2Ugd2VudCBmcm9tIDYxIE1CIGJlZm9yZSBHQyB0byA1OCBNQiBhZnRlciBHQywKICB3aXRoIGEgcmVwb3J0ZWQgaGVhcCBjYXBhY2l0eSBvZiA2NCBNQi4gSGVyZSB0aGUgaGVhcCBzaXRzIGNsb3NlIHRvIGNhcGFjaXR5CiAgYW5kIHRoZSBjb2xsZWN0aW9uIHJlY2xhaW1lZCBvbmx5IDMgTUIuCi0gYFBhdXNlIEZ1bGwgKEFsbG9jYXRpb24gRmFpbHVyZSlgIHJlcGVhdGluZyBiYWNrLXRvLWJhY2sgbWVhbnMgdGhlIGNvbGxlY3RvcgogIGlzIGRlc3BlcmF0ZWx5IHRyeWluZyB0byBtYWtlIHJvb20gYW5kIGZpbmRpbmcgYWxtb3N0IG5vdGhpbmcgdG8gY29sbGVjdC4KICBKdWRnZSBoZWFsdGggYnkgdGhlIHRyZW5kLCBub3Qgb25lIGxpbmU6IHBvc3QtR0Mgb2NjdXBhbmN5IHNob3VsZCByZXR1cm4KICB0byBhIHN0YWJsZSBiYXNlbGluZSwgYWxsb2NhdGlvbiB0aHJvdWdocHV0IHNob3VsZCBzdGF5IHN1c3RhaW5hYmxlLCBhbmQKICB0aGUgYXBwbGljYXRpb24gc2hvdWxkIG5vdCBzcGVuZCBhbiBpbmNyZWFzaW5nIGZyYWN0aW9uIG9mIHRpbWUgY29sbGVjdGluZwogIGdhcmJhZ2UuIEEgY29sbGVjdG9yIHRoYXQgcmVwZWF0ZWRseSBmdWxsLUdDcyBhbmQgYnJpZWZseSBkcm9wcyBvY2N1cGFuY3kKICBjYW4gc3RpbGwgYmUgaW4gc2V2ZXJlIHRyb3VibGUuCi0gVGhlIHJ1biBlbmRzIHdpdGggYGphdmEubGFuZy5PdXRPZk1lbW9yeUVycm9yOiBKYXZhIGhlYXAgc3BhY2VgIChub3QKICBgR0Mgb3ZlcmhlYWQgbGltaXQgZXhjZWVkZWRgIOKAlCB0aGF0IG9uZSBpcyBIb3RTcG90J3Mgc2FmZWd1YXJkOiB+OTglIG9mIHRpbWUKICBpbiBHQyByZWNvdmVyaW5nIDwyJSBvZiBoZWFwIG92ZXIgY29uc2VjdXRpdmUgY29sbGVjdGlvbnMpLgoKVGhpcyBwYXR0ZXJuIGlzIHN0cm9uZyBldmlkZW5jZSB0aGF0IHRoZSBKVk0gaXMgcmV0YWluaW5nIGEgbGFyZ2UgYW1vdW50IG9mCmxpdmUgZGF0YSDigJQgYnV0IHJldGFpbmVkIG1lbW9yeSBpcyBub3QgYXV0b21hdGljYWxseSBhIGxlYWsuIEl0IGNvdWxkIGJlIGFuCnVuYm91bmRlZCBjYWNoZSwgb3IgaXQgY291bGQgYmUgYSBsZWdpdGltYXRlIHdvcmtpbmcgc2V0IHRoYXQgZG9lc24ndCBmaXQgdGhlCmNvbmZpZ3VyZWQgaGVhcC4gVGhlIGhlYXAgZHVtcCAoYmVsb3cpIGlzIHdoYXQgc2VwYXJhdGVzIHRoZSB0d28uCgojIyBIb3cgdG8gcmVjb2duaXplIGl0IGluIGEgcmVhbCBwaXBlbGluZQoKWW91IHdvbid0IGhhdmUgYSBsb29wIHByaW50aW5nICJtYXAgc2l6ZSIgaW4gcHJvZHVjdGlvbi4gV2hhdCB5b3Ugd2lsbCBoYXZlOgoKMS4gKipQb3N0LUdDIG9jY3VwYW5jeSBncm93cyB3aXRoIGlucHV0IHZvbHVtZSwgbm90IHRpbWUuKiogVGhlIHNhd3Rvb3RoIHBhdHRlcm4gb2YgYQogICBoZWFsdGh5IEpWTSAodXAsIGZ1bGwgR0MsIGJhY2sgZG93bikgYmVjb21lcyBhIHN0YWlyY2FzZSAodXAsIGZ1bGwgR0MsCiAgIGJhcmVseSBkb3duLCB1cCBhZ2FpbikuIEdyYXBoIHBvc3QtR0Mgb2NjdXBhbmN5IOKAlCBmcm9tIGRldGFpbGVkIEdDIGxvZ3Mgb3IKICAgSlZNIG1ldHJpY3Mgd2l0aCBvbGQtZ2VuIHZpc2liaWxpdHkg4oCUIGFuZCBpZiB0aGF0IGxpbmUgdHJlbmRzIHVwd2FyZCBhY3Jvc3MKICAgY29tcGFyYWJsZSB3b3JrbG9hZCBpbnRlcnZhbHMsIHNvbWV0aGluZyBpcyBhY2N1bXVsYXRpbmcuCjIuICoqRnVsbCBHQ3MgZnJlZSBhbG1vc3Qgbm90aGluZy4qKiBJZiB5b3VyIEdDIGxvZ3Mgc2hvdyByZWNsYWltZWQgYnl0ZXMKICAgc2hyaW5raW5nIHRvd2FyZCB6ZXJvIHdoaWxlIGZyZXF1ZW5jeSBjbGltYnMsIHRoYXQncyByZXRlbnRpb24sIG5vdCBjaHVybi4KMy4gKipSZXN0YXJ0cyBidXkgdGltZSDigJQgYnV0IHRoYXQgaXMgYSBjbHVlLCBub3QgYSBkaWFnbm9zaXMuKiogVGhlIHBpcGVsaW5lCiAgIHJ1bnMgZmluZSBmb3IgaG91cnMgb3IgZGF5cyBhZnRlciBhIHJlc3RhcnQsIHRoZW4gZGVncmFkZXMgYWdhaW4uIEEKICAgcmVwZWF0YWJsZSBwb3N0LXJlc3RhcnQgZ3Jvd3RoIGN1cnZlIHN1Z2dlc3RzIGN1bXVsYXRpdmUgcmV0ZW50aW9uIG9yCiAgIHVuYm91bmRlZCBzdGF0ZS4gQ29uZmlybSBpdCB1c2luZyB0aGUgcG9zdC1HQyBsaXZlLXNldCB0cmVuZCBhbmQgcGF0aHMKICAgdG8gR0Mgcm9vdHMg4oCUIGEgcmVzdGFydCBhbG9uZSBjYW5ub3QgdGVsbCBhIGxlYWsgZnJvbSBhbiB1bmRlcnNpemVkIGhlYXAKICAgZmVkIGJ5IHN0ZWFkeSBpbnB1dC4KNC4gKipMYXRlbmN5IGRlZ3JhZGVzIGJlZm9yZSBkZWF0aC4qKiBBcyB0aGUgaGVhcCBmaWxscywgR0MgcGF1c2VzIGxlbmd0aGVuLgogICBZb3UnbGwgb2Z0ZW4gc2VlIHRpbWVvdXRzIGFuZCBiYWNrcHJlc3N1cmUgKmJlZm9yZSogdGhlIE9PTSDigJQgdGhlIE9PTSBpcwogICBqdXN0IHRoZSBmaW5hbCBzeW1wdG9tLgoKIyMgSGVhcC1kdW1wIGNsdWVzCgpUYWtlIGEgaGVhcCBkdW1wIG9uIE9PTSAoYC1YWDorSGVhcER1bXBPbk91dE9mTWVtb3J5RXJyb3JgKSBhbmQgb3BlbiBpdCBpbgpFY2xpcHNlIE1BVCBvciBKREsgTWlzc2lvbiBDb250cm9sOgoKLSAqKkRvbWluYXRvciB0cmVlOioqIG9uZSBgSGFzaE1hcGAgKG9yIHRoZSBjbGFzcyB3cmFwcGluZyBpdCkgcmV0YWlucyB0aGUKICBvdmVyd2hlbG1pbmcgbWFqb3JpdHkgb2YgdGhlIGhlYXAuIFNvcnQgYnkgcmV0YWluZWQgaGVhcCDigJQgdGhlIGxlYWsgaXMKICB1c3VhbGx5IGVtYmFycmFzc2luZ2x5IG5lYXIgdGhlIHRvcC4KLSAqKlBhdGggdG8gR0Mgcm9vdHM6KiogcmlnaHQtY2xpY2sgdGhlIHN1c3BlY3Qg4oaSICpQYXRoIHRvIEdDIFJvb3RzKiDihpIKICAqZXhjbHVkZSB3ZWFrL3NvZnQgcmVmZXJlbmNlcyouIEEgc2hvcnQgcGF0aCB0aHJvdWdoIGEgYHN0YXRpY2AgZmllbGQgaXMKICB0aGUgdGVsbDogdGhlIG1hcCBpcyByZWFjaGFibGUgZm9yZXZlciBieSBkZXNpZ24sIGFuZCBub3RoaW5nIGV2ZXIgcmVtb3ZlcwogIGVudHJpZXMuCi0gKipIaXN0b2dyYW06KiogY29tcGFyZSB3aXRoIGEgZHVtcCBmcm9tIHN0YXJ0dXAuIFJlcGVhdGVkIGhpc3RvZ3JhbXMgY2FuCiAgc2hvdyB3aGljaCBvYmplY3QgcG9wdWxhdGlvbnMgY29udGludWUgdG8gZ3Jvdy4gVXNlIGEgaGVhcCBkdW1wIG9yIEpGUgogIG9sZC1vYmplY3QgYW5hbHlzaXMgdG8gZGV0ZXJtaW5lIHdoeSB0aG9zZSBvYmplY3RzIHJlbWFpbiByZWFjaGFibGUg4oCUIGEKICBoaXN0b2dyYW0gc2hvd3MgaW5zdGFuY2UgY291bnRzLCBub3Qgb2JqZWN0IGFnZS4gSGVyZSB0aGUgZ3Jvd2luZwogIHBvcHVsYXRpb25zIGFyZSBgYnl0ZVtdYCBhbmQgYFN0cmluZ2AgKHRoZSBrZXlzKS4KCiMjIFRoZSAyLW1pbnV0ZSB0cmlhZ2UgY2hlY2tsaXN0CgpXaGVuIGEgcGlwZWxpbmUgT09NcyBhbmQgeW91IHN1c3BlY3QgYWNjdW11bGF0aW9uOgoKLSBbIF0gKipQb3N0LUdDIG9jY3VwYW5jeSB0cmVuZGluZyB1cD8qKiBDaGVjayBtZXRyaWNzIG9yIGRldGFpbGVkIEdDIGxvZ3MuCiAgICAgIEEgcmlzaW5nIGJhc2VsaW5lIGFjcm9zcyBjb21wYXJhYmxlIHdvcmtsb2FkIGludGVydmFscyBpcyBldmlkZW5jZSBvZgogICAgICBhY2N1bXVsYXRpb24g4oCUIG5vdCBwcm9vZiBvZiBhIGxlYWsuIEEgZmxhdCBiYXNlbGluZSBuZWFyIGNhcGFjaXR5IG1heQogICAgICBtZWFuIGEgbGVnaXRpbWF0ZSB3b3JraW5nIHNldCBvciBhbiB1bmRlcnNpemVkIGhlYXAuCi0gWyBdICoqRG8gZnVsbCBHQ3MgcmVjbGFpbSB+bm90aGluZz8qKiBSZXBlYXRlZCBmdWxsIEdDcyB0aGF0IGZyZWUgdmVyeQogICAgICBsaXR0bGUgaW5kaWNhdGUgbW9zdCBvZiB0aGUgb2NjdXBpZWQgaGVhcCBpcyBsaXZlIG9yIG90aGVyd2lzZQogICAgICB1bnJlY2xhaW1lZCDigJQgcmV0ZW50aW9uLCB3aGF0ZXZlciB0aGUgY2F1c2UuCi0gWyBdICoqRG9lcyBhIHJlc3RhcnQgYnV5IGhvdXJzL2RheXM/KiogQSByZXBlYXRhYmxlIHBvc3QtcmVzdGFydCBncm93dGgKICAgICAgY3VydmUgc3VnZ2VzdHMgY3VtdWxhdGl2ZSByZXRlbnRpb24gb3IgdW5ib3VuZGVkIHN0YXRlIOKAlCBidXQgY29uZmlybQogICAgICB3aXRoIHRoZSBwb3N0LUdDIGxpdmUtc2V0IHRyZW5kIGFuZCBwYXRocyB0byBHQyByb290cyBiZWZvcmUgY2FsbGluZwogICAgICBpdCBhIGxlYWsuCi0gWyBdICoqSGVhcCBkdW1wIOKGkiBkb21pbmF0b3IgdHJlZSDihpIgdG9wIHJldGFpbmVyLioqIFdoYXQncyBob2xkaW5nIGl0PwogICAgICBDb3JyZWxhdGUgd2l0aCB3b3JrbG9hZCB2b2x1bWUgYmVmb3JlIGRlY2lkaW5nOiBmaXggcmV0ZW50aW9uIG9yIGFkZAogICAgICBtZW1vcnkuCi0gWyBdICoqRG9lcyB0aGUgcmV0YWluZXIgZ3JvdyB3aXRoIGlucHV0IHZvbHVtZT8qKiBBIG1hcC9zZXQvbGlzdCB3aG9zZSBzaXplCiAgICAgIHRyYWNrcyByZWNvcmRzLXByb2Nlc3NlZCBpcyBhbiB1bmJvdW5kZWQgY2FjaGUgdW50aWwgcHJvdmVuIG90aGVyd2lzZS4KLSBbIF0gKipGaXggPSBib3VuZCBpdCBvciBzaXplIGZvciBpdC4qKiBNYXggc2l6ZSwgVFRML1RUSSBleHBpcmF0aW9uLCBvcgogICAgICBldmljdGlvbiBwb2xpY3kgZm9yIGEgbGVhazsgYSBsYXJnZXIgaGVhcCBmb3IgYSBsZWdpdGltYXRlIHdvcmtpbmcgc2V0IOKAlAogICAgICB0aGVuIHZlcmlmeSB0aGUgcG9zdC1HQyBiYXNlbGluZSBnb2VzIGZsYXQgaW4gc3RhZ2luZyBiZWZvcmUgc2hpcHBpbmcuCgojIyBUaGUgZml4ICh3aGF0IGBmaXhlZC9gIGRlbW9uc3RyYXRlcykKCkEgYm91bmRlZCBjYWNoZTogdGhlIHNhbWUgaW5zZXJ0aW9uLW9yZGVyIG1hcCwgYnV0IGByZW1vdmVFbGRlc3RFbnRyeWAgY2FwcwppdCBhdCAxLDAwMCBlbnRyaWVzLCBzbyB0aGUgaWRlbnRpY2FsIG1pbGxpb24tcmVjb3JkIHdvcmtsb2FkIHJ1bnMgY2xlYW4KdW5kZXIgdGhlIHNhbWUgNjQgTUIgaGVhcC4gTm90ZSB0aGlzIGlzICpib3VuZGVkIGV2aWN0aW9uKiwgbm90IExSVSDigJQga2V5cwphcmUgbmV2ZXIgcmV2aXNpdGVkIGluIHRoaXMgd29ya2xvYWQsIHNvIExSVSBiZWhhdmlvciB3b3VsZCBiZSB1bm9ic2VydmFibGUuClRoZSBoYW5kLXJvbGxlZCBtYXAgaXMgYWxzbyBub3QgdGhyZWFkLXNhZmU7IHByb2R1Y3Rpb24gY2FjaGVzIG5lZWQKY29uY3VycmVuY3kgY29udHJvbCwgbWV0cmljcywgYW5kIHVzdWFsbHkgd2VpZ2h0LWJhc2VkIGJvdW5kcy4gSW4KcHJvZHVjdGlvbiwgdXNlIENhZmZlaW5lIChzaXplICsgVFRMICsgc3RhdHMpIHJhdGhlciB0aGFuIGhhbmQtcm9sbGluZyDigJQgYnV0CnRoZSBwcmluY2lwbGUgaXMgaWRlbnRpY2FsOiAqKmV2ZXJ5IGNhY2hlIG5lZWRzIGFuIGV2aWN0aW9uIHBvbGljeSwgb3IgaXQncwpqdXN0IGEgbGVhayB3aXRoIGEgbmljZXIgbmFtZS4qKgo=
+# Scenario 01 — Diagnosis: the unbounded in-memory cache
+
+> [Back to the field guide root](../README.md)
+
+## The GC log signature
+
+Run the broken version (`./run.sh` enables GC logging to
+`scenario-01-unbounded-cache-broken-gc.log`) and you'll see the classic
+retention signature. Old-gen occupancy climbs monotonically; repeated full
+GCs reclaim very little, leaving the heap close to capacity.
+
+Representative output from OpenJDK 21 with Parallel GC on Linux. Exact GC
+lines and OutOfMemoryError detail messages can differ by JDK, collector, and
+operating system.
+
+```
+[0.412s][info][gc] GC(4) Pause Full (Allocation Failure) 61M->58M(64M) 38.204ms
+[0.489s][info][gc] GC(5) Pause Full (Allocation Failure) 61M->60M(64M) 44.917ms
+[0.571s][info][gc] GC(6) Pause Full (Allocation Failure) 62M->61M(64M) 51.330ms
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+```
+
+Read it like this:
+
+- `61M->58M(64M)` — heap usage went from 61 MB before GC to 58 MB after GC,
+  with a reported heap capacity of 64 MB. Here the heap sits close to capacity
+  and the collection reclaimed only 3 MB.
+- `Pause Full (Allocation Failure)` repeating back-to-back means the collector
+  is desperately trying to make room and finding almost nothing to collect.
+  Judge health by the trend, not one line: post-GC occupancy should return
+  to a stable baseline, allocation throughput should stay sustainable, and
+  the application should not spend an increasing fraction of time collecting
+  garbage. A collector that repeatedly full-GCs and briefly drops occupancy
+  can still be in severe trouble.
+- The run ends with `java.lang.OutOfMemoryError: Java heap space` (not
+  `GC overhead limit exceeded` — that one is HotSpot's safeguard: ~98% of time
+  in GC recovering <2% of heap over consecutive collections).
+
+This pattern is strong evidence that the JVM is retaining a large amount of
+live data — but retained memory is not automatically a leak. It could be an
+unbounded cache, or it could be a legitimate working set that doesn't fit the
+configured heap. The heap dump (below) is what separates the two.
+
+## How to recognize it in a real pipeline
+
+You won't have a loop printing "map size" in production. What you will have:
+
+1. **Post-GC occupancy grows with input volume, not time.** The sawtooth pattern of a
+   healthy JVM (up, full GC, back down) becomes a staircase (up, full GC,
+   barely down, up again). Graph post-GC occupancy — from detailed GC logs or
+   JVM metrics with old-gen visibility — and if that line trends upward across
+   comparable workload intervals, something is accumulating.
+2. **Full GCs free almost nothing.** If your GC logs show reclaimed bytes
+   shrinking toward zero while frequency climbs, that's retention, not churn.
+3. **Restarts buy time — but that is a clue, not a diagnosis.** The pipeline
+   runs fine for hours or days after a restart, then degrades again. A
+   repeatable post-restart growth curve suggests cumulative retention or
+   unbounded state. Confirm it using the post-GC live-set trend and paths
+   to GC roots — a restart alone cannot tell a leak from an undersized heap
+   fed by steady input.
+4. **Latency degrades before death.** As the heap fills, GC pauses lengthen.
+   You'll often see timeouts and backpressure *before* the OOM — the OOM is
+   just the final symptom.
+
+## Heap-dump clues
+
+Take a heap dump on OOM (`-XX:+HeapDumpOnOutOfMemoryError`) and open it in
+Eclipse MAT or JDK Mission Control:
+
+- **Dominator tree:** one `HashMap` (or the class wrapping it) retains the
+  overwhelming majority of the heap. Sort by retained heap — the leak is
+  usually embarrassingly near the top.
+- **Path to GC roots:** right-click the suspect → *Path to GC Roots* →
+  *exclude weak/soft references*. A short path through a `static` field is
+  the tell: the map is reachable forever by design, and nothing ever removes
+  entries.
+- **Histogram:** compare with a dump from startup. Repeated histograms can
+  show which object populations continue to grow. Use a heap dump or JFR
+  old-object analysis to determine why those objects remain reachable — a
+  histogram shows instance counts, not object age. Here the growing
+  populations are `byte[]` and `String` (the keys).
+
+## The 2-minute triage checklist
+
+When a pipeline OOMs and you suspect accumulation:
+
+- [ ] **Post-GC occupancy trending up?** Check metrics or detailed GC logs.
+      A rising baseline across comparable workload intervals is evidence of
+      accumulation — not proof of a leak. A flat baseline near capacity may
+      mean a legitimate working set or an undersized heap.
+- [ ] **Do full GCs reclaim ~nothing?** Repeated full GCs that free very
+      little indicate most of the occupied heap is live or otherwise
+      unreclaimed — retention, whatever the cause.
+- [ ] **Does a restart buy hours/days?** A repeatable post-restart growth
+      curve suggests cumulative retention or unbounded state — but confirm
+      with the post-GC live-set trend and paths to GC roots before calling
+      it a leak.
+- [ ] **Heap dump → dominator tree → top retainer.** What's holding it?
+      Correlate with workload volume before deciding: fix retention or add
+      memory.
+- [ ] **Does the retainer grow with input volume?** A map/set/list whose size
+      tracks records-processed is an unbounded cache until proven otherwise.
+- [ ] **Fix = bound it or size for it.** Max size, TTL/TTI expiration, or
+      eviction policy for a leak; a larger heap for a legitimate working set —
+      then verify the post-GC baseline goes flat in staging before shipping.
+
+## The fix (what `fixed/` demonstrates)
+
+A bounded cache: the same insertion-order map, but `removeEldestEntry` caps
+it at 1,000 entries, so the identical million-record workload runs clean
+under the same 64 MB heap. Note this is *bounded eviction*, not LRU — keys
+are never revisited in this workload, so LRU behavior would be unobservable.
+The hand-rolled map is also not thread-safe; production caches need
+concurrency control, metrics, and usually weight-based bounds. In
+production, use Caffeine (size + TTL + stats) rather than hand-rolling — but
+the principle is identical: **every cache needs an eviction policy, or it's
+just a leak with a nicer name.**

@@ -1,1 +1,58 @@
-IyBTaGFyZWQgSlZNIGZsYWdzIGZvciB0aGUgSlZNIEhlYXAgT09NIEZpZWxkIEd1aWRlLgojCiMgQnJva2VuIGFuZCBmaXhlZCB2ZXJzaW9ucyBvZiBldmVyeSBzY2VuYXJpbyBydW4gdW5kZXIgSURFTlRJQ0FMIGZsYWdzOgojIHNhbWUgaW5pdGlhbCBhbmQgbWF4IGhlYXAsIHNhbWUgY29sbGVjdG9yLCBzYW1lIEdDIGxvZ2dpbmcgZGVjb3JhdGlvbnMuCiMgVGhlIG9ubHkgZGlmZmVyZW5jZSBiZXR3ZWVuIGEgYnJva2VuIHJ1biBhbmQgYSBmaXhlZCBydW4gaXMgdGhlIHByb2dyYW0uCiMKIyBTb3VyY2VkIGJ5IHJ1bi5zaCBhbmQgdGVzdC5zaCDigJQgZG8gbm90IGV4ZWN1dGUgZGlyZWN0bHkuCiMKIyBFbnZpcm9ubWVudCBvdmVycmlkZXM6CiMgICBPT01GR19HQz1HMXxaR0N8U2hlbmFuZG9haHxQYXJhbGxlbCAgIChkZWZhdWx0OiBQYXJhbGxlbCkKIyAgICAgTk9URTogWkdDIGFuZCBTaGVuYW5kb2FoIHJlc2VydmUgaGVhcCBoZWFkcm9vbSBmb3IgY29uY3VycmVudAojICAgICBvcGVyYXRpb24gYW5kIG5lZWQgYSBiaWdnZXIgaGVhcCB0aGFuIHRoZSBkZWZhdWx0IDY0bSB0byBydW4gdGhlc2UKIyAgICAgbGFicyB1c2VmdWxseS4gSWYgeW91IHN3aXRjaCBjb2xsZWN0b3JzLCBhbHNvIHJhaXNlIHRoZSBoZWFwLCBlLmcuOgojICAgICAgIE9PTUZHX0dDPVpHQyBPT01GR19IRUFQPTI1Nm0gLi9ydW4uc2ggc2NlbmFyaW8tMDEtdW5ib3VuZGVkLWNhY2hlIGJyb2tlbgojICAgT09NRkdfSEVBUD02NG0gICAgICAgICAgICAgICAgICAgICAgICAoZGVmYXVsdDogNjRtOyBzZXRzIGJvdGggLVhtcyBhbmQgLVhteCkKIyAgIE9PTUZHX0VYVFJBX0ZMQUdTPSIuLi4iICAgICAgICAgICAgICAgYXBwZW5kZWQgdmVyYmF0aW0gKHVzZWQgYnkgZGlhZ25vc2UgbW9kZSkKIyAgIE9PTUZHX0pGUj0xICAgICAgICAgICAgICAgICAgICAgICAgICAgYm91bmRlZCBKRlIgcmVjb3JkaW5nIChkaWFnbm9zZSBtb2RlKQoKIyBqdm1fZmxhZ3MgPGdjLWxvZy1wYXRoPjogcHJpbnQgdGhlIHNoYXJlZCBmbGFncyBmb3Igb25lIHJ1bi4KanZtX2ZsYWdzKCkgewogIF9nY2xvZz0iJDEiCiAgY2FzZSAiJHtPT01GR19HQzotUGFyYWxsZWx9IiBpbgogICAgRzEpICAgICAgICAgX2djPSItWFg6K1VzZUcxR0MiIDs7CiAgICBaR0MpICAgICAgICBfZ2M9Ii1YWDorVXNlWkdDIiA7OwogICAgU2hlbmFuZG9haCkgX2djPSItWFg6K1VzZVNoZW5hbmRvYWhHQyIgOzsKICAgIFBhcmFsbGVsfCopIF9nYz0iLVhYOitVc2VQYXJhbGxlbEdDIiA7OwogIGVzYWMKICBfaGVhcD0iJHtPT01GR19IRUFQOi02NG19IgogIF9mbGFncz0iLVhtcyR7X2hlYXB9IC1YbXgke19oZWFwfSAke19nY30gLVhsb2c6Z2MqOmZpbGU9JHtfZ2Nsb2d9OnRpbWUsbGV2ZWwsdGFncyIKICBpZiBbICIke09PTUZHX1RFU1Q6LTB9IiA9ICIxIiBdOyB0aGVuCiAgICAjIFRlc3QgbW9kZSBvbmx5OiBleGl0IG9uIHRoZSBmaXJzdCBPdXRPZk1lbW9yeUVycm9yIGluc3RlYWQgb2YgcmlkaW5nCiAgICAjIHRoZSBmdWxsIEdDIGRlYXRoIHNwaXJhbCB0byB0aGUgbmF0dXJhbCBlbmQuIFRoaXMgbWFrZXMgLi90ZXN0LnNoIGFuZAogICAgIyBDSSBmYXN0IGFuZCBkZXRlcm1pbmlzdGljLiBFZHVjYXRpb25hbCBydW5zICguL3J1bi5zaCkgbmV2ZXIgc2V0IHRoaXMsCiAgICAjIHNvIHJlYWRlcnMgc3RpbGwgc2VlIHRoZSBvcmRpbmFyeSBPdXRPZk1lbW9yeUVycm9yIGFuZCBpdHMgc3RhY2sgdHJhY2UuCiAgICBfZmxhZ3M9IiRfZmxhZ3MgLVhYOitFeGl0T25PdXRPZk1lbW9yeUVycm9yIgogIGZpCiAgaWYgWyAtbiAiJHtPT01GR19FWFRSQV9GTEFHUzotfSIgXTsgdGhlbgogICAgX2ZsYWdzPSIkX2ZsYWdzICRPT01GR19FWFRSQV9GTEFHUyIKICBmaQogIHByaW50ZiAnJXMnICIkX2ZsYWdzIgp9CgojIGp2bV9iYXNlX2ZsYWdzOiBiYXNlIEpWTSBmbGFncyB3aXRob3V0IHRlc3QtbW9kZSBleHRyYXMgKGZvciBDSSBlbnYgcmVjb3JkaW5nKS4KanZtX2Jhc2VfZmxhZ3MoKSB7CiAgX2djX2ZsYWdzPSIkKE9PTUZHX1RFU1Q9MCBPT01GR19FWFRSQV9GTEFHUz0ganZtX2ZsYWdzIC9kZXYvbnVsbCkiCiAgIyBTdHJpcCB0aGUgZ2MtbG9nIHBhdGggKGl0J3MgL2Rldi9udWxsIGhlcmUsIG5vdCBtZWFuaW5nZnVsIGZvciByZWNvcmRpbmcpLgogIHByaW50ZiAnJXMnICIkX2djX2ZsYWdzIgp9CgojIGp2bV9leHRyYV9mbGFnczogdGhlIGFkZGl0aW9uYWwgZmxhZ3MgYXBwbGllZCBpbiB0ZXN0IG1vZGUgKGZvciBDSSBlbnYgcmVjb3JkaW5nKS4KanZtX2V4dHJhX2ZsYWdzKCkgewogIGlmIFsgIiR7T09NRkdfVEVTVDotMH0iID0gIjEiIF07IHRoZW4KICAgIHByaW50ZiAnJXMnICItWFg6K0V4aXRPbk91dE9mTWVtb3J5RXJyb3IiCiAgICBpZiBbIC1uICIke09PTUZHX0VYVFJBX0ZMQUdTOi19IiBdOyB0aGVuCiAgICAgIHByaW50ZiAnICVzJyAiJE9PTUZHX0VYVFJBX0ZMQUdTIgogICAgZmkKICBmaQp9Cg==
+# Shared JVM flags for the JVM Heap OOM Field Guide.
+#
+# Broken and fixed versions of every scenario run under IDENTICAL flags:
+# same initial and max heap, same collector, same GC logging decorations.
+# The only difference between a broken run and a fixed run is the program.
+#
+# Sourced by run.sh and test.sh — do not execute directly.
+#
+# Environment overrides:
+#   OOMFG_GC=G1|ZGC|Shenandoah|Parallel   (default: Parallel)
+#     NOTE: ZGC and Shenandoah reserve heap headroom for concurrent
+#     operation and need a bigger heap than the default 64m to run these
+#     labs usefully. If you switch collectors, also raise the heap, e.g.:
+#       OOMFG_GC=ZGC OOMFG_HEAP=256m ./run.sh scenario-01-unbounded-cache broken
+#   OOMFG_HEAP=64m                        (default: 64m; sets both -Xms and -Xmx)
+#   OOMFG_EXTRA_FLAGS="..."               appended verbatim (used by diagnose mode)
+#   OOMFG_JFR=1                           bounded JFR recording (diagnose mode)
+
+# jvm_flags <gc-log-path>: print the shared flags for one run.
+jvm_flags() {
+  _gclog="$1"
+  case "${OOMFG_GC:-Parallel}" in
+    G1)         _gc="-XX:+UseG1GC" ;;
+    ZGC)        _gc="-XX:+UseZGC" ;;
+    Shenandoah) _gc="-XX:+UseShenandoahGC" ;;
+    Parallel|*) _gc="-XX:+UseParallelGC" ;;
+  esac
+  _heap="${OOMFG_HEAP:-64m}"
+  _flags="-Xms${_heap} -Xmx${_heap} ${_gc} -Xlog:gc*:file=${_gclog}:time,level,tags"
+  if [ "${OOMFG_TEST:-0}" = "1" ]; then
+    # Test mode only: exit on the first OutOfMemoryError instead of riding
+    # the full GC death spiral to the natural end. This makes ./test.sh and
+    # CI fast and deterministic. Educational runs (./run.sh) never set this,
+    # so readers still see the ordinary OutOfMemoryError and its stack trace.
+    _flags="$_flags -XX:+ExitOnOutOfMemoryError"
+  fi
+  if [ -n "${OOMFG_EXTRA_FLAGS:-}" ]; then
+    _flags="$_flags $OOMFG_EXTRA_FLAGS"
+  fi
+  printf '%s' "$_flags"
+}
+
+# jvm_base_flags: base JVM flags without test-mode extras (for CI env recording).
+jvm_base_flags() {
+  _gc_flags="$(OOMFG_TEST=0 OOMFG_EXTRA_FLAGS= jvm_flags /dev/null)"
+  # Strip the gc-log path (it's /dev/null here, not meaningful for recording).
+  printf '%s' "$_gc_flags"
+}
+
+# jvm_extra_flags: the additional flags applied in test mode (for CI env recording).
+jvm_extra_flags() {
+  if [ "${OOMFG_TEST:-0}" = "1" ]; then
+    printf '%s' "-XX:+ExitOnOutOfMemoryError"
+    if [ -n "${OOMFG_EXTRA_FLAGS:-}" ]; then
+      printf ' %s' "$OOMFG_EXTRA_FLAGS"
+    fi
+  fi
+}

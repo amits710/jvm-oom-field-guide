@@ -1,1 +1,7 @@
-IyEvYmluL3NoCiMgUnVucyB0aGUgZml4ZWQgdmVyc2lvbiBvZiBzY2VuYXJpbyAwMyB2aWEgdGhlIHNoYXJlZCByb290IHJ1bm5lciwgc28gdGhlIEpWTSBmbGFncyAoLVhtcy8tWG14LAojIGNvbGxlY3RvciwgR0MgbG9nZ2luZykgYXJlIGlkZW50aWNhbCB0byB0aGUgb3RoZXIgdmVyc2lvbidzLgojIFByb2dyYW0gYXJndW1lbnRzIGFyZSBwYXNzZWQgdGhyb3VnaCwgZS5nLjogLi9ydW4uc2ggLS1pdGVtcyA1MDAwMDAKc2V0IC11CmNkICIkKGRpcm5hbWUgIiQwIikiCmV4ZWMgLi4vLi4vcnVuLnNoIHNjZW5hcmlvLTAzLXJlcG9ydC1idWlsZGVyIGZpeGVkICIkQCIK
+#!/bin/sh
+# Runs the fixed version of scenario 03 via the shared root runner, so the JVM flags (-Xms/-Xmx,
+# collector, GC logging) are identical to the other version's.
+# Program arguments are passed through, e.g.: ./run.sh --items 500000
+set -u
+cd "$(dirname "$0")"
+exec ../../run.sh scenario-03-report-builder fixed "$@"

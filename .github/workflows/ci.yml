@@ -1,8 +1,20 @@
+# ⚠️  THIS FILE CANNOT BE PUSHED BY AUTOMATION.
+# The GitHub App used for this repo lacks the `workflows` permission, so
+# .github/workflows/* files must be updated by hand:
+#   1. Open https://github.com/amits710/jvm-oom-field-guide
+#   2. Go to .github/workflows/ci.yml → pencil icon (Edit)
+#   3. Replace the ENTIRE file contents with the YAML below
+#   4. Commit directly to main
+# The next push will trigger the updated workflow.
+
 name: ci
 
 on:
   push:
   pull_request:
+
+permissions:
+  contents: read
 
 jobs:
   test:
@@ -12,32 +24,82 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest]
-        java: [11, 17, 21]
+        os: [ubuntu-24.04]
+        java: [11, 17, 21, 25]
         include:
           # macOS job: exercises the gtimeout-missing path in test.sh
           - os: macos-latest
             java: 21
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v6
         with:
           distribution: temurin
           java-version: ${{ matrix.java }}
+      - name: record environment
+        run: |
+          . ./common.sh
+          {
+            echo "date: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo "java: $(java -version 2>&1 | tr '\n' ' ')"
+            echo "os: $(uname -srm)"
+            echo "sha: ${{ github.sha }}"
+            echo "ref: ${{ github.ref }}"
+            echo "jvm base flags: $(jvm_base_flags)"
+            echo "jvm test extras (OOMFG_TEST=1): $(OOMFG_TEST=1 jvm_extra_flags)"
+            echo "scenario args: defaults from test.sh check_broken/check_fixed calls"
+          } > env-info.txt
+          chmod +x test.sh run.sh common.sh scenario-*/broken/run.sh scenario-*/fixed/run.sh
       - name: run test suite
-        run: chmod +x test.sh run.sh common.sh scenario-*/broken/run.sh scenario-*/fixed/run.sh && ./test.sh
+        env:
+          OOMFG_KEEP_ARTIFACTS: "1"
+        run: ./test.sh
+      - name: upload logs
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: logs-jdk${{ matrix.java }}-${{ matrix.os }}
+          path: |
+            env-info.txt
+            test-artifacts/
+          if-no-files-found: warn
 
-  test-jdk25:
-    # Best effort: newest LTS/current line. Does not block merges.
-    name: "JDK 25 (best effort)"
-    runs-on: ubuntu-latest
+  test-jdk27:
+    # Best effort: current feature release. Does not block merges.
+    name: "JDK 27 (best effort)"
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     continue-on-error: true
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v6
         with:
           distribution: temurin
-          java-version: 25
+          java-version: 27
+      - name: record environment
+        run: |
+          . ./common.sh
+          {
+            echo "date: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo "java: $(java -version 2>&1 | tr '\n' ' ')"
+            echo "os: $(uname -srm)"
+            echo "sha: ${{ github.sha }}"
+            echo "ref: ${{ github.ref }}"
+            echo "jvm base flags: $(jvm_base_flags)"
+            echo "jvm test extras (OOMFG_TEST=1): $(OOMFG_TEST=1 jvm_extra_flags)"
+            echo "scenario args: defaults from test.sh check_broken/check_fixed calls"
+          } > env-info.txt
+          chmod +x test.sh run.sh common.sh scenario-*/broken/run.sh scenario-*/fixed/run.sh
       - name: run test suite
-        run: chmod +x test.sh run.sh common.sh scenario-*/broken/run.sh scenario-*/fixed/run.sh && ./test.sh
+        env:
+          OOMFG_KEEP_ARTIFACTS: "1"
+        run: ./test.sh
+      - name: upload logs
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: logs-jdk27-ubuntu-24.04
+          path: |
+            env-info.txt
+            test-artifacts/
+          if-no-files-found: warn

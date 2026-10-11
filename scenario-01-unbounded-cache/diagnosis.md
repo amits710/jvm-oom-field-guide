@@ -6,8 +6,8 @@
 
 Run the broken version (`./run.sh` enables GC logging to
 `scenario-01-unbounded-cache-broken-gc.log`) and you'll see the classic
-retention signature. Old-gen occupancy climbs monotonically; repeated full
-GCs reclaim very little, leaving the heap close to capacity.
+retention signature. The post-GC live-set floor continues to rise; repeated
+full GCs reclaim very little, leaving the heap close to capacity.
 
 Representative output from OpenJDK 21 with Parallel GC on Linux. Exact GC
 lines and OutOfMemoryError detail messages can differ by JDK, collector, and
@@ -45,9 +45,11 @@ configured heap. The heap dump (below) is what separates the two.
 
 You won't have a loop printing "map size" in production. What you will have:
 
-1. **Post-GC occupancy grows with input volume, not time.** The sawtooth pattern of a
-   healthy JVM (up, full GC, back down) becomes a staircase (up, full GC,
-   barely down, up again). Graph post-GC occupancy — from detailed GC logs or
+1. **Post-GC occupancy grows with input volume, not time.** In a healthy JVM, allocation raises heap occupancy and collections bring it
+   back toward a relatively stable post-GC baseline (the sawtooth). Here the
+   sawtooth becomes a staircase: occupancy rises, full GCs barely dent it, and
+   it rises again. Repeated full GCs with an increasing baseline are a warning
+   sign. Graph post-GC occupancy — from detailed GC logs or
    JVM metrics with old-gen visibility — and if that line trends upward across
    comparable workload intervals, something is accumulating.
 2. **Full GCs free almost nothing.** If your GC logs show reclaimed bytes
@@ -65,7 +67,7 @@ You won't have a loop printing "map size" in production. What you will have:
 ## Heap-dump clues
 
 Take a heap dump on OOM (`-XX:+HeapDumpOnOutOfMemoryError`) and open it in
-Eclipse MAT or JDK Mission Control:
+Eclipse Memory Analyzer or VisualVM:
 
 - **Dominator tree:** one `HashMap` (or the class wrapping it) retains the
   overwhelming majority of the heap. Sort by retained heap — the leak is

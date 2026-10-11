@@ -1,10 +1,17 @@
 # Scenario 02 — Diagnosis: the oversized batch
 
+> [Back to the field guide root](../../README.md)
+
 ## The GC log signature
 
-Run the broken version (`./run.sh` enables GC logging to `gc.log`) and you'll
-see a cliff, not a staircase. The heap rockets to capacity inside a single
-batch; back-to-back full GCs reclaim nothing; the JVM dies within a second:
+Run the broken version (`./run.sh` enables GC logging to
+`scenario-02-oversized-batch-broken-gc.log`) and you'll see a cliff, not a
+staircase. The heap rockets to capacity inside a single batch; back-to-back
+full GCs reclaim nothing; the JVM dies within a second.
+
+Representative output from OpenJDK 21 with Parallel GC on Linux. Exact GC
+lines and OutOfMemoryError detail messages can differ by JDK, collector, and
+operating system.
 
 ```
 [0.194s][info][gc] GC(10) Pause Full (Ergonomics) 58M->58M(61M) 11.005ms
@@ -51,12 +58,18 @@ Eclipse MAT or JDK Mission Control:
   the batch) dominates the heap — same as scenario 01 so far.
 - **Path to GC roots:** this is the differentiator. The list is reachable from
   a **local variable** in the batch-reading method — not from a `static`
-  field, not from a cache. Nothing is *retaining* it beyond its natural
-  lifetime; it's just too big. A short path through a local = sizing problem.
-  A short path through a static = retention problem.
-- **Histogram:** one allocation site dominates (`byte[]` here). The instances
-  were all created in the last fraction of a second — a leak's payload would
-  show a mix of ages.
+  field, not from a cache. The path to the GC root is evidence about
+  ownership and intended lifetime: stack-local roots often indicate an
+  active working set (here, one batch that is simply too big), while static
+  roots often indicate application-lifetime retention — but neither is
+  conclusive by itself. Correlate with the failure shape (cliff vs.
+  staircase) before concluding.
+- **Histogram:** one allocation site dominates (`byte[]` here). A histogram
+  shows instance counts, not object age — it cannot tell you whether these
+  objects are new or old. What distinguishes this case is the *context*: the
+  payload appears suddenly, in one batch, rather than growing steadily
+  across the run. Use a heap dump or JFR old-object analysis to determine
+  why objects remain reachable.
 
 ## How to recognize it in a real pipeline
 
@@ -69,9 +82,12 @@ have:
 2. **No rising baseline before death.** Metrics show heap healthy right up to
    the spike. Retention problems telegraph themselves for hours; sizing
    problems don't.
-3. **Restarts don't help.** Unlike scenario 01, restarting buys you nothing —
-   the same partition kills the JVM again on reprocessing. If the failure
-   reproduces deterministically on the same input, it's the unit of work.
+3. **Restarts don't help — but read that carefully.** Unlike scenario 01, the
+   same partition kills the JVM again on reprocessing, so a restart buys no
+   time. Deterministic re-failure on the same input points at the unit of
+   work. Still, "restart didn't help" is supporting evidence, not a
+   diagnosis: confirm with the heap dump (local root, single oversized
+   structure) before resizing anything.
 4. **One partition is always the culprit.** Skew is the production disguise:
    999 partitions fit in memory, one doesn't.
 
@@ -84,8 +100,11 @@ When a pipeline OOMs and you suspect the batch, not a leak:
 - [ ] **Does the same input kill it again?** Deterministic re-failure on the
       same partition = sizing. A leak would take hours to rebuild.
 - [ ] **Heap dump → dominator tree → top retainer reachable from a local?**
-      Local variable = the batch itself is too big. Static field = go read
-      scenario 01.
+      The path to the GC root is evidence about ownership and intended
+      lifetime: a stack-local root often indicates an active working set
+      (the batch itself is too big); a static root often indicates
+      retention. Neither is conclusive alone — correlate with the cliff
+      shape before deciding.
 - [ ] **Is there a skew suspect?** Check partition sizes for the failed run.
       The killer partition is usually an obvious outlier.
 - [ ] **Fix = bound the unit of work.** Chunked reads, fetch-size / page-size
@@ -96,8 +115,9 @@ When a pipeline OOMs and you suspect the batch, not a leak:
 ## The fix (what `fixed/` demonstrates)
 
 Read the batch in bounded chunks (5,000 records here) instead of all 250,000
-at once. Each chunk is processed and released before the next is read, so live
-memory stays flat regardless of partition size. In production, the same idea
-wears different clothes — a JDBC fetch size, a paginated API, a streaming
-parser — but the principle is identical: **size the unit of work for the
-heap, not for the input.**
+at once. Each chunk is processed inside a helper method whose local list
+becomes unreachable on return — narrow scopes, not explicit nulling of
+locals — so live memory stays flat regardless of partition size. In
+production, the same idea wears different clothes — a JDBC fetch size, a
+paginated API, a streaming parser — but the principle is identical: **size
+the unit of work for the heap, not for the input.**

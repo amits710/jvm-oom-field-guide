@@ -1,1 +1,118 @@
-aW1wb3J0IGphdmEudXRpbC5IYXNoU2V0OwppbXBvcnQgamF2YS51dGlsLlNldDsKCi8qKgogKiBTQ0VOQVJJTyAwNSAoZml4ZWQpOiB0aGUgbGVha2VkIGNvbm5lY3Rpb24sIGNsb3NlZCBwcm9wZXJseS4KICoKICogSWRlbnRpY2FsIHdvcmtsb2FkIHRvIHRoZSBicm9rZW4gdmVyc2lvbiDigJQgc2FtZSAtLWNvbm5lY3Rpb25zLCBzYW1lCiAqIC0tYnVmZmVyLWtiIOKAlCBidXQgZWFjaCBjb25uZWN0aW9uIGlzIG9wZW5lZCBpbiB0cnktd2l0aC1yZXNvdXJjZXMgYW5kCiAqIGRlcmVnaXN0ZXJzIGl0c2VsZiBvbiBjbG9zZS4gTGl2ZSBtZW1vcnkgc3RheXMgYXQgcm91Z2hseSBvbmUgY29ubmVjdGlvbidzCiAqIGJ1ZmZlciByZWdhcmRsZXNzIG9mIGhvdyBtYW55IHVuaXRzIG9mIHdvcmsgcnVuLgogKgogKiBUaGUgcHJpbmNpcGxlOiBldmVyeSByZXNvdXJjZSBhY3F1aXNpdGlvbiBuZWVkcyBhIG1hdGNoaW5nIHJlbGVhc2Ugb24KICogZXZlcnkgcGF0aCwgYW5kIHRoZSByZWxlYXNlIG11c3QgYWxzbyBkcm9wIHRoZSBib29ra2VlcGluZyByZWZlcmVuY2UuCiAqIEluIHByb2R1Y3Rpb24gdGhpcyBpcyB0cnktd2l0aC1yZXNvdXJjZXMgKG9yIGNsb3NlIGluIGZpbmFsbHkpLCBhCiAqIGNvbm5lY3Rpb24gcG9vbCB3aXRoIGxlYWsgZGV0ZWN0aW9uLCBhbmQgdHJlYXRpbmcgImNvbm5lY3Rpb25zIG9wZW4iCiAqIG1ldHJpY3MgYXMgYW4gYWxlcnQsIG5vdCBhIGRhc2hib2FyZCBkZWNvcmF0aW9uLgogKgogKiAgIC4vcnVuLnNoIFstLWNvbm5lY3Rpb25zIDEwMDAwMF0gWy0tYnVmZmVyLWtiIDI1Nl0KICovCnB1YmxpYyBjbGFzcyBMZWFrZWRDb25uZWN0aW9uc0ZpeGVkIHsKCiAgICBzdGF0aWMgZmluYWwgY2xhc3MgQ29ubmVjdGlvbiBpbXBsZW1lbnRzIEF1dG9DbG9zZWFibGUgewogICAgICAgIC8vIFBsYWluIEhhc2hTZXQ6IHRoaXMgZGVtb25zdHJhdGlvbiBpcyBzaW5nbGUtdGhyZWFkZWQsIHNvIHRoZXJlIGlzCiAgICAgICAgLy8gbm8gcmVhc29uIGZvciBzeW5jaHJvbml6YXRpb24gdGhlYXRlci4gKEEgcHJvZHVjdGlvbiByZWdpc3RyeQogICAgICAgIC8vIHNoYXJlZCBhY3Jvc3MgdGhyZWFkcyB3b3VsZCBuZWVkIHJlYWwgY29uY3VycmVuY3kgY29udHJvbC4pCiAgICAgICAgcHJpdmF0ZSBzdGF0aWMgZmluYWwgU2V0PENvbm5lY3Rpb24+IG9wZW5Db25uZWN0aW9ucyA9IG5ldyBIYXNoU2V0PD4oKTsKCiAgICAgICAgcHJpdmF0ZSBmaW5hbCBieXRlW10gYnVmZmVyOwogICAgICAgIHByaXZhdGUgZmluYWwgbG9uZyBpZDsKCiAgICAgICAgQ29ubmVjdGlvbihsb25nIGlkLCBpbnQgYnVmZmVyQnl0ZXMpIHsKICAgICAgICAgICAgdGhpcy5pZCA9IGlkOwogICAgICAgICAgICB0aGlzLmJ1ZmZlciA9IG5ldyBieXRlW2J1ZmZlckJ5dGVzXTsKICAgICAgICAgICAgb3BlbkNvbm5lY3Rpb25zLmFkZCh0aGlzKTsKICAgICAgICB9CgogICAgICAgIHZvaWQgdXNlKCkgewogICAgICAgICAgICBidWZmZXJbMF0gPSAoYnl0ZSkgaWQ7IC8vIHByZXRlbmQgdG8gZG8gd29yayB3aXRoIHRoZSBjb25uZWN0aW9uCiAgICAgICAgfQoKICAgICAgICBAT3ZlcnJpZGUKICAgICAgICBwdWJsaWMgdm9pZCBjbG9zZSgpIHsKICAgICAgICAgICAgb3BlbkNvbm5lY3Rpb25zLnJlbW92ZSh0aGlzKTsgLy8gZGVyZWdpc3RlcjogdGhlIHJlZmVyZW5jZSBkaWVzIHdpdGggdGhlIHJlc291cmNlCiAgICAgICAgfQoKICAgICAgICBzdGF0aWMgaW50IG9wZW5Db3VudCgpIHsKICAgICAgICAgICAgcmV0dXJuIG9wZW5Db25uZWN0aW9ucy5zaXplKCk7CiAgICAgICAgfQogICAgfQoKICAgIHB1YmxpYyBzdGF0aWMgdm9pZCBtYWluKFN0cmluZ1tdIGFyZ3MpIHsKICAgICAgICBpbnQgY29ubmVjdGlvbnMgPSAxMDBfMDAwOwogICAgICAgIGludCBidWZmZXJLYiA9IDI1NjsKICAgICAgICBmb3IgKGludCBpID0gMDsgaSA8IGFyZ3MubGVuZ3RoOyBpKyspIHsKICAgICAgICAgICAgc3dpdGNoIChhcmdzW2ldKSB7CiAgICAgICAgICAgICAgICBjYXNlICItLWNvbm5lY3Rpb25zIjoKICAgICAgICAgICAgICAgICAgICBjb25uZWN0aW9ucyA9IHBvc2l0aXZlSW50KGFyZ3MsIGksICItLWNvbm5lY3Rpb25zIik7CiAgICAgICAgICAgICAgICAgICAgaSsrOwogICAgICAgICAgICAgICAgICAgIGJyZWFrOwogICAgICAgICAgICAgICAgY2FzZSAiLS1idWZmZXIta2IiOgogICAgICAgICAgICAgICAgICAgIGJ1ZmZlcktiID0gcG9zaXRpdmVJbnQoYXJncywgaSwgIi0tYnVmZmVyLWtiIik7CiAgICAgICAgICAgICAgICAgICAgaSsrOwogICAgICAgICAgICAgICAgICAgIGJyZWFrOwogICAgICAgICAgICAgICAgZGVmYXVsdDoKICAgICAgICAgICAgICAgICAgICB1c2FnZSgidW5rbm93biBhcmd1bWVudDogIiArIGFyZ3NbaV0pOwogICAgICAgICAgICB9CiAgICAgICAgfQogICAgICAgIGludCBidWZmZXJCeXRlczsKICAgICAgICB0cnkgewogICAgICAgICAgICBidWZmZXJCeXRlcyA9IE1hdGgubXVsdGlwbHlFeGFjdChidWZmZXJLYiwgMTAyNCk7CiAgICAgICAgfSBjYXRjaCAoQXJpdGhtZXRpY0V4Y2VwdGlvbiBlKSB7CiAgICAgICAgICAgIHVzYWdlKCItLWJ1ZmZlci1rYiAiICsgYnVmZmVyS2IgKyAiIG92ZXJmbG93cyB3aGVuIGNvbnZlcnRlZCB0byBieXRlcyIKICAgICAgICAgICAgICAgICAgICArICIgKG1heCAiICsgKEludGVnZXIuTUFYX1ZBTFVFIC8gMTAyNCkgKyAiIEtCKSIpOwogICAgICAgICAgICB0aHJvdyBuZXcgQXNzZXJ0aW9uRXJyb3IoInVucmVhY2hhYmxlIik7CiAgICAgICAgfQogICAgICAgIFN5c3RlbS5vdXQucHJpbnRsbigiU1RBUlRFRCBzY2VuYXJpby0wNS1sZWFrZWQtY29ubmVjdGlvbnMoZml4ZWQpIGNvbm5lY3Rpb25zPSIgKyBjb25uZWN0aW9ucwogICAgICAgICAgICAgICAgKyAiIGJ1ZmZlcktiPSIgKyBidWZmZXJLYik7CgogICAgICAgIGZvciAobG9uZyBpID0gMDsgaSA8IGNvbm5lY3Rpb25zOyBpKyspIHsKICAgICAgICAgICAgdHJ5IChDb25uZWN0aW9uIGNvbm4gPSBuZXcgQ29ubmVjdGlvbihpLCBidWZmZXJCeXRlcykpIHsgLy8gY2xvc2VkIGF0IHRoZSBlbmQgb2YgZXZlcnkgaXRlcmF0aW9uCiAgICAgICAgICAgICAgICBjb25uLnVzZSgpOwogICAgICAgICAgICB9CiAgICAgICAgICAgIGlmICgoaSArIDEpICUgMTBfMDAwID09IDApIHsKICAgICAgICAgICAgICAgIFN5c3RlbS5vdXQucHJpbnRsbigicHJvY2Vzc2VkICIgKyAoaSArIDEpICsgIiBjb25uZWN0aW9ucywgc3RpbGwgb3BlbjogIgogICAgICAgICAgICAgICAgICAgICAgICArIENvbm5lY3Rpb24ub3BlbkNvdW50KCkpOwogICAgICAgICAgICB9CiAgICAgICAgfQogICAgICAgIFN5c3RlbS5vdXQucHJpbnRsbigiQ09NUExFVEVEIGNvbm5lY3Rpb25zPSIgKyBjb25uZWN0aW9ucwogICAgICAgICAgICAgICAgKyAiIG9wZW49IiArIENvbm5lY3Rpb24ub3BlbkNvdW50KCkpOwogICAgfQoKICAgIC8vIC0tLS0tLS0tLS0gQ0xJIHZhbGlkYXRpb246IGJhZCBpbnB1dCBleGl0cyAyIHdpdGggdXNhZ2Ugb24gc3RkZXJyIC0tLS0tLS0tLS0KCiAgICBwcml2YXRlIHN0YXRpYyB2b2lkIHVzYWdlKFN0cmluZyBwcm9ibGVtKSB7CiAgICAgICAgU3lzdGVtLmVyci5wcmludGxuKCJlcnJvcjogIiArIHByb2JsZW0pOwogICAgICAgIFN5c3RlbS5lcnIucHJpbnRsbigidXNhZ2U6IExlYWtlZENvbm5lY3Rpb25zRml4ZWQgWy0tY29ubmVjdGlvbnMgTl0gWy0tYnVmZmVyLWtiIE5dIik7CiAgICAgICAgU3lzdGVtLmVyci5wcmludGxuKCIgIE4gbXVzdCBiZSBhIHBvc2l0aXZlIGludGVnZXIiKTsKICAgICAgICBTeXN0ZW0uZXhpdCgyKTsKICAgIH0KCiAgICAvKiogUGFyc2VzIGFyZ3NbaSsxXSBhcyBhIHBvc2l0aXZlIGludDsgZXhpdHMgMiBvbiBtaXNzaW5nL2ludmFsaWQvbm9uLXBvc2l0aXZlLiAqLwogICAgcHJpdmF0ZSBzdGF0aWMgaW50IHBvc2l0aXZlSW50KFN0cmluZ1tdIGFyZ3MsIGludCBpLCBTdHJpbmcgbmFtZSkgewogICAgICAgIGlmIChpICsgMSA+PSBhcmdzLmxlbmd0aCkgewogICAgICAgICAgICB1c2FnZSgibWlzc2luZyB2YWx1ZSBmb3IgIiArIG5hbWUpOwogICAgICAgIH0KICAgICAgICBpbnQgdjsKICAgICAgICB0cnkgewogICAgICAgICAgICB2ID0gSW50ZWdlci5wYXJzZUludChhcmdzW2kgKyAxXSk7CiAgICAgICAgfSBjYXRjaCAoTnVtYmVyRm9ybWF0RXhjZXB0aW9uIGUpIHsKICAgICAgICAgICAgdXNhZ2UoIm5vdCBhIG51bWJlciBmb3IgIiArIG5hbWUgKyAiOiAiICsgYXJnc1tpICsgMV0pOwogICAgICAgICAgICB0aHJvdyBuZXcgQXNzZXJ0aW9uRXJyb3IoInVucmVhY2hhYmxlIik7CiAgICAgICAgfQogICAgICAgIGlmICh2IDw9IDApIHsKICAgICAgICAgICAgdXNhZ2UobmFtZSArICIgbXVzdCBiZSBwb3NpdGl2ZSwgZ290ICIgKyB2KTsKICAgICAgICB9CiAgICAgICAgcmV0dXJuIHY7CiAgICB9Cn0K
+import java.util.HashSet;
+import java.util.Set;
+
+/**
+ * SCENARIO 05 (fixed): the leaked connection, closed properly.
+ *
+ * Identical workload to the broken version — same --connections, same
+ * --buffer-kb — but each connection is opened in try-with-resources and
+ * deregisters itself on close. Live memory stays at roughly one connection's
+ * buffer regardless of how many units of work run.
+ *
+ * The principle: every resource acquisition needs a matching release on
+ * every path, and the release must also drop the bookkeeping reference.
+ * In production this is try-with-resources (or close in finally), a
+ * connection pool with leak detection, and treating "connections open"
+ * metrics as an alert, not a dashboard decoration.
+ *
+ *   ./run.sh [--connections 100000] [--buffer-kb 256]
+ */
+public class LeakedConnectionsFixed {
+
+    static final class Connection implements AutoCloseable {
+        // Plain HashSet: this demonstration is single-threaded, so there is
+        // no reason for synchronization theater. (A production registry
+        // shared across threads would need real concurrency control.)
+        private static final Set<Connection> openConnections = new HashSet<>();
+
+        private final byte[] buffer;
+        private final long id;
+
+        Connection(long id, int bufferBytes) {
+            this.id = id;
+            this.buffer = new byte[bufferBytes];
+            openConnections.add(this);
+        }
+
+        void use() {
+            buffer[0] = (byte) id; // pretend to do work with the connection
+        }
+
+        @Override
+        public void close() {
+            openConnections.remove(this); // deregister: the reference dies with the resource
+        }
+
+        static int openCount() {
+            return openConnections.size();
+        }
+    }
+
+    public static void main(String[] args) {
+        int connections = 100_000;
+        int bufferKb = 256;
+        for (int i = 0; i < args.length; i++) {
+            switch (args[i]) {
+                case "--connections":
+                    connections = positiveInt(args, i, "--connections");
+                    i++;
+                    break;
+                case "--buffer-kb":
+                    bufferKb = positiveInt(args, i, "--buffer-kb");
+                    i++;
+                    break;
+                default:
+                    usage("unknown argument: " + args[i]);
+            }
+        }
+        int bufferBytes;
+        try {
+            bufferBytes = Math.multiplyExact(bufferKb, 1024);
+        } catch (ArithmeticException e) {
+            usage("--buffer-kb " + bufferKb + " overflows when converted to bytes"
+                    + " (max " + (Integer.MAX_VALUE / 1024) + " KB)");
+            throw new AssertionError("unreachable");
+        }
+        System.out.println("STARTED scenario-05-leaked-connections(fixed) connections=" + connections
+                + " bufferKb=" + bufferKb);
+
+        for (long i = 0; i < connections; i++) {
+            try (Connection conn = new Connection(i, bufferBytes)) { // closed at the end of every iteration
+                conn.use();
+            }
+            if ((i + 1) % 10_000 == 0) {
+                System.out.println("processed " + (i + 1) + " connections, still open: "
+                        + Connection.openCount());
+            }
+        }
+        System.out.println("COMPLETED connections=" + connections
+                + " open=" + Connection.openCount());
+    }
+
+    // ---------- CLI validation: bad input exits 2 with usage on stderr ----------
+
+    private static void usage(String problem) {
+        System.err.println("error: " + problem);
+        System.err.println("usage: LeakedConnectionsFixed [--connections N] [--buffer-kb N]");
+        System.err.println("  N must be a positive integer");
+        System.exit(2);
+    }
+
+    /** Parses args[i+1] as a positive int; exits 2 on missing/invalid/non-positive. */
+    private static int positiveInt(String[] args, int i, String name) {
+        if (i + 1 >= args.length) {
+            usage("missing value for " + name);
+        }
+        int v;
+        try {
+            v = Integer.parseInt(args[i + 1]);
+        } catch (NumberFormatException e) {
+            usage("not a number for " + name + ": " + args[i + 1]);
+            throw new AssertionError("unreachable");
+        }
+        if (v <= 0) {
+            usage(name + " must be positive, got " + v);
+        }
+        return v;
+    }
+}

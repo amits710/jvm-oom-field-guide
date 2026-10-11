@@ -23,8 +23,9 @@ Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
 
 Read it like this:
 
-- `58M->58M(61M)` — the full GC reclaimed *zero* bytes. Everything on the heap
-  is live: it's the batch being read right now.
+- `58M->58M(61M)` — the full GC reclaimed no space visible at the log's
+displayed resolution. Almost all occupied heap remained reachable or otherwise
+unreclaimed: it's the batch being read right now.
 - The whole sequence spans **~0.06 seconds** (0.194s → 0.243s). Compare with
   scenario 01, where the staircase builds over many collections across the
   run. Here there is no gradual climb — one unit of work is simply bigger
@@ -52,7 +53,7 @@ If the floor climbs steadily, suspect retention. Both end in
 ## Heap-dump clues
 
 Take a heap dump on OOM (`-XX:+HeapDumpOnOutOfMemoryError`) and open it in
-Eclipse MAT or JDK Mission Control:
+Eclipse Memory Analyzer or VisualVM:
 
 - **Dominator tree:** one giant `ArrayList` (or `byte[][]`, or whatever holds
   the batch) dominates the heap — same as scenario 01 so far.
@@ -97,8 +98,10 @@ When a pipeline OOMs and you suspect the batch, not a leak:
 
 - [ ] **Did it die fast?** Seconds/minutes from a healthy heap to OOM suggests
       one oversized unit of work, not gradual retention.
-- [ ] **Does the same input kill it again?** Deterministic re-failure on the
-      same partition = sizing. A leak would take hours to rebuild.
+- [ ] **Does the same input kill it again?** Failure at approximately the
+      same input position strongly suggests a workload-size or retained-batch
+      relationship. Confirm by examining the dominant objects and their
+      retaining path.
 - [ ] **Heap dump → dominator tree → top retainer reachable from a local?**
       The path to the GC root is evidence about ownership and intended
       lifetime: a stack-local root often indicates an active working set

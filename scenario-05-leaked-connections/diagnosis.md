@@ -1,1 +1,126 @@
-IyBTY2VuYXJpbyAwNSDigJQgRGlhZ25vc2lzOiB0aGUgbGVha2VkIGNvbm5lY3Rpb24KCj4gW0JhY2sgdG8gdGhlIGZpZWxkIGd1aWRlIHJvb3RdKC4uL1JFQURNRS5tZCkKCiMjIFRoZSBHQyBsb2cgc2lnbmF0dXJlCgpSdW4gdGhlIGJyb2tlbiB2ZXJzaW9uIChgLi9ydW4uc2hgIGVuYWJsZXMgR0MgbG9nZ2luZyB0bwpgc2NlbmFyaW8tMDUtbGVha2VkLWNvbm5lY3Rpb25zLWJyb2tlbi1nYy5sb2dgKSBhbmQgeW91J2xsIHNlZSBhIHN0YWlyY2FzZSDigJQKYSByaXNpbmcgcG9zdC1HQyBmbG9vciBhY3Jvc3MgY29uc2VjdXRpdmUgY29sbGVjdGlvbnMsIGVuZGluZyBhdCBjYXBhY2l0eS4KClJlcHJlc2VudGF0aXZlIG91dHB1dCBmcm9tIE9wZW5KREsgMjEgd2l0aCBQYXJhbGxlbCBHQyBvbiBMaW51eC4gRXhhY3QgR0MKbGluZXMgYW5kIE91dE9mTWVtb3J5RXJyb3IgZGV0YWlsIG1lc3NhZ2VzIGNhbiBkaWZmZXIgYnkgSkRLLCBjb2xsZWN0b3IsIGFuZApvcGVyYXRpbmcgc3lzdGVtLgoKYGBgClswLjEwNXNdW2luZm9dW2djXSBHQygwKSBQYXVzZSBZb3VuZyAoQWxsb2NhdGlvbiBGYWlsdXJlKSAxNU0tPjE1TSg2MU0pIDE5LjE5M21zClswLjE2OHNdW2luZm9dW2djXSBHQygxKSBQYXVzZSBZb3VuZyAoQWxsb2NhdGlvbiBGYWlsdXJlKSAzME0tPjMwTSg2MU0pIDE1LjM1MG1zClswLjE5NnNdW2luZm9dW2djXSBHQygyKSBQYXVzZSBGdWxsIChFcmdvbm9taWNzKSA0Nk0tPjQ2TSg2MU0pIDI0LjA3MW1zClswLjIxM3NdW2luZm9dW2djXSBHQygzKSBQYXVzZSBGdWxsIChFcmdvbm9taWNzKSA1OE0tPjU4TSg2MU0pIDEwLjc0OW1zClswLjIzNnNdW2luZm9dW2djXSBHQyg1KSBQYXVzZSBGdWxsIChBbGxvY2F0aW9uIEZhaWx1cmUpIDU4TS0+NThNKDYxTSkgMjAuMDE3bXMKRXhjZXB0aW9uIGluIHRocmVhZCAibWFpbiIgamF2YS5sYW5nLk91dE9mTWVtb3J5RXJyb3I6IEphdmEgaGVhcCBzcGFjZQpgYGAKClJlYWQgaXQgbGlrZSB0aGlzOgoKLSBUaGUgcG9zdC1HQyBmbG9vciBjbGltYnM6ICoqMTVNIOKGkiAzME0g4oaSIDQ2TSDihpIgNThNIOKGkiA1OE0qKi4gRWFjaCBjb2xsZWN0aW9uCiAgcmVjbGFpbXMgbm90aGluZyDigJQgZXZlcnkgYnl0ZSBvbiB0aGUgaGVhcCBpcyBsaXZlLCBoZWxkIGJ5IGNvbm5lY3Rpb25zCiAgdGhhdCB3aWxsIG5ldmVyIGJlIGNsb3NlZC4KLSBUaGUgcHJvZ3JhbSBwcmludGVkIGBvcGVuZWQgMjAwIGNvbm5lY3Rpb25zYCBhcyBpdHMgbGFzdCBwcm9ncmVzcyBsaW5lIChldmVyeQogIDUwIGNvbm5lY3Rpb25zKSBiZWZvcmUgZHlpbmcgYmV0d2VlbiB0aGUgMjAwIGFuZCAyNTAgbWFyay4gVGhlIGhlYXAKICBob2xkcyB+MjAwKyDDlyAyNTYgS0Ig4omIIDUxKyBNQiBvZiBjb25uZWN0aW9uIGJ1ZmZlcnMg4oCUIHRoZSBhcml0aG1ldGljIG9mIHRoZQogIGxlYWsgaXMgcmlnaHQgdGhlcmUgaW4gdGhlIG9jY3VwYW5jeS4KLSBUaGlzICpsb29rcyogbGlrZSBzY2VuYXJpbyAwMSdzIHNpZ25hdHVyZSAoYm90aCBhcmUgcmV0ZW50aW9uIHN0YWlyY2FzZXMpLgogIFRoZSBsb2cgYWxvbmUgY2FuJ3QgdGVsbCB0aGVtIGFwYXJ0IOKAlCB0aGUgaGVhcCBkdW1wIGNhbi4KCiMjIFN0YWlyY2FzZSB2cy4gc3RhaXJjYXNlOiAwMSB2cy4gMDUKClNjZW5hcmlvcyAwMSBhbmQgMDUgc2hhcmUgYSBHQyBzaWduYXR1cmUgYnV0IG5vdCBhIHJvb3QgY2F1c2UsIGFuZCB0aGUgZml4ZXMKYXJlIGRpZmZlcmVudC4gVGhpcyBpcyB0aGUgcGFpciB3b3J0aCBsZWFybmluZyB0byBkaXN0aW5ndWlzaDoKCnwgfCBTY2VuYXJpbyAwMSAodW5ib3VuZGVkIGNhY2hlKSB8IFNjZW5hcmlvIDA1IChsZWFrZWQgY29ubmVjdGlvbikgfAp8LS0tfC0tLXwtLS18CnwgV2hhdCdzIHJldGFpbmVkIHwgRGF0YSB0aGUgcHJvZ3JhbSAqY2hvc2UqIHRvIGtlZXAgfCBSZXNvdXJjZXMgdGhlIHByb2dyYW0gKmZvcmdvdCogdG8gcmVsZWFzZSB8CnwgR0Mgcm9vdCB8IEEgY2FjaGUgLyByZWdpc3RyeSB3aXRoIG5vIGV2aWN0aW9uIHwgQSByZWdpc3RyeSBub3RoaW5nIGV2ZXIgcmVtb3ZlcyBmcm9tIHwKfCBIaXN0b2dyYW0gdGVsbCB8IGBieXRlW11gIC8gYFN0cmluZ2AgY291bnRzIHRyYWNrIGlucHV0IHwgYENvbm5lY3Rpb25gIGNvdW50IHRyYWNrcyB3b3JrIGRvbmUsIDE6MSB8CnwgRml4IHwgRXZpY3Rpb24gcG9saWN5IChib3VuZCB0aGUgcmV0ZW50aW9uKSB8IENsb3NlIHRoZSByZXNvdXJjZSAoZml4IHRoZSBsaWZlY3ljbGUpIHwKCklmIHRoZSBoaXN0b2dyYW0ncyBmYXN0ZXN0LWdyb3dpbmcgY2xhc3MgaXMgYSAqcmVzb3VyY2UqIChjb25uZWN0aW9uLApzdHJlYW0sIGhhbmRsZSkgcmF0aGVyIHRoYW4gYSAqcGF5bG9hZCogKGBieXRlW11gLCBgU3RyaW5nYCwgeW91ciBkb21haW4Kb2JqZWN0cyksIHN1c3BlY3QgdGhlIGxpZmVjeWNsZSwgbm90IHRoZSBjYWNoZS4KCiMjIEhlYXAtZHVtcCBjbHVlcwoKVGFrZSBhIGhlYXAgZHVtcCBvbiBPT00gKGAtWFg6K0hlYXBEdW1wT25PdXRPZk1lbW9yeUVycm9yYCkgYW5kIG9wZW4gaXQgaW4KRWNsaXBzZSBNQVQgb3IgSkRLIE1pc3Npb24gQ29udHJvbDoKCi0gKipIaXN0b2dyYW06KiogYExlYWtlZENvbm5lY3Rpb25zJENvbm5lY3Rpb25gIGluc3RhbmNlcyBudW1iZXIgaW4gdGhlCiAgaHVuZHJlZHMsIGVhY2ggcmV0YWluaW5nIH4yNTYgS0Ig4oCUIGFuZCB0aGUgY291bnQgbWF0Y2hlcyB0aGUgdW5pdHMgb2Ygd29yawogIHRoZSBwcm9ncmFtIHBlcmZvcm1lZC4gQSAxOjEgcmF0aW8gYmV0d2VlbiBhIHJlc291cmNlIGNsYXNzIGFuZCB3b3JrIGRvbmUKICBpcyB0aGUgbGVhaydzIGZpbmdlcnByaW50LgotICoqRG9taW5hdG9yIHRyZWU6KiogZWFjaCBgQ29ubmVjdGlvbmAgcmV0YWlucyBpdHMgYGJ5dGVbXWAgYnVmZmVyOyB0b2dldGhlcgogIHRoZXkgZG9taW5hdGUgdGhlIGhlYXAuIE5vIHNpbmdsZSBvYmplY3QgaXMgc3VzcGljaW91cyDigJQgdGhlICpjb3VudCogaXMuCi0gKipQYXRoIHRvIEdDIHJvb3RzOioqIHJpZ2h0LWNsaWNrIGEgYENvbm5lY3Rpb25gIOKGkiAqUGF0aCB0byBHQyBSb290cyog4oaSCiAgKmV4Y2x1ZGUgd2Vhay9zb2Z0IHJlZmVyZW5jZXMqLiBUaGUgcGF0aCBydW5zIHRocm91Z2ggdGhlICoqc3RhdGljCiAgYG9wZW5Db25uZWN0aW9uc2Agc2V0KiouIEEgc3RhdGljIHJlZ2lzdHJ5IHRoYXQgb25seSBldmVyIGdyb3dzIGlzIHRoZQogIGNsYXNzaWMgc2hhcGUgb2YgYSByZXNvdXJjZSBsZWFrOiBzb21ldGhpbmcgYWRkZWQgZXZlcnkgcmVzb3VyY2UgImZvcgogIHRyYWNraW5nIiBhbmQgbmV2ZXIgcmVtb3ZlZC4KLSAqKlNoYWxsb3cgdnMuIHJldGFpbmVkOioqIGVhY2ggY29ubmVjdGlvbiBpcyBzbWFsbCAob2JqZWN0IGhlYWRlciArIHR3bwogIGZpZWxkcyk7IGl0cyAqcmV0YWluZWQqIGhlYXAgaXMgdGhlIDI1NiBLQiBidWZmZXIuIFNvcnQgYnkgcmV0YWluZWQsIG5vdAogIHNoYWxsb3cg4oCUIHRoZSBsZWFrIGhpZGVzIGJlaGluZCBhIHNtYWxsIG9iamVjdCBob2xkaW5nIGEgYmlnIG9uZS4KCiMjIEhvdyB0byByZWNvZ25pemUgaXQgaW4gYSByZWFsIHBpcGVsaW5lCgpZb3Ugd29uJ3QgaGF2ZSBhIGxvb3AgcHJpbnRpbmcgIm9wZW5lZCBOIGNvbm5lY3Rpb25zIiBpbiBwcm9kdWN0aW9uLiBXaGF0IHlvdQp3aWxsIGhhdmU6CgoxLiAqKk9PTXMgdGhhdCBjb3JyZWxhdGUgd2l0aCByZXF1ZXN0L2Nvbm5lY3Rpb24gY291bnQsIG5vdCB0aW1lLioqIFRoZQogICBzZXJ2aWNlIGRpZXMgYWZ0ZXIgTiByZXF1ZXN0cywgcmVzdGFydHMsIGRpZXMgYWdhaW4gYWZ0ZXIgTiByZXF1ZXN0cy4KICAgR3JhcGggaGVhcCBhZ2FpbnN0IHJlcXVlc3QgY291bnQg4oCUIGEgbGVhaydzIGNsb2NrIGlzIG1lYXN1cmVkIGluIHdvcmssCiAgIG5vdCB3YWxsIHRpbWUuCjIuICoqUmVzb3VyY2UtZXhoYXVzdGlvbiB3YXJuaW5ncyBuZWFyYnkuKiogQ29ubmVjdGlvbi1wb29sIGV4aGF1c3Rpb24sCiAgICJ0b28gbWFueSBvcGVuIGZpbGVzLCIgc29ja2V0IHRpbWVvdXRzIOKAlCBpbiBwcm9kdWN0aW9uLCB0aGUgSlZNIE9PTSBpcwogICBvZnRlbiB0aGUgKnNlY29uZCogc3ltcHRvbSwgbm90IHRoZSBmaXJzdC4gUmVhbCB1bmNsb3NlZCByZXNvdXJjZXMKICAgdXN1YWxseSBzdXJmYWNlIGFzIHBvb2wsIGZpbGUtZGVzY3JpcHRvciwgc29ja2V0LCBvciBkaXJlY3QtbWVtb3J5CiAgIHByZXNzdXJlIGJlZm9yZSB0aGV5IGV2ZXIgc2hvdyB1cCBhcyBKYXZhIGhlYXAgZ3Jvd3RoLiBUaGUgcG9vbAogICBjb21wbGFpbmluZyBmaXJzdCBpcyB0aGUgdGVsbCB0aGF0IHJlc291cmNlcywgbm90IGRhdGEsIGFyZSB0aGUgcHJvYmxlbSDigJQKICAgYW5kIGlmIHlvdSBvbmx5IHdhdGNoIHRoZSBoZWFwLCB5b3UnbGwgbWlzZGlhZ25vc2UgaXQgYXMgYSBjYWNoZSBsZWFrLgozLiAqKlRoZSBzdGFpcmNhc2UgYWdhaW4g4oCUIGJ1dCBzbG93ZXIuKiogSW4gcHJvZHVjdGlvbiB0aGUgbGVhayBpcyB1c3VhbGx5CiAgIG9uZSBjb25uZWN0aW9uIHBlciByZXF1ZXN0LCBzbyB0aGUgZmxvb3IgcmlzZXMgb3ZlciBob3Vycywgbm90IDAuMgogICBzZWNvbmRzLiBTYW1lIHNoYXBlLCBkaWZmZXJlbnQgdGltZXNjYWxlLiBHcmFwaCBwb3N0LUdDIG9sZC1nZW4gb2NjdXBhbmN5CiAgIGFnYWluc3QgcmVxdWVzdCBjb3VudCBhbmQgdGhlIDE6MSByYXRpbyBzaG93cyB1cC4KNC4gKipSZXN0YXJ0cyBidXkgdGltZSDigJQgYnV0IHRoYXQgaXMgYSBjbHVlLCBub3QgYSBkaWFnbm9zaXMuKiogTGlrZQogICBzY2VuYXJpbyAwMSwgdGhlIGNsb2NrIHJlc2V0cyBvbiByZXN0YXJ0IOKAlCBidXQgdW5saWtlIDAxLCB0aGUgZml4IGlzIG5vdAogICBhIGJpZ2dlciBoZWFwIG9yIGFuIGV2aWN0aW9uIHBvbGljeS4gQSByZXBlYXRhYmxlIHBvc3QtcmVzdGFydCBncm93dGgKICAgY3VydmUgc3VnZ2VzdHMgY3VtdWxhdGl2ZSByZXRlbnRpb247IGNvbmZpcm0gd2l0aCB0aGUgaGVhcCBkdW1wIChyZXNvdXJjZQogICBjbGFzcyBncm93aW5nIDE6MSB3aXRoIHdvcmssIHJvb3RlZCBpbiBhIHN0YXRpYyByZWdpc3RyeSkgYmVmb3JlCiAgIHJlZGVzaWduaW5nLiBNb3JlIGhlYXAganVzdCBidXlzIG1vcmUgbGVha2VkIGNvbm5lY3Rpb25zLgoKIyMgVGhlIDItbWludXRlIHRyaWFnZSBjaGVja2xpc3QKCldoZW4gYSBwaXBlbGluZSBPT01zIGFuZCB5b3Ugc3VzcGVjdCBhIHJlc291cmNlIGxlYWs6CgotIFsgXSAqKkRvZXMgaGVhcCB0cmFjayB3b3JrLCBub3QgdGltZT8qKiBPT00gYWZ0ZXIgTiByZXF1ZXN0cy9qb2JzLAogICAgICByZXByb2R1Y2libGUgcGVyIHVuaXQgb2Ygd29yaywgcG9pbnRzIGF0IHBlci13b3JrIHJlc291cmNlIHJldGVudGlvbi4KLSBbIF0gKipIZWFwIGR1bXAg4oaSIGhpc3RvZ3JhbSDihpIgaXMgdGhlIGZhc3Rlc3QtZ3Jvd2luZyBjbGFzcyBhIHJlc291cmNlPyoqCiAgICAgIENvbm5lY3Rpb25zLCBzdHJlYW1zLCBjaGFubmVscywgaGFuZGxlcyDigJQgbm90IHBheWxvYWRzLiBDb3VudCBzaG91bGQKICAgICAgcm91Z2hseSBlcXVhbCB3b3JrIGRvbmUuCi0gWyBdICoqUGF0aCB0byBHQyByb290cyDihpIgc3RhdGljIHJlZ2lzdHJ5PyoqIEEgc2V0L21hcC9saXN0IHRoYXQgb25seSBncm93cywKICAgICAgaG9sZGluZyByZXNvdXJjZXMgImZvciB0cmFja2luZywiIGlzIHRoZSBsZWFrJ3MgaGlkaW5nIHBsYWNlLgotIFsgXSAqKkFueSBwb29sL2ZpbGUvc29ja2V0IHdhcm5pbmdzIGluIHRoZSBsb2dzPyoqIFJlc291cmNlIGV4aGF1c3Rpb24KICAgICAgYmVmb3JlIHRoZSBPT00gY29ycm9ib3JhdGVzIHRoZSBsaWZlY3ljbGUgc3RvcnkuCi0gWyBdICoqRml4ID0gY2xvc2UgdGhlIHJlc291cmNlLCB0aGVuIGRyb3AgdGhlIHJlZmVyZW5jZS4qKiB0cnktd2l0aC1yZXNvdXJjZXMKICAgICAgKG9yIGNsb3NlIGluIGZpbmFsbHkpICpwbHVzKiBkZXJlZ2lzdHJhdGlvbiBmcm9tIGFueSB0cmFja2luZwogICAgICBjb2xsZWN0aW9uLiBDbG9zaW5nIHdpdGhvdXQgZGVyZWdpc3RlcmluZyBzdGlsbCBsZWFrcy4gVGhlbiB2ZXJpZnkgdGhlCiAgICAgIG9wZW4tY291bnQgbWV0cmljIGdvZXMgZmxhdCB1bmRlciBsb2FkIGJlZm9yZSBzaGlwcGluZy4KCiMjIFRoZSBmaXggKHdoYXQgYGZpeGVkL2AgZGVtb25zdHJhdGVzKQoKYENvbm5lY3Rpb25gIGltcGxlbWVudHMgYEF1dG9DbG9zZWFibGVgLCBlYWNoIG9uZSBpcyBvcGVuZWQgaW4KdHJ5LXdpdGgtcmVzb3VyY2VzLCBhbmQgYGNsb3NlKClgIHJlbW92ZXMgaXQgZnJvbSB0aGUgdHJhY2tpbmcgc2V0LiBMaXZlCm1lbW9yeSBzdGF5cyBhdCB+b25lIGJ1ZmZlciByZWdhcmRsZXNzIG9mIGhvdyBtYW55IGNvbm5lY3Rpb25zIGFyZSBwcm9jZXNzZWQuCkluIHByb2R1Y3Rpb24sIHRoZSBzYW1lIGlkZWEgd2VhcnMgZGlmZmVyZW50IGNsb3RoZXMg4oCUIGEgY29ubmVjdGlvbiBwb29sIHdpdGgKbGVhayBkZXRlY3Rpb24sIHRyeS13aXRoLXJlc291cmNlcyBhcm91bmQgZXZlcnkgSkRCQyBoYW5kbGUsIGZpbGUtc3RyZWFtCmRpc2NpcGxpbmUgaW4gRVRMIGNvZGUg4oCUIGJ1dCB0aGUgcHJpbmNpcGxlIGlzIGlkZW50aWNhbDogKipldmVyeSBhY3F1aXNpdGlvbgpuZWVkcyBhIHJlbGVhc2Ugb24gZXZlcnkgcGF0aCwgYW5kIHRoZSByZWxlYXNlIG11c3QgZHJvcCB0aGUgYm9va2tlZXBpbmcKcmVmZXJlbmNlIHRvby4qKgo=
+# Scenario 05 — Diagnosis: the leaked connection
+
+> [Back to the field guide root](../README.md)
+
+## The GC log signature
+
+Run the broken version (`./run.sh` enables GC logging to
+`scenario-05-leaked-connections-broken-gc.log`) and you'll see a staircase —
+a rising post-GC floor across consecutive collections, ending at capacity.
+
+Representative output from OpenJDK 21 with Parallel GC on Linux. Exact GC
+lines and OutOfMemoryError detail messages can differ by JDK, collector, and
+operating system.
+
+```
+[0.105s][info][gc] GC(0) Pause Young (Allocation Failure) 15M->15M(61M) 19.193ms
+[0.168s][info][gc] GC(1) Pause Young (Allocation Failure) 30M->30M(61M) 15.350ms
+[0.196s][info][gc] GC(2) Pause Full (Ergonomics) 46M->46M(61M) 24.071ms
+[0.213s][info][gc] GC(3) Pause Full (Ergonomics) 58M->58M(61M) 10.749ms
+[0.236s][info][gc] GC(5) Pause Full (Allocation Failure) 58M->58M(61M) 20.017ms
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+```
+
+Read it like this:
+
+- The post-GC floor climbs: **15M → 30M → 46M → 58M → 58M**. Each collection
+  reclaims nothing — every byte on the heap is live, held by connections
+  that will never be closed.
+- The program printed `opened 200 connections` as its last progress line (every
+  50 connections) before dying between the 200 and 250 mark. The heap
+  holds ~200+ × 256 KB ≈ 51+ MB of connection buffers — the arithmetic of the
+  leak is right there in the occupancy.
+- This *looks* like scenario 01's signature (both are retention staircases).
+  The log alone can't tell them apart — the heap dump can.
+
+## Staircase vs. staircase: 01 vs. 05
+
+Scenarios 01 and 05 share a GC signature but not a root cause, and the fixes
+are different. This is the pair worth learning to distinguish:
+
+| | Scenario 01 (unbounded cache) | Scenario 05 (leaked connection) |
+|---|---|---|
+| What's retained | Data the program *chose* to keep | Resources the program *forgot* to release |
+| GC root | A cache / registry with no eviction | A registry nothing ever removes from |
+| Histogram tell | `byte[]` / `String` counts track input | `Connection` count tracks work done, 1:1 |
+| Fix | Eviction policy (bound the retention) | Close the resource (fix the lifecycle) |
+
+If the histogram's fastest-growing class is a *resource* (connection,
+stream, handle) rather than a *payload* (`byte[]`, `String`, your domain
+objects), suspect the lifecycle, not the cache.
+
+## Heap-dump clues
+
+Take a heap dump on OOM (`-XX:+HeapDumpOnOutOfMemoryError`) and open it in
+Eclipse MAT or JDK Mission Control:
+
+- **Histogram:** `LeakedConnections$Connection` instances number in the
+  hundreds, each retaining ~256 KB — and the count matches the units of work
+  the program performed. A 1:1 ratio between a resource class and work done
+  is the leak's fingerprint.
+- **Dominator tree:** each `Connection` retains its `byte[]` buffer; together
+  they dominate the heap. No single object is suspicious — the *count* is.
+- **Path to GC roots:** right-click a `Connection` → *Path to GC Roots* →
+  *exclude weak/soft references*. The path runs through the **static
+  `openConnections` set**. A static registry that only ever grows is the
+  classic shape of a resource leak: something added every resource "for
+  tracking" and never removed.
+- **Shallow vs. retained:** each connection is small (object header + two
+  fields); its *retained* heap is the 256 KB buffer. Sort by retained, not
+  shallow — the leak hides behind a small object holding a big one.
+
+## How to recognize it in a real pipeline
+
+You won't have a loop printing "opened N connections" in production. What you
+will have:
+
+1. **OOMs that correlate with request/connection count, not time.** The
+   service dies after N requests, restarts, dies again after N requests.
+   Graph heap against request count — a leak's clock is measured in work,
+   not wall time.
+2. **Resource-exhaustion warnings nearby.** Connection-pool exhaustion,
+   "too many open files," socket timeouts — in production, the JVM OOM is
+   often the *second* symptom, not the first. Real unclosed resources
+   usually surface as pool, file-descriptor, socket, or direct-memory
+   pressure before they ever show up as Java heap growth. The pool
+   complaining first is the tell that resources, not data, are the problem —
+   and if you only watch the heap, you'll misdiagnose it as a cache leak.
+3. **The staircase again — but slower.** In production the leak is usually
+   one connection per request, so the floor rises over hours, not 0.2
+   seconds. Same shape, different timescale. Graph post-GC old-gen occupancy
+   against request count and the 1:1 ratio shows up.
+4. **Restarts buy time — but that is a clue, not a diagnosis.** Like
+   scenario 01, the clock resets on restart — but unlike 01, the fix is not
+   a bigger heap or an eviction policy. A repeatable post-restart growth
+   curve suggests cumulative retention; confirm with the heap dump (resource
+   class growing 1:1 with work, rooted in a static registry) before
+   redesigning. More heap just buys more leaked connections.
+
+## The 2-minute triage checklist
+
+When a pipeline OOMs and you suspect a resource leak:
+
+- [ ] **Does heap track work, not time?** OOM after N requests/jobs,
+      reproducible per unit of work, points at per-work resource retention.
+- [ ] **Heap dump → histogram → is the fastest-growing class a resource?**
+      Connections, streams, channels, handles — not payloads. Count should
+      roughly equal work done.
+- [ ] **Path to GC roots → static registry?** A set/map/list that only grows,
+      holding resources "for tracking," is the leak's hiding place.
+- [ ] **Any pool/file/socket warnings in the logs?** Resource exhaustion
+      before the OOM corroborates the lifecycle story.
+- [ ] **Fix = close the resource, then drop the reference.** try-with-resources
+      (or close in finally) *plus* deregistration from any tracking
+      collection. Closing without deregistering still leaks. Then verify the
+      open-count metric goes flat under load before shipping.
+
+## The fix (what `fixed/` demonstrates)
+
+`Connection` implements `AutoCloseable`, each one is opened in
+try-with-resources, and `close()` removes it from the tracking set. Live
+memory stays at ~one buffer regardless of how many connections are processed.
+In production, the same idea wears different clothes — a connection pool with
+leak detection, try-with-resources around every JDBC handle, file-stream
+discipline in ETL code — but the principle is identical: **every acquisition
+needs a release on every path, and the release must drop the bookkeeping
+reference too.**

@@ -1,7 +1,1 @@
-#!/bin/sh
-# Reproduces scenario 02 via the shared root runner, so the JVM flags (-Xms/-Xmx,
-# collector, GC logging) are identical to the other version's.
-# Program arguments are passed through, e.g.: ./run.sh --items 500000
-set -u
-cd "$(dirname "$0")"
-exec ../../run.sh scenario-02-oversized-batch broken "$@"
+IyEvYmluL3NoCiMgUmVwcm9kdWNlcyBzY2VuYXJpbyAwMiB2aWEgdGhlIHNoYXJlZCByb290IHJ1bm5lciwgc28gdGhlIEpWTSBmbGFncyAoLVhtcy8tWG14LAojIGNvbGxlY3RvciwgR0MgbG9nZ2luZykgYXJlIGlkZW50aWNhbCB0byB0aGUgb3RoZXIgdmVyc2lvbidzLgojIFByb2dyYW0gYXJndW1lbnRzIGFyZSBwYXNzZWQgdGhyb3VnaCwgZS5nLjogLi9ydW4uc2ggLS1iYXRjaC1zaXplIDEwMDAwMDAKIyBXaXRoIG5vIGFyZ3VtZW50cywgdXNlcyAtLWJhdGNoLXNpemUgNTAwMDAwIChhIHNpbmdsZSA1MDAgTUIgYmF0Y2ggdnMuIHRoZQojIGRlZmF1bHQgNjQgTUIgaGVhcCDigJQgZGllcyBvbiB0aGUgY2xpZmYgcXVpY2tseSBhbmQgcmVsaWFibHkpLgpzZXQgLXUKY2QgIiQoZGlybmFtZSAiJDAiKSIKaWYgWyAkIyAtZXEgMCBdOyB0aGVuCiAgc2V0IC0tIC0tYmF0Y2gtc2l6ZSA1MDAwMDAKZmkKZXhlYyAuLi8uLi9ydW4uc2ggc2NlbmFyaW8tMDItb3ZlcnNpemVkLWJhdGNoIGJyb2tlbiAiJEAiCg==

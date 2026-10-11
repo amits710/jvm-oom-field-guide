@@ -1,1 +1,12 @@
-IyEvYmluL3NoCiMgUnVucyB0aGUgZml4ZWQgdmVyc2lvbiBvZiBzY2VuYXJpbyAwNCB2aWEgdGhlIHNoYXJlZCByb290IHJ1bm5lciwgc28gdGhlIEpWTSBmbGFncyAoLVhtcy8tWG14LAojIGNvbGxlY3RvciwgR0MgbG9nZ2luZykgYXJlIGlkZW50aWNhbCB0byB0aGUgb3RoZXIgdmVyc2lvbidzLgojIFByb2dyYW0gYXJndW1lbnRzIGFyZSBwYXNzZWQgdGhyb3VnaCwgZS5nLjogLi9ydW4uc2ggLS10YXNrcyAxMDAwMAojIFdpdGggbm8gYXJndW1lbnRzLCB1c2VzIC0tdGFza3MgNTAwMCAoc2FtZSB3b3JrbG9hZCBhcyB0aGUgYnJva2VuIHZlcnNpb24ncwojIGRlZmF1bHQ7IHBlci10YXNrIGNsZWFudXAgaGFuZGxlcyBpdCBmaW5lKS4Kc2V0IC11CmNkICIkKGRpcm5hbWUgIiQwIikiCmlmIFsgJCMgLWVxIDAgXTsgdGhlbgogIHNldCAtLSAtLXRhc2tzIDUwMDAKZmkKZXhlYyAuLi8uLi9ydW4uc2ggc2NlbmFyaW8tMDQtdGhyZWFkbG9jYWwtbGVhayBmaXhlZCAiJEAiCg==
+#!/bin/sh
+# Runs the fixed version of scenario 04 via the shared root runner, so the JVM flags (-Xms/-Xmx,
+# collector, GC logging) are identical to the other version's.
+# Program arguments are passed through, e.g.: ./run.sh --tasks 10000
+# With no arguments, uses --tasks 5000 (same workload as the broken version's
+# default; per-task cleanup handles it fine).
+set -u
+cd "$(dirname "$0")"
+if [ $# -eq 0 ]; then
+  set -- --tasks 5000
+fi
+exec ../../run.sh scenario-04-threadlocal-leak fixed "$@"

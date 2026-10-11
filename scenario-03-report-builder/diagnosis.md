@@ -1,1 +1,135 @@
-IyBTY2VuYXJpbyAwMyDigJQgRGlhZ25vc2lzOiB0aGUgcmVwb3J0LWJ1aWxkZXIgcmV0ZW50aW9uCgo+IFtCYWNrIHRvIHRoZSBmaWVsZCBndWlkZSByb290XSguLi9SRUFETUUubWQpCgojIyBUaGUgR0MgbG9nIHNpZ25hdHVyZQoKUnVuIHRoZSBicm9rZW4gdmVyc2lvbiAoYC4vcnVuLnNoYCBlbmFibGVzIEdDIGxvZ2dpbmcgdG8KYHNjZW5hcmlvLTAzLXJlcG9ydC1idWlsZGVyLWJyb2tlbi1nYy5sb2dgKSBhbmQgeW91J2xsIHNlZSBhIHN0YWlyY2FzZSDigJQgdGhlCnNhbWUgcmlzaW5nIHBvc3QtR0MgZmxvb3IgYXMgc2NlbmFyaW8gMDEuIFlvdW5nIGNvbGxlY3Rpb25zIHJlY2xhaW0gbGVzcyBhbmQKbGVzczsgZnVsbCBjb2xsZWN0aW9ucyB0YWtlIG92ZXIgYW5kIHJlY2xhaW0gbm90aGluZzsgdGhlIEpWTSBnaXZlcyB1cC4KClJlcHJlc2VudGF0aXZlIG91dHB1dCBmcm9tIE9wZW5KREsgMjEgd2l0aCBQYXJhbGxlbCBHQyBvbiBMaW51eC4gRXhhY3QgR0MKbGluZXMgYW5kIE91dE9mTWVtb3J5RXJyb3IgZGV0YWlsIG1lc3NhZ2VzIGNhbiBkaWZmZXIgYnkgSkRLLCBjb2xsZWN0b3IsIGFuZApvcGVyYXRpbmcgc3lzdGVtLgoKYGBgClswLjA1N3NdW2luZm9dW2djXSBHQygwKSBQYXVzZSBZb3VuZyAoQWxsb2NhdGlvbiBGYWlsdXJlKSAxNk0tPjhNKDYxTSkgNC44ODBtcwpbMC4wOTBzXVtpbmZvXVtnY10gR0MoMikgUGF1c2UgWW91bmcgKEFsbG9jYXRpb24gRmFpbHVyZSkgMzNNLT4yNk0oNjFNKSA1LjAzNW1zClswLjEyOHNdW2luZm9dW2djXSBHQyg0KSBQYXVzZSBGdWxsIChFcmdvbm9taWNzKSA1MU0tPjM5TSg2MU0pIDIxLjk2NW1zClswLjE0OXNdW2luZm9dW2djXSBHQyg2KSBQYXVzZSBGdWxsIChFcmdvbm9taWNzKSA1OE0tPjUzTSg2MU0pIDYuNDkwbXMKWzAuMTcyc11baW5mb11bZ2NdIEdDKDEwKSBQYXVzZSBGdWxsIChFcmdvbm9taWNzKSA1OE0tPjU4TSg2MU0pIDQuMzM0bXMKRXhjZXB0aW9uIGluIHRocmVhZCAibWFpbiIgamF2YS5sYW5nLk91dE9mTWVtb3J5RXJyb3I6IEdDIG92ZXJoZWFkIGxpbWl0IGV4Y2VlZGVkCmBgYAoKUmVhZCBpdCBsaWtlIHRoaXM6CgotIFRoZSBwb3N0LUdDIGZsb29yIGNsaW1iczogKio4TSDihpIgMjZNIOKGkiAzOU0g4oaSIDUzTSDihpIgNThNIOKGkiA1OE0qKi4gVGhhdCByaXNpbmcKICBmbG9vciBpcyB0aGUgc2lnbmF0dXJlIG9mIHJldGVudGlvbiDigJQgZWFjaCBjb2xsZWN0aW9uIGxlYXZlcyBtb3JlIGJlaGluZAogIHRoYW4gdGhlIGxhc3QuIFRoaXMgaXMgdGhlIHNhbWUgc2hhcGUgYXMgc2NlbmFyaW8gMDEuCi0gVGhlIEpWTSBkaWVzIGhlcmUgd2l0aCBgR0Mgb3ZlcmhlYWQgbGltaXQgZXhjZWVkZWRgIHJhdGhlciB0aGFuIGBKYXZhIGhlYXAKICBzcGFjZWAg4oCUIEhvdFNwb3QncyBzYWZlZ3VhcmQgZmlyaW5nIGJlY2F1c2Ugfjk4JSBvZiB0aW1lIHdlbnQgdG8gR0MKICByZWNvdmVyaW5nIDwyJSBvZiBoZWFwLiBTYW1lIHJldGVudGlvbiBwYXR0ZXJuLCBkaWZmZXJlbnQgZmluYWwgZXJyb3IuIEluCiAgcHJvZHVjdGlvbiB5b3Ugd2lsbCBzZWUgYm90aDsgdGhlIHN0YWlyY2FzZSBpcyB3aGF0IG1hdHRlcnMsIG5vdCB3aGljaAogIG1lc3NhZ2UgZW5kcyBpdC4KLSBUaGUgcHJvZ3JhbSBwcmludGVkIGBwcm9jZXNzZWQgNDAwMDAgcmVjb3Jkc2AgYW5kIGRpZWQgYXQgNDBLIG9mIDMwMEsuIFRoZQogIGlucHV0IHNpZGUgd2FzIGZpbmUg4oCUIGJvdW5kZWQgY2h1bmtzLCByZWxlYXNlZCBlYWNoIGl0ZXJhdGlvbi4gVGhlIGtpbGxlcgogIHdhcyB0aGUgNDAsMDAwIHN1bW1hcmllcyBzaXR0aW5nIGluIHRoZSByZXBvcnQgbGlzdC4KCiMjIFN0YWlyY2FzZSB2cy4gc3RhaXJjYXNlOiAwMSB2cy4gMDMgKGFuZCB0aGUgMDIgY2xpZmYpCgpTY2VuYXJpb3MgMDEgYW5kIDAzIGxvb2sgaWRlbnRpY2FsIGluIHRoZSBHQyBsb2cuIFRoZSBkaWZmZXJlbmNlIGlzICp3aGF0KiBpcwpiZWluZyByZXRhaW5lZCBhbmQgKndoZXJlKiDigJQgYW5kIHRoZSBoZWFwIGR1bXAgaXMgd2hhdCBzZXBhcmF0ZXMgdGhlbToKCnwgfCBTY2VuYXJpbyAwMSAodW5ib3VuZGVkIGNhY2hlKSB8IFNjZW5hcmlvIDAyIChvdmVyc2l6ZWQgYmF0Y2gpIHwgU2NlbmFyaW8gMDMgKHJlcG9ydC1idWlsZGVyKSB8CnwtLS18LS0tfC0tLXwtLS18CnwgUG9zdC1HQyBmbG9vciB8ICoqUmlzZXMqKiAoc3RhaXJjYXNlKSB8IEZsYXQg4oCUIGRpZXMgdG9vIGZhc3QgfCAqKlJpc2VzKiogKHN0YWlyY2FzZSkgfAp8IFRpbWUgdG8gT09NIHwgR3JhZHVhbCB8IFN1ZGRlbiwgb25lIGJhdGNoIHwgR3JhZHVhbCB8CnwgV2hhdCdzIGxpdmUgfCBJbnB1dHMsIGtlcHQgZm9yIGxvb2t1cCB8IFRoZSBjdXJyZW50IGJhdGNoIHwgT3V0cHV0cywga2VwdCBmb3IgdGhlIHJlcG9ydCB8CnwgUmV0YWluZXIgc2hhcGUgfCBNYXAga2V5ZWQgZm9yIHJldXNlIHwgTG9jYWwgbGlzdCwgdG9vIGJpZyB8IEFwcGVuZC1vbmx5IGxpc3QsIHRoZSAicHJvZHVjdCIgfAp8IEZpeCB8IEV2aWN0aW9uIHBvbGljeSB8IFNtYWxsZXIgdW5pdCBvZiB3b3JrIHwgU3RyZWFtIHRoZSBvdXRwdXQgb3V0IHwKClRoZSAwMS12cy0wMyBkaXN0aW5jdGlvbiBpcyB0aGUgb25lIHRoYXQgYml0ZXMgaW4gcHJhY3RpY2U6IHlvdSBmaXggdGhlIGlucHV0CnNpZGUgKGNodW5raW5nLCBib3VuZGVkIGNhY2hlcywgZXZpY3Rpb24g4oCUIGFsbCB0aGUgcmlnaHQgdGhpbmdzKSwgdGhlIE9PTQpnb2VzIGF3YXkgZm9yIGEgd2hpbGUsIGFuZCB0aGVuIGl0IGNvbWVzIGJhY2suIEJlY2F1c2UgdGhlIGFjY3VtdWxhdGlvbiBtb3ZlZApkb3duc3RyZWFtLCBmcm9tIHdoYXQgeW91IHJlYWQgdG8gd2hhdCB5b3Ugd3JpdGUuIElmIHlvdSd2ZSAiYWxyZWFkeSBmaXhlZAp0aGUgbGVhayIgYW5kIHRoZSBzdGFpcmNhc2UgaXMgYmFjaywgbG9vayBhdCB0aGUgb3V0cHV0IHNpZGUuCgojIyBIZWFwLWR1bXAgY2x1ZXMKClRha2UgYSBoZWFwIGR1bXAgb24gT09NIChgLVhYOitIZWFwRHVtcE9uT3V0T2ZNZW1vcnlFcnJvcmApIGFuZCBvcGVuIGl0IGluCkVjbGlwc2UgTUFUIG9yIEpESyBNaXNzaW9uIENvbnRyb2w6CgotICoqRG9taW5hdG9yIHRyZWU6Kiogb25lIGBBcnJheUxpc3RgIG9mIHN1bW1hcmllcyBkb21pbmF0ZXMg4oCUIHNhbWUgYXMgMDEgYW5kCiAgMDIgYXQgdGhpcyBsZXZlbC4gVGhlIGRvbWluYXRvciB0cmVlIGFsb25lIGNhbid0IHRlbGwgdGhlIHRocmVlIGFwYXJ0LgotICoqUGF0aCB0byBHQyByb290czoqKiB0aGlzIGlzIHRoZSBkaWZmZXJlbnRpYXRvci4gVGhlIGxpc3QgaXMgcmVhY2hhYmxlCiAgdGhyb3VnaCB0aGUgKipidWlsZGVyL3Jlc3VsdCBvYmplY3QqKiDigJQgdGhlIHRoaW5nIHdob3NlIGpvYiBpcyBwcm9kdWNpbmcgdGhlCiAgcmVwb3J0IOKAlCBub3QgdGhyb3VnaCBhIGNhY2hlLCBub3QgdGhyb3VnaCBhIGxvY2FsIHZhcmlhYmxlLiBBc2s6ICppcyB0aGlzCiAgc3RydWN0dXJlIHRoZSBwcm9kdWN0LCBvciBpcyBpdCBpbmZyYXN0cnVjdHVyZT8qIElmIHRoZSBhbnN3ZXIgaXMgInRoZQogIHByb2R1Y3QiICh0aGUgcmVwb3J0LCB0aGUgcmVzcG9uc2UsIHRoZSBleHBvcnQpLCB5b3UncmUgaW4gc2NlbmFyaW8gMDM6CiAgdGhlIG91dHB1dCBpcyB1bmJvdW5kZWQsIGFuZCBubyBldmljdGlvbiBwb2xpY3kgbWFrZXMgc2Vuc2UgYmVjYXVzZSBub3RoaW5nCiAgaGVyZSBpcyBkaXNwb3NhYmxlLgotICoqSGlzdG9ncmFtOioqIHRoZSBwYXlsb2FkIGNsYXNzZXMgYXJlIHRoZSAqc3VtbWFyeSogdHlwZXMsIG5vdCB0aGUgaW5wdXQKICB0eXBlcy4gSW4gMDEgdGhlIHJldGFpbmVkIG9iamVjdHMgbG9vayBsaWtlIGlucHV0cyAoY2FjaGVkIHJlY29yZHMpOyBoZXJlCiAgdGhleSBsb29rIGxpa2Ugb3V0cHV0cyAoc3VtbWFyaWVzLCBEVE9zLCBmb3JtYXR0ZWQgcm93cykuIElmIHRoZSBkb21pbmF0b3IKICBpcyBmdWxsIG9mIHRoaW5ncyB5b3VyIGNvZGUgKmNyZWF0ZWQqIHJhdGhlciB0aGFuIHRoaW5ncyBpdCAqcmVhZCosIHN1c3BlY3QKICB0aGUgYnVpbGRlci4KCiMjIEhvdyB0byByZWNvZ25pemUgaXQgaW4gYSByZWFsIHBpcGVsaW5lCgpZb3Ugd29uJ3QgaGF2ZSBhIGxvb3AgcHJpbnRpbmcgInByb2Nlc3NlZCBOIHJlY29yZHMiIGluIHByb2R1Y3Rpb24uIFdoYXQgeW91CndpbGwgaGF2ZToKCjEuICoqVGhlIE9PTSBtb3ZlZCBhZnRlciB5b3UgZml4ZWQgaW5nZXN0LioqIFRoZSBjbGFzc2ljIHRlbGw6IGNodW5raW5nLAogICBzdHJlYW1pbmcgcmVhZHMsIG9yIGV2aWN0aW9uIGZpeGVkIHRoZSBwcm9ibGVtIG9uY2Ug4oCUIHRoZW4gaXQgcmV0dXJuZWQuCiAgIFRoZSBhY2N1bXVsYXRpb24gZGlkbid0IGdvIGF3YXk7IGl0IHJlbG9jYXRlZCB0byB0aGUgb3V0cHV0IHN0YWdlLgoyLiAqKk91dHB1dCBzaXplIHRyYWNrcyBpbnB1dCB2b2x1bWUuKiogVGhlIHJlcG9ydC9yZXNwb25zZS9leHBvcnQgZ3Jvd3Mgd2l0aAogICB0aGUgbnVtYmVyIG9mIHJlY29yZHMgcHJvY2Vzc2VkLCBub3Qgd2l0aCB0aW1lLiBBIGpvYiB0aGF0IGhhbmRsZXMgMTB4CiAgIGlucHV0IHByb2R1Y2VzIGEgMTB4IHJlcG9ydCDigJQgYW5kIG5vYm9keSBzaXplZCB0aGUgaGVhcCBmb3IgdGhlIHJlcG9ydC4KMy4gKioiV2UnbGwgd3JpdGUgaXQgYXQgdGhlIGVuZC4iKiogTGlzdGVuIGZvciB0aGUgZGVzaWduIHNtZWxsOiBjb2xsZWN0IGFsbAogICByZXN1bHRzIGluIG1lbW9yeSwgdGhlbiBzZXJpYWxpemUgLyB1cGxvYWQgLyByZXR1cm4uIFRoZSBmbHVzaC1hdC10aGUtZW5kCiAgIGlzIHRoZSBidWcgd2VhcmluZyBhIHBsYW4gYXMgYSBkaXNndWlzZS4KNC4gKipSZXN0YXJ0cyBidXkgdGltZSDigJQgYnV0IHRoYXQgaXMgYSBjbHVlLCBub3QgYSBkaWFnbm9zaXMuKiogVGhlIHN0YWlyY2FzZQogICByZWJ1aWxkcyBhZnRlciBldmVyeSByZXN0YXJ0LCBsaWtlIHNjZW5hcmlvIDAxLiBVbmxpa2UgMDIsIHRoZSBzYW1lIGlucHV0CiAgIHdvbid0IGtpbGwgaXQgaW5zdGFudGx5IOKAlCBpdCB0YWtlcyB0aGUgZnVsbCBydW4gdG8gYWNjdW11bGF0ZS4gQQogICByZXBlYXRhYmxlIHBvc3QtcmVzdGFydCBncm93dGggY3VydmUgc3VnZ2VzdHMgY3VtdWxhdGl2ZSByZXRlbnRpb247CiAgIGNvbmZpcm0gd2l0aCB0aGUgcG9zdC1HQyBsaXZlLXNldCB0cmVuZCBhbmQgdGhlIGhlYXAgZHVtcCAoaXMgdGhlCiAgIHJldGFpbmVyIHRoZSBvdXRwdXQ/KSBiZWZvcmUgcmVkZXNpZ25pbmcuCgojIyBUaGUgMi1taW51dGUgdHJpYWdlIGNoZWNrbGlzdAoKV2hlbiBhIHBpcGVsaW5lIE9PTXMgb24gYSBzdGFpcmNhc2UgYW5kIHRoZSBpbnB1dCBzaWRlIGxvb2tzIGNsZWFuOgoKLSBbIF0gKipJcyB0aGUgcmV0YWluZXIgdGhlIG91dHB1dD8qKiBIZWFwIGR1bXAg4oaSIGRvbWluYXRvciB0cmVlIOKGkiBpcyB0aGUgdG9wCiAgICAgIHJldGFpbmVyIGZ1bGwgb2Ygc3VtbWFyaWVzL3Jlc3VsdHMvRFRPcyByYXRoZXIgdGhhbiBjYWNoZWQgaW5wdXRzPwotIFsgXSAqKkRvZXMgc29tZXRoaW5nIGdldCAid3JpdHRlbiBhdCB0aGUgZW5kIj8qKiBTZWFyY2ggdGhlIGNvZGUgZm9yIHRoZQogICAgICBmaW5hbCBmbHVzaC9zZXJpYWxpemUvdXBsb2FkLiBFdmVyeXRoaW5nIGFjY3VtdWxhdGVkIGJlZm9yZSB0aGF0IGNhbGwKICAgICAgaXMgc3VzcGVjdC4KLSBbIF0gKipEaWQgdGhpcyBPT00gbW92ZT8qKiBJZiBhIHByZXZpb3VzIGZpeCBhZGRyZXNzZWQgdGhlIGlucHV0IHNpZGUgYW5kCiAgICAgIHRoZSBzdGFpcmNhc2UgY2FtZSBiYWNrLCB0aGUgYWNjdW11bGF0aW9uIHJlbG9jYXRlZCBkb3duc3RyZWFtLgotIFsgXSAqKkRvZXMgb3V0cHV0IHZvbHVtZSB0cmFjayBpbnB1dCB2b2x1bWU/KiogQSByZXBvcnQgdGhhdCBncm93cyB3aXRoCiAgICAgIHJlY29yZHMtcHJvY2Vzc2VkIGlzIHVuYm91bmRlZCBieSBjb25zdHJ1Y3Rpb24uCi0gWyBdICoqRml4ID0gc3RyZWFtIHRoZSBvdXRwdXQuKiogV3JpdGUgZWFjaCBwaWVjZSBvdXQgYXMgaXQncyBwcm9kdWNlZCDigJQKICAgICAgc3RyZWFtaW5nIHdyaXRlciwgYXBwZW5kLW9ubHkgZmlsZSwgZGF0YWJhc2Ugc2luayDigJQgc28gInRoZSByZXBvcnQiCiAgICAgIGxpdmVzIHNvbWV3aGVyZSBjaGVhcGVyIHRoYW4gdGhlIGhlYXAuIEV2aWN0aW9uIGRvZXNuJ3QgYXBwbHk6IHRoZQogICAgICByZXBvcnQgaXNuJ3QgYSBjYWNoZSwgaXQncyB0aGUgcHJvZHVjdC4KCiMjIFRoZSBmaXggKHdoYXQgYGZpeGVkL2AgZGVtb25zdHJhdGVzKQoKU3RyZWFtIGVhY2ggc3VtbWFyeSB0byBhIGZpbGUgdmlhIGEgYnVmZmVyZWQgc3RyZWFtIGFzIHNvb24gYXMgaXQncwpwcm9kdWNlZCwgaW5zdGVhZCBvZiBhcHBlbmRpbmcgaXQgdG8gYW4gaW4tbWVtb3J5IGxpc3QuIFRoZSBmaXhlZCB2ZXJzaW9uCmdlbmVyYXRlcyBieXRlLWZvci1ieXRlIGlkZW50aWNhbCBzdW1tYXJpZXMgdG8gdGhlIGJyb2tlbiB2ZXJzaW9uIChzYW1lCmRldGVybWluaXN0aWMgYG1ha2VTdW1tYXJ5YCkg4oCUIHRoZSBleHBlcmltZW50IGlzb2xhdGVzIHJldGVudGlvbiwgbm90CmNvbnRlbnQg4oCUIGFuZCBwcmludHMgdGhlIHJlY29yZCBjb3VudCwgdG90YWwgYnl0ZXMsIENSQzMyLCBhbmQgb3V0cHV0IHBhdGgKc28geW91IGNhbiB2ZXJpZnkgdGhlIHJlcG9ydCBpcyBjb21wbGV0ZS4gTGl2ZSBoZWFwIHN0YXlzIGZsYXQgbm8gbWF0dGVyIGhvdwptYW55IHJlY29yZHMgYXJyaXZlOyB0aGUgZmlsZSBob2xkcyB0aGUgcmVwb3J0LgoKT25lIGhvbmVzdCBsaW1pdGF0aW9uOiBzdHJlYW1pbmcgd29ya3Mgd2hlbiB0aGUgb3V0cHV0IGNhbiBiZSBlbWl0dGVkCmluY3JlbWVudGFsbHkuIElmIHRoZSBmaW5hbCBvdXRwdXQgcmVxdWlyZXMgYSBnbG9iYWwgc29ydCwgZGVkdXBsaWNhdGlvbiwgb3IKcmVvcmRlcmluZywgdGhlIHByb2R1Y3Rpb24gZml4IGlzIGNodW5raW5nLCBleHRlcm5hbCBzb3J0aW5nLCBzcGlsbCBmaWxlcywgb3IKcGFydGl0aW9uZWQgbWVyZ2luZyDigJQgbm90IG5haXZlIHN0cmVhbWluZy4KCkluIHByb2R1Y3Rpb24gdGhlIHNhbWUgaWRlYSB3ZWFycyBkaWZmZXJlbnQgY2xvdGhlcyDigJQgYSBzdHJlYW1pbmcgSlNPTi9YTUwKd3JpdGVyLCBhIGRhdGFiYXNlIGJhdGNoIGluc2VydCwgYW4gUzMgbXVsdGlwYXJ0IHVwbG9hZCDigJQgYnV0IHRoZSBwcmluY2lwbGUKaXMgaWRlbnRpY2FsOiAqKm5ldmVyIGhvbGQgdGhlIHdob2xlIG91dHB1dCBpbiBtZW1vcnkganVzdCBiZWNhdXNlIHlvdQpoYXZlbid0IHdyaXR0ZW4gaXQgeWV0LioqCg==
+# Scenario 03 — Diagnosis: the report-builder retention
+
+> [Back to the field guide root](../README.md)
+
+## The GC log signature
+
+Run the broken version (`./run.sh` enables GC logging to
+`scenario-03-report-builder-broken-gc.log`) and you'll see a staircase — the
+same rising post-GC floor as scenario 01. Young collections reclaim less and
+less; full collections take over and reclaim nothing; the JVM gives up.
+
+Representative output from OpenJDK 21 with Parallel GC on Linux. Exact GC
+lines and OutOfMemoryError detail messages can differ by JDK, collector, and
+operating system.
+
+```
+[0.057s][info][gc] GC(0) Pause Young (Allocation Failure) 16M->8M(61M) 4.880ms
+[0.090s][info][gc] GC(2) Pause Young (Allocation Failure) 33M->26M(61M) 5.035ms
+[0.128s][info][gc] GC(4) Pause Full (Ergonomics) 51M->39M(61M) 21.965ms
+[0.149s][info][gc] GC(6) Pause Full (Ergonomics) 58M->53M(61M) 6.490ms
+[0.172s][info][gc] GC(10) Pause Full (Ergonomics) 58M->58M(61M) 4.334ms
+Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
+```
+
+Read it like this:
+
+- The post-GC floor climbs: **8M → 26M → 39M → 53M → 58M → 58M**. That rising
+  floor is the signature of retention — each collection leaves more behind
+  than the last. This is the same shape as scenario 01.
+- The JVM dies here with `GC overhead limit exceeded` rather than `Java heap
+  space` — HotSpot's safeguard firing because ~98% of time went to GC
+  recovering <2% of heap. Same retention pattern, different final error. In
+  production you will see both; the staircase is what matters, not which
+  message ends it.
+- The program printed `processed 40000 records` and died at 40K of 300K. The
+  input side was fine — bounded chunks, released each iteration. The killer
+  was the 40,000 summaries sitting in the report list.
+
+## Staircase vs. staircase: 01 vs. 03 (and the 02 cliff)
+
+Scenarios 01 and 03 look identical in the GC log. The difference is *what* is
+being retained and *where* — and the heap dump is what separates them:
+
+| | Scenario 01 (unbounded cache) | Scenario 02 (oversized batch) | Scenario 03 (report-builder) |
+|---|---|---|---|
+| Post-GC floor | **Rises** (staircase) | Flat — dies too fast | **Rises** (staircase) |
+| Time to OOM | Gradual | Sudden, one batch | Gradual |
+| What's live | Inputs, kept for lookup | The current batch | Outputs, kept for the report |
+| Retainer shape | Map keyed for reuse | Local list, too big | Append-only list, the "product" |
+| Fix | Eviction policy | Smaller unit of work | Stream the output out |
+
+The 01-vs-03 distinction is the one that bites in practice: you fix the input
+side (chunking, bounded caches, eviction — all the right things), the OOM
+goes away for a while, and then it comes back. Because the accumulation moved
+downstream, from what you read to what you write. If you've "already fixed
+the leak" and the staircase is back, look at the output side.
+
+## Heap-dump clues
+
+Take a heap dump on OOM (`-XX:+HeapDumpOnOutOfMemoryError`) and open it in
+Eclipse MAT or JDK Mission Control:
+
+- **Dominator tree:** one `ArrayList` of summaries dominates — same as 01 and
+  02 at this level. The dominator tree alone can't tell the three apart.
+- **Path to GC roots:** this is the differentiator. The list is reachable
+  through the **builder/result object** — the thing whose job is producing the
+  report — not through a cache, not through a local variable. Ask: *is this
+  structure the product, or is it infrastructure?* If the answer is "the
+  product" (the report, the response, the export), you're in scenario 03:
+  the output is unbounded, and no eviction policy makes sense because nothing
+  here is disposable.
+- **Histogram:** the payload classes are the *summary* types, not the input
+  types. In 01 the retained objects look like inputs (cached records); here
+  they look like outputs (summaries, DTOs, formatted rows). If the dominator
+  is full of things your code *created* rather than things it *read*, suspect
+  the builder.
+
+## How to recognize it in a real pipeline
+
+You won't have a loop printing "processed N records" in production. What you
+will have:
+
+1. **The OOM moved after you fixed ingest.** The classic tell: chunking,
+   streaming reads, or eviction fixed the problem once — then it returned.
+   The accumulation didn't go away; it relocated to the output stage.
+2. **Output size tracks input volume.** The report/response/export grows with
+   the number of records processed, not with time. A job that handles 10x
+   input produces a 10x report — and nobody sized the heap for the report.
+3. **"We'll write it at the end."** Listen for the design smell: collect all
+   results in memory, then serialize / upload / return. The flush-at-the-end
+   is the bug wearing a plan as a disguise.
+4. **Restarts buy time — but that is a clue, not a diagnosis.** The staircase
+   rebuilds after every restart, like scenario 01. Unlike 02, the same input
+   won't kill it instantly — it takes the full run to accumulate. A
+   repeatable post-restart growth curve suggests cumulative retention;
+   confirm with the post-GC live-set trend and the heap dump (is the
+   retainer the output?) before redesigning.
+
+## The 2-minute triage checklist
+
+When a pipeline OOMs on a staircase and the input side looks clean:
+
+- [ ] **Is the retainer the output?** Heap dump → dominator tree → is the top
+      retainer full of summaries/results/DTOs rather than cached inputs?
+- [ ] **Does something get "written at the end"?** Search the code for the
+      final flush/serialize/upload. Everything accumulated before that call
+      is suspect.
+- [ ] **Did this OOM move?** If a previous fix addressed the input side and
+      the staircase came back, the accumulation relocated downstream.
+- [ ] **Does output volume track input volume?** A report that grows with
+      records-processed is unbounded by construction.
+- [ ] **Fix = stream the output.** Write each piece out as it's produced —
+      streaming writer, append-only file, database sink — so "the report"
+      lives somewhere cheaper than the heap. Eviction doesn't apply: the
+      report isn't a cache, it's the product.
+
+## The fix (what `fixed/` demonstrates)
+
+Stream each summary to a file via a buffered stream as soon as it's
+produced, instead of appending it to an in-memory list. The fixed version
+generates byte-for-byte identical summaries to the broken version (same
+deterministic `makeSummary`) — the experiment isolates retention, not
+content — and prints the record count, total bytes, CRC32, and output path
+so you can verify the report is complete. Live heap stays flat no matter how
+many records arrive; the file holds the report.
+
+One honest limitation: streaming works when the output can be emitted
+incrementally. If the final output requires a global sort, deduplication, or
+reordering, the production fix is chunking, external sorting, spill files, or
+partitioned merging — not naive streaming.
+
+In production the same idea wears different clothes — a streaming JSON/XML
+writer, a database batch insert, an S3 multipart upload — but the principle
+is identical: **never hold the whole output in memory just because you
+haven't written it yet.**

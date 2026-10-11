@@ -1,1 +1,103 @@
-aW1wb3J0IGphdmEudXRpbC5BcnJheUxpc3Q7CmltcG9ydCBqYXZhLnV0aWwuTGlzdDsKCi8qKgogKiBTQ0VOQVJJTyAwMiAoYnJva2VuKTogdGhlIG92ZXJzaXplZCBiYXRjaC4KICoKICogTW9kZWxzIGEgcGlwZWxpbmUgc3RhZ2UgdGhhdCByZWFkcyBhIHdob2xlIHBhcnRpdGlvbiBpbnRvIG1lbW9yeSBiZWZvcmUKICogcHJvY2Vzc2luZyBhIHNpbmdsZSByZWNvcmQ6ICJyZWFkIGV2ZXJ5dGhpbmcsIHRoZW4gY29tcHV0ZS4iIFRoZSBiYXRjaCBzaXplCiAqIGlzIGEgZnVuY3Rpb24gb2YgdGhlIGlucHV0IHBhcnRpdGlvbiwgbm90IG9mIGF2YWlsYWJsZSBtZW1vcnkg4oCUIHNvIHRoZSBmaXJzdAogKiBwYXJ0aXRpb24gdGhhdCBvdXRncm93cyB0aGUgaGVhcCBraWxscyB0aGUgSlZNLgogKgogKiBUaGlzIGlzIE5PVCBhIGxlYWsuIE5vdGhpbmcgaGVyZSBhY2N1bXVsYXRlcyBhY3Jvc3MgYmF0Y2hlczsgZWFjaCBiYXRjaCBpcwogKiByZWxlYXNlZCBhZnRlciBwcm9jZXNzaW5nLiBUaGUgZmFpbHVyZSBpcyBhIHNpbmdsZSB1bml0IG9mIHdvcmsgdGhhdCBpcwogKiBiaWdnZXIgdGhhbiB0aGUgaGVhcC4gSW4gcHJvZHVjdGlvbiB0aGlzIGhpZGVzIGJlaGluZCBwYXJ0aXRpb24gc2tldyAob25lCiAqIGdpYW50IHBhcnRpdGlvbiksIHVuYm91bmRlZCAiTElNSVQgMTAwMDAwMCIgcmVhZHMsIG9yIGEgYmF0Y2ggc2l6ZSB0dW5lZAogKiBmb3IgeWVzdGVyZGF5J3MgZGF0YSB2b2x1bWUuCiAqCiAqIENvbXBhcmUgd2l0aCBzY2VuYXJpbyAwMTogdGhlcmUgdGhlIGhlYXAgZGllcyBvbiBhIHNsb3cgc3RhaXJjYXNlIChyaXNpbmcKICogcG9zdC1HQyBmbG9vciBhY3Jvc3MgdGhlIHdob2xlIHJ1bikuIEhlcmUgaXQgZGllcyBvbiBhIGNsaWZmIOKAlCBvbmUgc3RlZXAKICogY2xpbWIgaW5zaWRlIGEgc2luZ2xlIGJhdGNoLCB0aGVuIE91dE9mTWVtb3J5RXJyb3IuCiAqCiAqIEFjY2VwdHMgdGhlIHNhbWUgd29ya2xvYWQgcGFyYW1ldGVycyBhcyB0aGUgZml4ZWQgdmVyc2lvbiAoLS1iYXRjaGVzLAogKiAtLWJhdGNoLXNpemUsIC0tcGF5bG9hZC1ieXRlcykuIFRoZSBicm9rZW4gdmVyc2lvbiBkaWVzIHJlYWRpbmcgdGhlIEZJUlNUCiAqIGJhdGNoOyB0aGUgZml4ZWQgdmVyc2lvbiBwcm9jZXNzZXMgZXZlcnkgYmF0Y2ggYnkgY2h1bmtpbmcuCiAqCiAqICAgLi9ydW4uc2ggWy0tYmF0Y2hlcyAzXSBbLS1iYXRjaC1zaXplIDI1MDAwMF0gWy0tcGF5bG9hZC1ieXRlcyAxMDI0XQogKi8KcHVibGljIGNsYXNzIE92ZXJzaXplZEJhdGNoIHsKCiAgICBwdWJsaWMgc3RhdGljIHZvaWQgbWFpbihTdHJpbmdbXSBhcmdzKSB7CiAgICAgICAgaW50IGJhdGNoZXMgPSAzOwogICAgICAgIGludCBiYXRjaFNpemUgPSAyNTBfMDAwOwogICAgICAgIGludCBwYXlsb2FkQnl0ZXMgPSAxMDI0OwogICAgICAgIGZvciAoaW50IGkgPSAwOyBpIDwgYXJncy5sZW5ndGg7IGkrKykgewogICAgICAgICAgICBzd2l0Y2ggKGFyZ3NbaV0pIHsKICAgICAgICAgICAgICAgIGNhc2UgIi0tYmF0Y2hlcyI6CiAgICAgICAgICAgICAgICAgICAgYmF0Y2hlcyA9IHBvc2l0aXZlSW50KGFyZ3MsIGksICItLWJhdGNoZXMiKTsKICAgICAgICAgICAgICAgICAgICBpKys7CiAgICAgICAgICAgICAgICAgICAgYnJlYWs7CiAgICAgICAgICAgICAgICBjYXNlICItLWJhdGNoLXNpemUiOgogICAgICAgICAgICAgICAgICAgIGJhdGNoU2l6ZSA9IHBvc2l0aXZlSW50KGFyZ3MsIGksICItLWJhdGNoLXNpemUiKTsKICAgICAgICAgICAgICAgICAgICBpKys7CiAgICAgICAgICAgICAgICAgICAgYnJlYWs7CiAgICAgICAgICAgICAgICBjYXNlICItLXBheWxvYWQtYnl0ZXMiOgogICAgICAgICAgICAgICAgICAgIHBheWxvYWRCeXRlcyA9IHBvc2l0aXZlSW50KGFyZ3MsIGksICItLXBheWxvYWQtYnl0ZXMiKTsKICAgICAgICAgICAgICAgICAgICBpKys7CiAgICAgICAgICAgICAgICAgICAgYnJlYWs7CiAgICAgICAgICAgICAgICBkZWZhdWx0OgogICAgICAgICAgICAgICAgICAgIHVzYWdlKCJ1bmtub3duIGFyZ3VtZW50OiAiICsgYXJnc1tpXSk7CiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICAgICAgU3lzdGVtLm91dC5wcmludGxuKCJTVEFSVEVEIHNjZW5hcmlvLTAyLW92ZXJzaXplZC1iYXRjaCBiYXRjaGVzPSIgKyBiYXRjaGVzCiAgICAgICAgICAgICAgICArICIgYmF0Y2hTaXplPSIgKyBiYXRjaFNpemUgKyAiIHBheWxvYWRCeXRlcz0iICsgcGF5bG9hZEJ5dGVzCiAgICAgICAgICAgICAgICArICIgKGV4cGVjdCBPdXRPZk1lbW9yeUVycm9yKSIpOwoKICAgICAgICAvLyBObyB0cnkvY2F0Y2ggYXJvdW5kIHRoZSBPdXRPZk1lbW9yeUVycm9yOiB0aGUgcmF3IGVycm9yIGFuZCBzdGFjawogICAgICAgIC8vIHRyYWNlIGFyZSB0aGUgbGVzc29uLiBBbGxvY2F0aW5nIGEgZGlhZ25vc3RpYyBtZXNzYWdlIG9uIGFuCiAgICAgICAgLy8gZXhoYXVzdGVkIGhlYXAgY2FuIGl0c2VsZiB0aHJvdy4KICAgICAgICBmb3IgKGludCBiYXRjaCA9IDE7IGJhdGNoIDw9IGJhdGNoZXM7IGJhdGNoKyspIHsKICAgICAgICAgICAgU3lzdGVtLm91dC5wcmludGxuKCJyZWFkaW5nIGJhdGNoICIgKyBiYXRjaCArICIgKCIgKyBiYXRjaFNpemUgKyAiIHJlY29yZHMpLi4uIik7CiAgICAgICAgICAgIExpc3Q8Ynl0ZVtdPiByZWNvcmRzID0gbmV3IEFycmF5TGlzdDw+KGJhdGNoU2l6ZSk7CiAgICAgICAgICAgIGZvciAoaW50IGkgPSAwOyBpIDwgYmF0Y2hTaXplOyBpKyspIHsKICAgICAgICAgICAgICAgIHJlY29yZHMuYWRkKG5ldyBieXRlW3BheWxvYWRCeXRlc10pOyAvLyBvbmUgcmVjb3JkJ3MgcGF5bG9hZAogICAgICAgICAgICB9CiAgICAgICAgICAgIC8vICJQcm9jZXNzIiB0aGUgYmF0Y2gsIHRoZW4gcmVsZWFzZSBpdCBiZWZvcmUgdGhlIG5leHQgb25lLgogICAgICAgICAgICBsb25nIGNoZWNrc3VtID0gMDsKICAgICAgICAgICAgZm9yIChieXRlW10gciA6IHJlY29yZHMpIHsKICAgICAgICAgICAgICAgIGNoZWNrc3VtICs9IHIubGVuZ3RoOwogICAgICAgICAgICB9CiAgICAgICAgICAgIFN5c3RlbS5vdXQucHJpbnRsbigiYmF0Y2ggIiArIGJhdGNoICsgIiBkb25lLCBjaGVja3N1bT0iICsgY2hlY2tzdW0pOwogICAgICAgICAgICByZWNvcmRzID0gbnVsbDsgLy8gYmF0Y2ggaXMgZ2FyYmFnZSBub3cg4oCUIHRoZSBORVhUIGJhdGNoIGlzIHRoZSBwcm9ibGVtLCBub3QgdGhpcyBvbmUKICAgICAgICB9CiAgICAgICAgU3lzdGVtLm91dC5wcmludGxuKCJmaW5pc2hlZCBhbGwgIiArIGJhdGNoZXMgKyAiIGJhdGNoZXMgd2l0aG91dCBPT00iCiAgICAgICAgICAgICAgICArICIgKHVuZXhwZWN0ZWQgZm9yIHRoZSBicm9rZW4gdmVyc2lvbiDigJQgd2FzIHRoZSBoZWFwIGVubGFyZ2VkPykiKTsKICAgIH0KCiAgICAvLyAtLS0tLS0tLS0tIENMSSB2YWxpZGF0aW9uOiBiYWQgaW5wdXQgZXhpdHMgMiB3aXRoIHVzYWdlIG9uIHN0ZGVyciAtLS0tLS0tLS0tCgogICAgcHJpdmF0ZSBzdGF0aWMgdm9pZCB1c2FnZShTdHJpbmcgcHJvYmxlbSkgewogICAgICAgIFN5c3RlbS5lcnIucHJpbnRsbigiZXJyb3I6ICIgKyBwcm9ibGVtKTsKICAgICAgICBTeXN0ZW0uZXJyLnByaW50bG4oInVzYWdlOiBPdmVyc2l6ZWRCYXRjaCBbLS1iYXRjaGVzIE5dIFstLWJhdGNoLXNpemUgTl0gWy0tcGF5bG9hZC1ieXRlcyBOXSIpOwogICAgICAgIFN5c3RlbS5lcnIucHJpbnRsbigiICBOIG11c3QgYmUgYSBwb3NpdGl2ZSBpbnRlZ2VyIik7CiAgICAgICAgU3lzdGVtLmV4aXQoMik7CiAgICB9CgogICAgLyoqIFBhcnNlcyBhcmdzW2krMV0gYXMgYSBwb3NpdGl2ZSBpbnQ7IGV4aXRzIDIgb24gbWlzc2luZy9pbnZhbGlkL25vbi1wb3NpdGl2ZS4gKi8KICAgIHByaXZhdGUgc3RhdGljIGludCBwb3NpdGl2ZUludChTdHJpbmdbXSBhcmdzLCBpbnQgaSwgU3RyaW5nIG5hbWUpIHsKICAgICAgICBpZiAoaSArIDEgPj0gYXJncy5sZW5ndGgpIHsKICAgICAgICAgICAgdXNhZ2UoIm1pc3NpbmcgdmFsdWUgZm9yICIgKyBuYW1lKTsKICAgICAgICB9CiAgICAgICAgaW50IHY7CiAgICAgICAgdHJ5IHsKICAgICAgICAgICAgdiA9IEludGVnZXIucGFyc2VJbnQoYXJnc1tpICsgMV0pOwogICAgICAgIH0gY2F0Y2ggKE51bWJlckZvcm1hdEV4Y2VwdGlvbiBlKSB7CiAgICAgICAgICAgIHVzYWdlKCJub3QgYSBudW1iZXIgZm9yICIgKyBuYW1lICsgIjogIiArIGFyZ3NbaSArIDFdKTsKICAgICAgICAgICAgdGhyb3cgbmV3IEFzc2VydGlvbkVycm9yKCJ1bnJlYWNoYWJsZSIpOwogICAgICAgIH0KICAgICAgICBpZiAodiA8PSAwKSB7CiAgICAgICAgICAgIHVzYWdlKG5hbWUgKyAiIG11c3QgYmUgcG9zaXRpdmUsIGdvdCAiICsgdik7CiAgICAgICAgfQogICAgICAgIHJldHVybiB2OwogICAgfQp9Cg==
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * SCENARIO 02 (broken): the oversized batch.
+ *
+ * Models a pipeline stage that reads a whole partition into memory before
+ * processing a single record: "read everything, then compute." The batch size
+ * is a function of the input partition, not of available memory — so the first
+ * partition that outgrows the heap kills the JVM.
+ *
+ * This is NOT a leak. Nothing here accumulates across batches; each batch is
+ * released after processing. The failure is a single unit of work that is
+ * bigger than the heap. In production this hides behind partition skew (one
+ * giant partition), unbounded "LIMIT 1000000" reads, or a batch size tuned
+ * for yesterday's data volume.
+ *
+ * Compare with scenario 01: there the heap dies on a slow staircase (rising
+ * post-GC floor across the whole run). Here it dies on a cliff — one steep
+ * climb inside a single batch, then OutOfMemoryError.
+ *
+ * Accepts the same workload parameters as the fixed version (--batches,
+ * --batch-size, --payload-bytes). The broken version dies reading the FIRST
+ * batch; the fixed version processes every batch by chunking.
+ *
+ *   ./run.sh [--batches 3] [--batch-size 250000] [--payload-bytes 1024]
+ */
+public class OversizedBatch {
+
+    public static void main(String[] args) {
+        int batches = 3;
+        int batchSize = 250_000;
+        int payloadBytes = 1024;
+        for (int i = 0; i < args.length; i++) {
+            switch (args[i]) {
+                case "--batches":
+                    batches = positiveInt(args, i, "--batches");
+                    i++;
+                    break;
+                case "--batch-size":
+                    batchSize = positiveInt(args, i, "--batch-size");
+                    i++;
+                    break;
+                case "--payload-bytes":
+                    payloadBytes = positiveInt(args, i, "--payload-bytes");
+                    i++;
+                    break;
+                default:
+                    usage("unknown argument: " + args[i]);
+            }
+        }
+        System.out.println("STARTED scenario-02-oversized-batch batches=" + batches
+                + " batchSize=" + batchSize + " payloadBytes=" + payloadBytes
+                + " (expect OutOfMemoryError)");
+
+        // No try/catch around the OutOfMemoryError: the raw error and stack
+        // trace are the lesson. Allocating a diagnostic message on an
+        // exhausted heap can itself throw.
+        for (int batch = 1; batch <= batches; batch++) {
+            System.out.println("reading batch " + batch + " (" + batchSize + " records)...");
+            List<byte[]> records = new ArrayList<>(batchSize);
+            for (int i = 0; i < batchSize; i++) {
+                records.add(new byte[payloadBytes]); // one record's payload
+            }
+            // "Process" the batch, then release it before the next one.
+            long checksum = 0;
+            for (byte[] r : records) {
+                checksum += r.length;
+            }
+            System.out.println("batch " + batch + " done, checksum=" + checksum);
+            records = null; // batch is garbage now — the NEXT batch is the problem, not this one
+        }
+        System.out.println("finished all " + batches + " batches without OOM"
+                + " (unexpected for the broken version — was the heap enlarged?)");
+    }
+
+    // ---------- CLI validation: bad input exits 2 with usage on stderr ----------
+
+    private static void usage(String problem) {
+        System.err.println("error: " + problem);
+        System.err.println("usage: OversizedBatch [--batches N] [--batch-size N] [--payload-bytes N]");
+        System.err.println("  N must be a positive integer");
+        System.exit(2);
+    }
+
+    /** Parses args[i+1] as a positive int; exits 2 on missing/invalid/non-positive. */
+    private static int positiveInt(String[] args, int i, String name) {
+        if (i + 1 >= args.length) {
+            usage("missing value for " + name);
+        }
+        int v;
+        try {
+            v = Integer.parseInt(args[i + 1]);
+        } catch (NumberFormatException e) {
+            usage("not a number for " + name + ": " + args[i + 1]);
+            throw new AssertionError("unreachable");
+        }
+        if (v <= 0) {
+            usage(name + " must be positive, got " + v);
+        }
+        return v;
+    }
+}

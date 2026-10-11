@@ -51,11 +51,13 @@ scenario-NN-<name>/
 
 Two experimental disciplines are enforced across all five:
 
-- **Equivalent workloads.** Broken and fixed accept the same CLI parameters
-  (`--items`, `--batch-size`, `--payload-bytes`, …). The broken version OOMs
-  before finishing; the fixed version completes *every* item and prints a
-  `COMPLETED` line with record/byte/checksum counts so you can verify it did
-  the same work.
+- **Equivalent workloads.** Broken and fixed variants share the same
+  workload-defining parameters (record count, payload size, batch size). A
+  fixed variant may expose an implementation or output control such as
+  `--chunk-size` or `--output`; that control does not change the logical
+  records processed. The broken version OOMs before finishing; the fixed
+  version completes *every* item and prints a `COMPLETED` line with
+  record/byte/checksum counts so you can verify it did the same work.
 - **Identical JVM flags.** All runs go through the root `run.sh`, which
   applies the same `-Xms64m -Xmx64m`, the same collector (Parallel GC), and
   the same GC logging to both versions. The only variable is the program.
@@ -64,7 +66,7 @@ Two experimental disciplines are enforced across all five:
 
 ## Running a scenario
 
-All examples are pure Java with zero dependencies. Any JDK 11+ works:
+All examples are pure Java with zero dependencies. Designed for JDK 11 and later; continuously tested on the versions listed below:
 
 ```sh
 ./run.sh scenario-01-unbounded-cache broken            # reproduce
@@ -159,7 +161,7 @@ landscape.
 - **OS:** Linux (primary), macOS (CI-tested). Windows is untested —
   `test.sh` needs `timeout`/`gtimeout` or it runs steps without a per-step
   limit.
-- **JDK:** 11, 17, 21, 25 (all LTS lines plus current), 27 (best-effort). CI matrix covers
+- **JDK:** 11, 17, 21, 25 (LTS release lines), 27 (current feature release, best-effort). CI matrix covers
   these; the labs avoid APIs newer than 11.
 - **Duration:** each lab runs in under a minute on a laptop.
 - **Disk:** negligible, except scenario 03's fixed run, which streams a

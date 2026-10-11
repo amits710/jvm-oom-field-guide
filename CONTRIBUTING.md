@@ -12,9 +12,12 @@ Create `scenario-NN-<name>/` with:
 - `broken/<Name>.java` — must reliably throw `OutOfMemoryError` on a 64 MB
   heap. Let the error escape naturally: no catch-and-rethrow, no diagnostic
   string building in a catch block.
-- `fixed/<Name>Fixed.java` — must accept the **same CLI parameters** as the
-  broken version, complete the **entire** workload, and print a `COMPLETED`
-  line with record/byte/checksum counts proving it did the same work.
+- `fixed/<Name>Fixed.java` — must share the broken version's
+  workload-defining parameters (record count, payload size, batch size),
+  complete the **entire** workload, and print a `COMPLETED` line with
+  record/byte/checksum counts proving it did the same work. A fixed variant
+  may add an implementation or output control (e.g. `--chunk-size`,
+  `--output`); that control must not change the logical records processed.
 - `broken/run.sh` and `fixed/run.sh` — thin wrappers delegating to the root
   `run.sh` (copy an existing pair). Never set JVM flags here; the shared
   runner in `common.sh` keeps them identical.

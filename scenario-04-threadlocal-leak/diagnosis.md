@@ -17,17 +17,22 @@ operating system.
 [0.509s][info][gc] GC(63) Pause Full (Ergonomics) 58M->58M(61M) 11.413ms
 [0.515s][info][gc] GC(64) Pause Full (Allocation Failure) 58M->58M(61M) 5.862ms
 [0.527s][info][gc] GC(65) Pause Full (Ergonomics) 58M->58M(61M) 9.253ms
-Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "main" java.util.concurrent.ExecutionException:
+    java.lang.OutOfMemoryError: Java heap space
+Caused by: java.lang.OutOfMemoryError: Java heap space
 ```
 
-(On some runs you'll see `GC overhead limit exceeded` instead — HotSpot's
-safeguard tripping when the collector spends too long reclaiming too little.
-Same root cause, different tripwire.)
+Because the allocation fails on an executor worker, `Future.get()` reports an
+`ExecutionException`. Inspect the `Caused by` chain to find the underlying
+`OutOfMemoryError`. (On some runs the cause is `GC overhead limit exceeded`
+instead — HotSpot's safeguard tripping when the collector spends too long
+reclaiming too little. Same root cause, different tripwire.)
 
 Read it like this:
 
-- `58M->58M(61M)` — the full GC reclaimed *zero* bytes. Everything on the heap
-  is live, and the floor rose to get here (earlier collections sat at 46M).
+- `58M->58M(61M)` — the full GC reclaimed no space visible at the log's
+displayed resolution. Almost all occupied heap remained reachable or otherwise
+unreclaimed, and the floor rose to get here (earlier collections sat at 46M).
   This is retention, same family as scenario 01.
 - **The GC log cannot tell you this is a ThreadLocal leak.** The staircase
   says *retention*; it says nothing about *where the retention is rooted*.
@@ -54,7 +59,7 @@ not in scenario 01.
 ## Heap-dump clues
 
 Take a heap dump on OOM (`-XX:+HeapDumpOnOutOfMemoryError`) and open it in
-Eclipse MAT or JDK Mission Control:
+Eclipse Memory Analyzer or VisualVM:
 
 - **Dominator tree:** not one giant collection but **four** large `ArrayList`s
   (one per pool thread), each holding hundreds of `byte[]` payloads. N
@@ -62,8 +67,9 @@ Eclipse MAT or JDK Mission Control:
 - **Path to GC roots:** right-click a list → *Path to GC Roots* → *exclude
   weak/soft references*. The path runs
   `ArrayList` ← `ThreadLocal$ThreadLocalMap$Entry` ← `ThreadLocalMap` ←
-  `Thread` (the pool worker). The thread is the root: as long as the pool
-  keeps the thread alive, everything the thread ever touched stays alive.
+  `Thread` (the pool worker). The thread is the root: as long as the pool thread
+  lives, objects reachable through values in that thread's ThreadLocalMap can
+  remain reachable.
 - **The weak-key trap:** `ThreadLocalMap` keys are weak references, while
   values are strong references. If a key becomes unreachable, the associated
   value may remain until a later `ThreadLocalMap` operation happens to expunge

@@ -1,1 +1,111 @@
-aW1wb3J0IGphdmEudXRpbC5IYXNoTWFwOwppbXBvcnQgamF2YS51dGlsLk1hcDsKCi8qKgogKiBTQ0VOQVJJTyAwMSAoYnJva2VuKTogdGhlIHVuYm91bmRlZCBpbi1tZW1vcnkgY2FjaGUuCiAqCiAqIE1vZGVscyBhIGRlcHJlc3NpbmdseSBjb21tb24gcGlwZWxpbmUgcGF0dGVybjogcmVjb3JkcyBhcmUgY2FjaGVkIGluIGEgcGxhaW4KICogSGFzaE1hcCAiZm9yIHBlcmZvcm1hbmNlLCIga2V5ZWQgYnkgcmVjb3JkIElELCB3aXRoIG5vIGV2aWN0aW9uIHBvbGljeSBhdAogKiBhbGwuIEV2ZXJ5IHJlY29yZCB0aGUgcGlwZWxpbmUgZXZlciBzZWVzIHN0YXlzIGluIHRoZSBtYXAgZm9yZXZlci4KICoKICogSW4gcHJvZHVjdGlvbiB0aGlzIHVzdWFsbHkgaGlkZXMgYmVoaW5kIGEgbmljZXIgbmFtZSDigJQgYSAibG9va3VwIGNhY2hlLCIgYQogKiAiZGVkdXAgc2V0LCIgYSAicmVjZW50bHkgc2VlbiIgcmVnaXN0cnkuIFRoZSBzaGFwZSBpcyBhbHdheXMgdGhlIHNhbWU6CiAqIGEgY29sbGVjdGlvbiB3aG9zZSBzaXplIGlzIGEgZnVuY3Rpb24gb2YgdG90YWwgaW5wdXQgdm9sdW1lLCBub3Qgb2YgdGltZS4KICoKICogVGhlIGtleXMgYXJlIGRldGVybWluaXN0aWMgc2VxdWVudGlhbCBJRHMgKCJyZWNvcmQtMCIsICJyZWNvcmQtMSIsIC4uLiksCiAqIG5vdCBVVUlEcywgc28gdGhlIG9ubHkgdGhpbmcgZ3Jvd2luZyB0aGUgaGVhcCBpcyB0aGUgY2FjaGUgaXRzZWxmIOKAlCBubwogKiBhbGxvY2F0aW9uIG5vaXNlIGZyb20ga2V5IGdlbmVyYXRpb24uCiAqCiAqIFJ1biB3aXRoIGEgc21hbGwgaGVhcCBhbmQgd2F0Y2ggb2xkLWdlbiBjbGltYiB1bnRpbCB0aGUgSlZNIGdpdmVzIHVwOgogKiAgIC4vcnVuLnNoIFstLWl0ZW1zIDEwMDAwMDBdIFstLXBheWxvYWQtYnl0ZXMgNDA5Nl0KICoKICogQWNjZXB0cyB0aGUgc2FtZSBDTEkgcGFyYW1ldGVycyBhcyB0aGUgZml4ZWQgdmVyc2lvbi4gVGhlIGJyb2tlbiB2ZXJzaW9uCiAqIGRpZXMgd2l0aCBPdXRPZk1lbW9yeUVycm9yIGxvbmcgYmVmb3JlIHJlYWNoaW5nIC0taXRlbXM7IHRoZSBmaXhlZCB2ZXJzaW9uCiAqIHByb2Nlc3NlcyBldmVyeSBpdGVtLgogKi8KcHVibGljIGNsYXNzIFVuYm91bmRlZENhY2hlIHsKCiAgICAvLyBUaGUgY2FjaGUuIE5vdGU6IG5vIG1heCBzaXplLCBubyBUVEwsIG5vIGV2aWN0aW9uLiBKdXN0IHZpYmVzLgogICAgcHJpdmF0ZSBzdGF0aWMgZmluYWwgTWFwPFN0cmluZywgYnl0ZVtdPiBDQUNIRSA9IG5ldyBIYXNoTWFwPD4oKTsKCiAgICBwdWJsaWMgc3RhdGljIHZvaWQgbWFpbihTdHJpbmdbXSBhcmdzKSB7CiAgICAgICAgbG9uZyBpdGVtcyA9IDFfMDAwXzAwMDsKICAgICAgICBpbnQgcGF5bG9hZEJ5dGVzID0gNDA5NjsKICAgICAgICBmb3IgKGludCBpID0gMDsgaSA8IGFyZ3MubGVuZ3RoOyBpKyspIHsKICAgICAgICAgICAgc3dpdGNoIChhcmdzW2ldKSB7CiAgICAgICAgICAgICAgICBjYXNlICItLWl0ZW1zIjoKICAgICAgICAgICAgICAgICAgICBpdGVtcyA9IHBvc2l0aXZlTG9uZyhhcmdzLCBpLCAiLS1pdGVtcyIpOwogICAgICAgICAgICAgICAgICAgIGkrKzsKICAgICAgICAgICAgICAgICAgICBicmVhazsKICAgICAgICAgICAgICAgIGNhc2UgIi0tcGF5bG9hZC1ieXRlcyI6CiAgICAgICAgICAgICAgICAgICAgcGF5bG9hZEJ5dGVzID0gcG9zaXRpdmVJbnQoYXJncywgaSwgIi0tcGF5bG9hZC1ieXRlcyIpOwogICAgICAgICAgICAgICAgICAgIGkrKzsKICAgICAgICAgICAgICAgICAgICBicmVhazsKICAgICAgICAgICAgICAgIGRlZmF1bHQ6CiAgICAgICAgICAgICAgICAgICAgdXNhZ2UoInVua25vd24gYXJndW1lbnQ6ICIgKyBhcmdzW2ldKTsKICAgICAgICAgICAgfQogICAgICAgIH0KICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oIlNUQVJURUQgc2NlbmFyaW8tMDEtdW5ib3VuZGVkLWNhY2hlIGl0ZW1zPSIgKyBpdGVtcwogICAgICAgICAgICAgICAgKyAiIHBheWxvYWRCeXRlcz0iICsgcGF5bG9hZEJ5dGVzICsgIiAoZXhwZWN0IE91dE9mTWVtb3J5RXJyb3IpIik7CgogICAgICAgIC8vIE5vIHRyeS9jYXRjaCBhcm91bmQgdGhlIE91dE9mTWVtb3J5RXJyb3I6IHdoZW4gdGhlIGhlYXAgaXMKICAgICAgICAvLyBleGhhdXN0ZWQsIGV2ZW4gYnVpbGRpbmcgYSBkaWFnbm9zdGljIG1lc3NhZ2UgY2FuIGFsbG9jYXRlIGFuZAogICAgICAgIC8vIHRocm93LiBUaGUgcmF3IGVycm9yIGFuZCBzdGFjayB0cmFjZSBhcmUgdGhlIGxlc3Nvbi4KICAgICAgICBmb3IgKGxvbmcgaSA9IDA7IGkgPCBpdGVtczsgaSsrKSB7CiAgICAgICAgICAgIFN0cmluZyBrZXkgPSAicmVjb3JkLSIgKyBpOwogICAgICAgICAgICBieXRlW10gcGF5bG9hZCA9IG5ldyBieXRlW3BheWxvYWRCeXRlc107CiAgICAgICAgICAgIHBheWxvYWRbMF0gPSAoYnl0ZSkgKGkgJiAweEZGKTsgLy8gdG91Y2ggaXQgc28gaXQgaXNuJ3Qgb3B0aW1pemVkIGF3YXkKICAgICAgICAgICAgQ0FDSEUucHV0KGtleSwgcGF5bG9hZCk7CiAgICAgICAgICAgIGlmICgoaSArIDEpICUgNV8wMDAgPT0gMCkgewogICAgICAgICAgICAgICAgU3lzdGVtLm91dC5wcmludGxuKCJjYWNoZWQgIiArIChpICsgMSkgKyAiIHJlY29yZHMsIG1hcCBzaXplOiAiICsgQ0FDSEUuc2l6ZSgpKTsKICAgICAgICAgICAgfQogICAgICAgIH0KICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oImZpbmlzaGVkIGFsbCAiICsgaXRlbXMgKyAiIHJlY29yZHMgd2l0aG91dCBPT00iCiAgICAgICAgICAgICAgICArICIgKHVuZXhwZWN0ZWQgZm9yIHRoZSBicm9rZW4gdmVyc2lvbiDigJQgd2FzIHRoZSBoZWFwIGVubGFyZ2VkPykiKTsKICAgIH0KCiAgICAvLyAtLS0tLS0tLS0tIENMSSB2YWxpZGF0aW9uOiBiYWQgaW5wdXQgZXhpdHMgMiB3aXRoIHVzYWdlIG9uIHN0ZGVyciAtLS0tLS0tLS0tCgogICAgcHJpdmF0ZSBzdGF0aWMgdm9pZCB1c2FnZShTdHJpbmcgcHJvYmxlbSkgewogICAgICAgIFN5c3RlbS5lcnIucHJpbnRsbigiZXJyb3I6ICIgKyBwcm9ibGVtKTsKICAgICAgICBTeXN0ZW0uZXJyLnByaW50bG4oInVzYWdlOiBVbmJvdW5kZWRDYWNoZSBbLS1pdGVtcyBOXSBbLS1wYXlsb2FkLWJ5dGVzIE5dIik7CiAgICAgICAgU3lzdGVtLmVyci5wcmludGxuKCIgIE4gbXVzdCBiZSBhIHBvc2l0aXZlIGludGVnZXIiKTsKICAgICAgICBTeXN0ZW0uZXhpdCgyKTsKICAgIH0KCiAgICAvKiogUGFyc2VzIGFyZ3NbaSsxXSBhcyBhIHBvc2l0aXZlIGxvbmc7IGV4aXRzIDIgb24gbWlzc2luZy9pbnZhbGlkL25vbi1wb3NpdGl2ZS4gKi8KICAgIHByaXZhdGUgc3RhdGljIGxvbmcgcG9zaXRpdmVMb25nKFN0cmluZ1tdIGFyZ3MsIGludCBpLCBTdHJpbmcgbmFtZSkgewogICAgICAgIGlmIChpICsgMSA+PSBhcmdzLmxlbmd0aCkgewogICAgICAgICAgICB1c2FnZSgibWlzc2luZyB2YWx1ZSBmb3IgIiArIG5hbWUpOwogICAgICAgIH0KICAgICAgICBsb25nIHY7CiAgICAgICAgdHJ5IHsKICAgICAgICAgICAgdiA9IExvbmcucGFyc2VMb25nKGFyZ3NbaSArIDFdKTsKICAgICAgICB9IGNhdGNoIChOdW1iZXJGb3JtYXRFeGNlcHRpb24gZSkgewogICAgICAgICAgICB1c2FnZSgibm90IGEgbnVtYmVyIGZvciAiICsgbmFtZSArICI6ICIgKyBhcmdzW2kgKyAxXSk7CiAgICAgICAgICAgIHRocm93IG5ldyBBc3NlcnRpb25FcnJvcigidW5yZWFjaGFibGUiKTsKICAgICAgICB9CiAgICAgICAgaWYgKHYgPD0gMCkgewogICAgICAgICAgICB1c2FnZShuYW1lICsgIiBtdXN0IGJlIHBvc2l0aXZlLCBnb3QgIiArIHYpOwogICAgICAgIH0KICAgICAgICByZXR1cm4gdjsKICAgIH0KCiAgICAvKiogUGFyc2VzIGFyZ3NbaSsxXSBhcyBhIHBvc2l0aXZlIGludDsgZXhpdHMgMiBvbiBtaXNzaW5nL2ludmFsaWQvbm9uLXBvc2l0aXZlLiAqLwogICAgcHJpdmF0ZSBzdGF0aWMgaW50IHBvc2l0aXZlSW50KFN0cmluZ1tdIGFyZ3MsIGludCBpLCBTdHJpbmcgbmFtZSkgewogICAgICAgIGlmIChpICsgMSA+PSBhcmdzLmxlbmd0aCkgewogICAgICAgICAgICB1c2FnZSgibWlzc2luZyB2YWx1ZSBmb3IgIiArIG5hbWUpOwogICAgICAgIH0KICAgICAgICBpbnQgdjsKICAgICAgICB0cnkgewogICAgICAgICAgICB2ID0gSW50ZWdlci5wYXJzZUludChhcmdzW2kgKyAxXSk7CiAgICAgICAgfSBjYXRjaCAoTnVtYmVyRm9ybWF0RXhjZXB0aW9uIGUpIHsKICAgICAgICAgICAgdXNhZ2UoIm5vdCBhIG51bWJlciBmb3IgIiArIG5hbWUgKyAiOiAiICsgYXJnc1tpICsgMV0pOwogICAgICAgICAgICB0aHJvdyBuZXcgQXNzZXJ0aW9uRXJyb3IoInVucmVhY2hhYmxlIik7CiAgICAgICAgfQogICAgICAgIGlmICh2IDw9IDApIHsKICAgICAgICAgICAgdXNhZ2UobmFtZSArICIgbXVzdCBiZSBwb3NpdGl2ZSwgZ290ICIgKyB2KTsKICAgICAgICB9CiAgICAgICAgcmV0dXJuIHY7CiAgICB9Cn0K
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * SCENARIO 01 (broken): the unbounded in-memory cache.
+ *
+ * Models a depressingly common pipeline pattern: records are cached in a plain
+ * HashMap "for performance," keyed by record ID, with no eviction policy at
+ * all. Every record the pipeline ever sees stays in the map forever.
+ *
+ * In production this usually hides behind a nicer name — a "lookup cache," a
+ * "dedup set," a "recently seen" registry. The shape is always the same:
+ * a collection whose size is a function of total input volume, not of time.
+ *
+ * The keys are deterministic sequential IDs ("record-0", "record-1", ...),
+ * not UUIDs, so the only thing growing the heap is the cache itself — no
+ * allocation noise from key generation.
+ *
+ * Run with a small heap and watch old-gen climb until the JVM gives up:
+ *   ./run.sh [--items 1000000] [--payload-bytes 4096]
+ *
+ * Accepts the same CLI parameters as the fixed version. The broken version
+ * dies with OutOfMemoryError long before reaching --items; the fixed version
+ * processes every item.
+ */
+public class UnboundedCache {
+
+    // The cache. Note: no max size, no TTL, no eviction. Just vibes.
+    private static final Map<String, byte[]> CACHE = new HashMap<>();
+
+    public static void main(String[] args) {
+        long items = 1_000_000;
+        int payloadBytes = 4096;
+        for (int i = 0; i < args.length; i++) {
+            switch (args[i]) {
+                case "--items":
+                    items = positiveLong(args, i, "--items");
+                    i++;
+                    break;
+                case "--payload-bytes":
+                    payloadBytes = positiveInt(args, i, "--payload-bytes");
+                    i++;
+                    break;
+                default:
+                    usage("unknown argument: " + args[i]);
+            }
+        }
+        System.out.println("STARTED scenario-01-unbounded-cache items=" + items
+                + " payloadBytes=" + payloadBytes + " (expect OutOfMemoryError)");
+
+        // No try/catch around the OutOfMemoryError: when the heap is
+        // exhausted, even building a diagnostic message can allocate and
+        // throw. The raw error and stack trace are the lesson.
+        for (long i = 0; i < items; i++) {
+            String key = "record-" + i;
+            byte[] payload = new byte[payloadBytes];
+            payload[0] = (byte) (i & 0xFF); // touch it so it isn't optimized away
+            CACHE.put(key, payload);
+            if ((i + 1) % 5_000 == 0) {
+                System.out.println("cached " + (i + 1) + " records, map size: " + CACHE.size());
+            }
+        }
+        System.out.println("finished all " + items + " records without OOM"
+                + " (unexpected for the broken version — was the heap enlarged?)");
+    }
+
+    // ---------- CLI validation: bad input exits 2 with usage on stderr ----------
+
+    private static void usage(String problem) {
+        System.err.println("error: " + problem);
+        System.err.println("usage: UnboundedCache [--items N] [--payload-bytes N]");
+        System.err.println("  N must be a positive integer");
+        System.exit(2);
+    }
+
+    /** Parses args[i+1] as a positive long; exits 2 on missing/invalid/non-positive. */
+    private static long positiveLong(String[] args, int i, String name) {
+        if (i + 1 >= args.length) {
+            usage("missing value for " + name);
+        }
+        long v;
+        try {
+            v = Long.parseLong(args[i + 1]);
+        } catch (NumberFormatException e) {
+            usage("not a number for " + name + ": " + args[i + 1]);
+            throw new AssertionError("unreachable");
+        }
+        if (v <= 0) {
+            usage(name + " must be positive, got " + v);
+        }
+        return v;
+    }
+
+    /** Parses args[i+1] as a positive int; exits 2 on missing/invalid/non-positive. */
+    private static int positiveInt(String[] args, int i, String name) {
+        if (i + 1 >= args.length) {
+            usage("missing value for " + name);
+        }
+        int v;
+        try {
+            v = Integer.parseInt(args[i + 1]);
+        } catch (NumberFormatException e) {
+            usage("not a number for " + name + ": " + args[i + 1]);
+            throw new AssertionError("unreachable");
+        }
+        if (v <= 0) {
+            usage(name + " must be positive, got " + v);
+        }
+        return v;
+    }
+}

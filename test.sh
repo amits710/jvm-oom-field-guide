@@ -18,6 +18,22 @@ export OOMFG_TEST=1
 PASS=0; FAIL=0
 TMPBASE="$(mktemp -d "${TMPDIR:-/tmp}/oomfg-test.XXXXXX")"
 cleanup() {
+  if [ "${OOMFG_KEEP_ARTIFACTS:-0}" = "1" ]; then
+    # CI mode: copy GC logs and test outputs where the workflow uploads them.
+    rm -rf "$ROOT/test-artifacts"
+    mkdir -p "$ROOT/test-artifacts"
+    for d in "$TMPBASE"/*/; do
+      label="$(basename "$d")"
+      mkdir -p "$ROOT/test-artifacts/$label"
+      for log in gc.log stdout.log stderr.log javac.log; do
+        [ -f "$d/$log" ] && cp "$d/$log" "$ROOT/test-artifacts/$label/"
+      done
+    done
+    # Also keep the special-case outputs (e.g. 03-report.bin).
+    for f in "$TMPBASE"/03-report.bin; do
+      [ -f "$f" ] && cp "$f" "$ROOT/test-artifacts/"
+    done
+  fi
   if [ "$FAIL" -eq 0 ]; then
     rm -rf "$TMPBASE"
   else

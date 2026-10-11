@@ -25,7 +25,7 @@ jobs:
           distribution: temurin
           java-version: ${{ matrix.java }}
       - name: run test suite
-        run: ./test.sh
+        run: chmod +x test.sh run.sh common.sh scenario-*/broken/run.sh scenario-*/fixed/run.sh && ./test.sh
 
   test-jdk25:
     # Best effort: newest LTS/current line. Does not block merges.
@@ -40,4 +40,4 @@ jobs:
           distribution: temurin
           java-version: 25
       - name: run test suite
-        run: ./test.sh
+        run: chmod +x test.sh run.sh common.sh scenario-*/broken/run.sh scenario-*/fixed/run.sh && ./test.sh

@@ -1,1 +1,105 @@
-aW1wb3J0IGphdmEudXRpbC5BcnJheUxpc3Q7CmltcG9ydCBqYXZhLnV0aWwuTGlzdDsKaW1wb3J0IGphdmEudXRpbC5jb25jdXJyZW50LkV4ZWN1dG9yU2VydmljZTsKaW1wb3J0IGphdmEudXRpbC5jb25jdXJyZW50LkV4ZWN1dG9yczsKCi8qKgogKiBTQ0VOQVJJTyAwNCAoZml4ZWQpOiBncm93aW5nIFRocmVhZExvY2FsIHN0YXRlLCBjbGVhbmVkIHVwIHBlciB0YXNrLgogKgogKiBJZGVudGljYWwgd29ya2xvYWQgdG8gdGhlIGJyb2tlbiB2ZXJzaW9uIOKAlCBzYW1lIC0tcG9vbC1zaXplLCBzYW1lIC0tdGFza3MsCiAqIHNhbWUgLS1wYXlsb2FkLWJ5dGVzIOKAlCBidXQgZWFjaCB0YXNrIGNsZWFucyB1cCBhZnRlciBpdHNlbGYgaW4gYSBmaW5hbGx5CiAqIGJsb2NrOiBCVUZGRVIucmVtb3ZlKCkuIFRoZSB0aHJlYWQga2VlcHMgaXRzIHNsb3QgaW4gdGhlIHBvb2w7IHRoZQogKiBwZXItdGFzayBnYXJiYWdlIGlzIGVsaWdpYmxlIGZvciBjb2xsZWN0aW9uIHRoZSBtb21lbnQgdGhlIHRhc2sgZW5kcy4KICoKICogcmVtb3ZlKCkgKG5vdCBqdXN0IGNsZWFyKCkpIGlzIHRoZSBjYW5vbmljYWwgZml4OiBpdCBkcm9wcyB0aGUgZW50cnkgZnJvbQogKiB0aGUgdGhyZWFkJ3MgVGhyZWFkTG9jYWxNYXAgZW50aXJlbHksIHNvIG5laXRoZXIgdGhlIHZhbHVlIG5vciBhIHN0YWxlCiAqIGtleSBsaW5nZXJzLiBjbGVhcigpIHdvdWxkIGVtcHR5IHRoaXMgdGFzaydzIGxpc3QgYnV0IGxlYXZlIHRoZSBlbnRyeSDigJQKICogZmluZSBoZXJlLCBidXQgcmVtb3ZlKCkgaXMgdGhlIGhhYml0IHRoYXQgc3Vydml2ZXMgY29weS1wYXN0ZS4KICoKICogVGhlIHByaW5jaXBsZTogYSBUaHJlYWRMb2NhbCdzIGxpZmV0aW1lIG11c3QgbWF0Y2ggdGhlIHRhc2sncywgbm90IHRoZQogKiB0aHJlYWQncy4gSW4gcHJvZHVjdGlvbiB0aGlzIGlzIHRyeS9maW5hbGx5IGFyb3VuZCB0aGUgVGhyZWFkTG9jYWwgdXNlLCBhCiAqIHJlcXVlc3QgZmlsdGVyIHRoYXQgY2xlYW5zIHVwLCBvciDigJQgYmV0dGVyIOKAlCBub3QgdXNpbmcgVGhyZWFkTG9jYWwgZm9yCiAqIHJlcXVlc3Qtc2NvcGVkIGRhdGEgYXQgYWxsLgogKgogKiAgIC4vcnVuLnNoIFstLXBvb2wtc2l6ZSA0XSBbLS10YXNrcyAzMDAwXSBbLS1wYXlsb2FkLWJ5dGVzIDMyNzY4XQogKi8KcHVibGljIGNsYXNzIFRocmVhZExvY2FsTGVha0ZpeGVkIHsKCiAgICBwcml2YXRlIHN0YXRpYyBmaW5hbCBUaHJlYWRMb2NhbDxMaXN0PGJ5dGVbXT4+IEJVRkZFUiA9CiAgICAgICAgICAgIFRocmVhZExvY2FsLndpdGhJbml0aWFsKEFycmF5TGlzdDo6bmV3KTsKCiAgICBwdWJsaWMgc3RhdGljIHZvaWQgbWFpbihTdHJpbmdbXSBhcmdzKSB0aHJvd3MgRXhjZXB0aW9uIHsKICAgICAgICBpbnQgcG9vbFNpemUgPSA0OwogICAgICAgIGludCB0YXNrcyA9IDMwMDA7CiAgICAgICAgaW50IHBheWxvYWRCeXRlcyA9IDMyICogMTAyNDsgLy8gMzIgS0IgcGVyIHRhc2sKICAgICAgICBmb3IgKGludCBpID0gMDsgaSA8IGFyZ3MubGVuZ3RoOyBpKyspIHsKICAgICAgICAgICAgc3dpdGNoIChhcmdzW2ldKSB7CiAgICAgICAgICAgICAgICBjYXNlICItLXBvb2wtc2l6ZSI6CiAgICAgICAgICAgICAgICAgICAgcG9vbFNpemUgPSBwb3NpdGl2ZUludChhcmdzLCBpLCAiLS1wb29sLXNpemUiKTsKICAgICAgICAgICAgICAgICAgICBpKys7CiAgICAgICAgICAgICAgICAgICAgYnJlYWs7CiAgICAgICAgICAgICAgICBjYXNlICItLXRhc2tzIjoKICAgICAgICAgICAgICAgICAgICB0YXNrcyA9IHBvc2l0aXZlSW50KGFyZ3MsIGksICItLXRhc2tzIik7CiAgICAgICAgICAgICAgICAgICAgaSsrOwogICAgICAgICAgICAgICAgICAgIGJyZWFrOwogICAgICAgICAgICAgICAgY2FzZSAiLS1wYXlsb2FkLWJ5dGVzIjoKICAgICAgICAgICAgICAgICAgICBwYXlsb2FkQnl0ZXMgPSBwb3NpdGl2ZUludChhcmdzLCBpLCAiLS1wYXlsb2FkLWJ5dGVzIik7CiAgICAgICAgICAgICAgICAgICAgaSsrOwogICAgICAgICAgICAgICAgICAgIGJyZWFrOwogICAgICAgICAgICAgICAgZGVmYXVsdDoKICAgICAgICAgICAgICAgICAgICB1c2FnZSgidW5rbm93biBhcmd1bWVudDogIiArIGFyZ3NbaV0pOwogICAgICAgICAgICB9CiAgICAgICAgfQogICAgICAgIFN5c3RlbS5vdXQucHJpbnRsbigiU1RBUlRFRCBzY2VuYXJpby0wNC10aHJlYWRsb2NhbC1sZWFrKGZpeGVkKSBwb29sU2l6ZT0iICsgcG9vbFNpemUKICAgICAgICAgICAgICAgICsgIiB0YXNrcz0iICsgdGFza3MgKyAiIHBheWxvYWRCeXRlcz0iICsgcGF5bG9hZEJ5dGVzKTsKCiAgICAgICAgRXhlY3V0b3JTZXJ2aWNlIHBvb2wgPSBFeGVjdXRvcnMubmV3Rml4ZWRUaHJlYWRQb29sKHBvb2xTaXplKTsKICAgICAgICB0cnkgewogICAgICAgICAgICBmb3IgKGludCBpID0gMDsgaSA8IHRhc2tzOyBpKyspIHsKICAgICAgICAgICAgICAgIGZpbmFsIGludCBieXRlcyA9IHBheWxvYWRCeXRlczsKICAgICAgICAgICAgICAgIHBvb2wuc3VibWl0KCgpIC0+IHsKICAgICAgICAgICAgICAgICAgICB0cnkgewogICAgICAgICAgICAgICAgICAgICAgICBCVUZGRVIuZ2V0KCkuYWRkKG5ldyBieXRlW2J5dGVzXSk7CiAgICAgICAgICAgICAgICAgICAgICAgIC8vIC4uLiB0YXNrIGRvZXMgaXRzIHdvcmsgd2l0aCB0aGUgYnVmZmVyIC4uLgogICAgICAgICAgICAgICAgICAgIH0gZmluYWxseSB7CiAgICAgICAgICAgICAgICAgICAgICAgIEJVRkZFUi5yZW1vdmUoKTsgLy8gdGhlIHRhc2sgZW5kczsgaXRzIGdhcmJhZ2UgbWF5IGdvCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfSkuZ2V0KCk7CiAgICAgICAgICAgICAgICBpZiAoKGkgKyAxKSAlIDUwMCA9PSAwKSB7CiAgICAgICAgICAgICAgICAgICAgU3lzdGVtLm91dC5wcmludGxuKCJjb21wbGV0ZWQgIiArIChpICsgMSkgKyAiIHRhc2tzLi4uIik7CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgU3lzdGVtLm91dC5wcmludGxuKCJDT01QTEVURUQgdGFza3M9IiArIHRhc2tzCiAgICAgICAgICAgICAgICAgICAgKyAiIHBvb2xTaXplPSIgKyBwb29sU2l6ZSArICIgcGF5bG9hZEJ5dGVzPSIgKyBwYXlsb2FkQnl0ZXMpOwogICAgICAgIH0gZmluYWxseSB7CiAgICAgICAgICAgIHBvb2wuc2h1dGRvd25Ob3coKTsKICAgICAgICB9CiAgICB9CgogICAgLy8gLS0tLS0tLS0tLSBDTEkgdmFsaWRhdGlvbjogYmFkIGlucHV0IGV4aXRzIDIgd2l0aCB1c2FnZSBvbiBzdGRlcnIgLS0tLS0tLS0tLQoKICAgIHByaXZhdGUgc3RhdGljIHZvaWQgdXNhZ2UoU3RyaW5nIHByb2JsZW0pIHsKICAgICAgICBTeXN0ZW0uZXJyLnByaW50bG4oImVycm9yOiAiICsgcHJvYmxlbSk7CiAgICAgICAgU3lzdGVtLmVyci5wcmludGxuKCJ1c2FnZTogVGhyZWFkTG9jYWxMZWFrRml4ZWQgWy0tcG9vbC1zaXplIE5dIFstLXRhc2tzIE5dIFstLXBheWxvYWQtYnl0ZXMgTl0iKTsKICAgICAgICBTeXN0ZW0uZXJyLnByaW50bG4oIiAgTiBtdXN0IGJlIGEgcG9zaXRpdmUgaW50ZWdlciIpOwogICAgICAgIFN5c3RlbS5leGl0KDIpOwogICAgfQoKICAgIC8qKiBQYXJzZXMgYXJnc1tpKzFdIGFzIGEgcG9zaXRpdmUgaW50OyBleGl0cyAyIG9uIG1pc3NpbmcvaW52YWxpZC9ub24tcG9zaXRpdmUuICovCiAgICBwcml2YXRlIHN0YXRpYyBpbnQgcG9zaXRpdmVJbnQoU3RyaW5nW10gYXJncywgaW50IGksIFN0cmluZyBuYW1lKSB7CiAgICAgICAgaWYgKGkgKyAxID49IGFyZ3MubGVuZ3RoKSB7CiAgICAgICAgICAgIHVzYWdlKCJtaXNzaW5nIHZhbHVlIGZvciAiICsgbmFtZSk7CiAgICAgICAgfQogICAgICAgIGludCB2OwogICAgICAgIHRyeSB7CiAgICAgICAgICAgIHYgPSBJbnRlZ2VyLnBhcnNlSW50KGFyZ3NbaSArIDFdKTsKICAgICAgICB9IGNhdGNoIChOdW1iZXJGb3JtYXRFeGNlcHRpb24gZSkgewogICAgICAgICAgICB1c2FnZSgibm90IGEgbnVtYmVyIGZvciAiICsgbmFtZSArICI6ICIgKyBhcmdzW2kgKyAxXSk7CiAgICAgICAgICAgIHRocm93IG5ldyBBc3NlcnRpb25FcnJvcigidW5yZWFjaGFibGUiKTsKICAgICAgICB9CiAgICAgICAgaWYgKHYgPD0gMCkgewogICAgICAgICAgICB1c2FnZShuYW1lICsgIiBtdXN0IGJlIHBvc2l0aXZlLCBnb3QgIiArIHYpOwogICAgICAgIH0KICAgICAgICByZXR1cm4gdjsKICAgIH0KfQo=
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+/**
+ * SCENARIO 04 (fixed): growing ThreadLocal state, cleaned up per task.
+ *
+ * Identical workload to the broken version — same --pool-size, same --tasks,
+ * same --payload-bytes — but each task cleans up after itself in a finally
+ * block: BUFFER.remove(). The thread keeps its slot in the pool; the
+ * per-task garbage is eligible for collection the moment the task ends.
+ *
+ * remove() (not just clear()) is the canonical fix: it drops the entry from
+ * the thread's ThreadLocalMap entirely, so neither the value nor a stale
+ * key lingers. clear() would empty this task's list but leave the entry —
+ * fine here, but remove() is the habit that survives copy-paste.
+ *
+ * The principle: a ThreadLocal's lifetime must match the task's, not the
+ * thread's. In production this is try/finally around the ThreadLocal use, a
+ * request filter that cleans up, or — better — not using ThreadLocal for
+ * request-scoped data at all.
+ *
+ *   ./run.sh [--pool-size 4] [--tasks 3000] [--payload-bytes 32768]
+ */
+public class ThreadLocalLeakFixed {
+
+    private static final ThreadLocal<List<byte[]>> BUFFER =
+            ThreadLocal.withInitial(ArrayList::new);
+
+    public static void main(String[] args) throws Exception {
+        int poolSize = 4;
+        int tasks = 3000;
+        int payloadBytes = 32 * 1024; // 32 KB per task
+        for (int i = 0; i < args.length; i++) {
+            switch (args[i]) {
+                case "--pool-size":
+                    poolSize = positiveInt(args, i, "--pool-size");
+                    i++;
+                    break;
+                case "--tasks":
+                    tasks = positiveInt(args, i, "--tasks");
+                    i++;
+                    break;
+                case "--payload-bytes":
+                    payloadBytes = positiveInt(args, i, "--payload-bytes");
+                    i++;
+                    break;
+                default:
+                    usage("unknown argument: " + args[i]);
+            }
+        }
+        System.out.println("STARTED scenario-04-threadlocal-leak(fixed) poolSize=" + poolSize
+                + " tasks=" + tasks + " payloadBytes=" + payloadBytes);
+
+        ExecutorService pool = Executors.newFixedThreadPool(poolSize);
+        try {
+            for (int i = 0; i < tasks; i++) {
+                final int bytes = payloadBytes;
+                pool.submit(() -> {
+                    try {
+                        BUFFER.get().add(new byte[bytes]);
+                        // ... task does its work with the buffer ...
+                    } finally {
+                        BUFFER.remove(); // the task ends; its garbage may go
+                    }
+                }).get();
+                if ((i + 1) % 500 == 0) {
+                    System.out.println("completed " + (i + 1) + " tasks...");
+                }
+            }
+            System.out.println("COMPLETED tasks=" + tasks
+                    + " poolSize=" + poolSize + " payloadBytes=" + payloadBytes);
+        } finally {
+            pool.shutdownNow();
+        }
+    }
+
+    // ---------- CLI validation: bad input exits 2 with usage on stderr ----------
+
+    private static void usage(String problem) {
+        System.err.println("error: " + problem);
+        System.err.println("usage: ThreadLocalLeakFixed [--pool-size N] [--tasks N] [--payload-bytes N]");
+        System.err.println("  N must be a positive integer");
+        System.exit(2);
+    }
+
+    /** Parses args[i+1] as a positive int; exits 2 on missing/invalid/non-positive. */
+    private static int positiveInt(String[] args, int i, String name) {
+        if (i + 1 >= args.length) {
+            usage("missing value for " + name);
+        }
+        int v;
+        try {
+            v = Integer.parseInt(args[i + 1]);
+        } catch (NumberFormatException e) {
+            usage("not a number for " + name + ": " + args[i + 1]);
+            throw new AssertionError("unreachable");
+        }
+        if (v <= 0) {
+            usage(name + " must be positive, got " + v);
+        }
+        return v;
+    }
+}

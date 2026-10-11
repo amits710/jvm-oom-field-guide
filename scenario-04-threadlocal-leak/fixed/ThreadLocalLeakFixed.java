@@ -2,15 +2,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 
 /**
- * SCENARIO 04 (fixed): the ThreadLocal leak, plugged.
+ * SCENARIO 04 (fixed): growing ThreadLocal state, cleaned up per task.
  *
- * Same workload as the broken version — 3,000 tasks on a 4-thread pool, 32 KB
- * per task — but each task cleans up after itself in a finally block:
- * BUFFER.remove(). The thread keeps its slot in the pool; the per-task
- * garbage is eligible for collection the moment the task ends.
+ * Identical workload to the broken version — same --pool-size, same --tasks,
+ * same --payload-bytes — but each task cleans up after itself in a finally
+ * block: BUFFER.remove(). The thread keeps its slot in the pool; the
+ * per-task garbage is eligible for collection the moment the task ends.
  *
  * remove() (not just clear()) is the canonical fix: it drops the entry from
  * the thread's ThreadLocalMap entirely, so neither the value nor a stale
@@ -22,38 +21,46 @@ import java.util.concurrent.Future;
  * request filter that cleans up, or — better — not using ThreadLocal for
  * request-scoped data at all.
  *
- *   javac ThreadLocalLeakFixed.java && java -Xmx64m ThreadLocalLeakFixed
+ *   ./run.sh [--pool-size 4] [--tasks 3000] [--payload-bytes 32768]
  */
 public class ThreadLocalLeakFixed {
 
     private static final ThreadLocal<List<byte[]>> BUFFER =
             ThreadLocal.withInitial(ArrayList::new);
 
-    private static final int POOL_SIZE = 4;
-    private static final int TASKS = 3_000;
-    private static final int PAYLOAD_BYTES = 32 * 1024; // 32 KB per task
-
     public static void main(String[] args) throws Exception {
-        ExecutorService pool = Executors.newFixedThreadPool(POOL_SIZE);
-        List<Future<?>> futures = new ArrayList<>(TASKS);
+        int poolSize = 4;
+        int tasks = 3000;
+        int payloadBytes = 32 * 1024; // 32 KB per task
+        for (int i = 0; i < args.length; i++) {
+            switch (args[i]) {
+                case "--pool-size":     poolSize     = Integer.parseInt(args[++i]); break;
+                case "--tasks":         tasks        = Integer.parseInt(args[++i]); break;
+                case "--payload-bytes": payloadBytes = Integer.parseInt(args[++i]); break;
+                default: throw new IllegalArgumentException("unknown arg: " + args[i]);
+            }
+        }
+        System.out.println("STARTED scenario-04-threadlocal-leak(fixed) poolSize=" + poolSize
+                + " tasks=" + tasks + " payloadBytes=" + payloadBytes);
+
+        ExecutorService pool = Executors.newFixedThreadPool(poolSize);
         try {
-            for (int i = 0; i < TASKS; i++) {
-                futures.add(pool.submit(() -> {
+            for (int i = 0; i < tasks; i++) {
+                final int bytes = payloadBytes;
+                pool.submit(() -> {
                     try {
-                        BUFFER.get().add(new byte[PAYLOAD_BYTES]);
+                        BUFFER.get().add(new byte[bytes]);
                         // ... task does its work with the buffer ...
                     } finally {
                         BUFFER.remove(); // the task ends; its garbage may go
                     }
-                }));
+                }).get();
                 if ((i + 1) % 500 == 0) {
-                    System.out.println("submitted " + (i + 1) + " tasks...");
+                    System.out.println("completed " + (i + 1) + " tasks...");
                 }
             }
-            for (Future<?> f : futures) {
-                f.get();
-            }
-            System.out.println("all " + TASKS + " tasks done, heap survived.");
+            System.out.println("COMPLETED tasks=" + tasks
+                    + " poolSize=" + poolSize + " payloadBytes=" + payloadBytes);
         } finally {
             pool.shutdownNow();
         }

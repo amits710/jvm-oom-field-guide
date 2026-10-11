@@ -1,7 +1,1 @@
-#!/bin/sh
-# Runs the fixed version of scenario 02 via the shared root runner, so the JVM flags (-Xms/-Xmx,
-# collector, GC logging) are identical to the other version's.
-# Program arguments are passed through, e.g.: ./run.sh --items 500000
-set -u
-cd "$(dirname "$0")"
-exec ../../run.sh scenario-02-oversized-batch fixed "$@"
+IyEvYmluL3NoCiMgUnVucyB0aGUgZml4ZWQgdmVyc2lvbiBvZiBzY2VuYXJpbyAwMiB2aWEgdGhlIHNoYXJlZCByb290IHJ1bm5lciwgc28gdGhlIEpWTSBmbGFncyAoLVhtcy8tWG14LAojIGNvbGxlY3RvciwgR0MgbG9nZ2luZykgYXJlIGlkZW50aWNhbCB0byB0aGUgb3RoZXIgdmVyc2lvbidzLgojIFByb2dyYW0gYXJndW1lbnRzIGFyZSBwYXNzZWQgdGhyb3VnaCwgZS5nLjogLi9ydW4uc2ggLS1iYXRjaC1zaXplIDEwMDAwMDAKIyBXaXRoIG5vIGFyZ3VtZW50cywgdXNlcyAtLWJhdGNoLXNpemUgNTAwMDAwIChzYW1lIHdvcmtsb2FkIGFzIHRoZSBicm9rZW4KIyB2ZXJzaW9uJ3MgZGVmYXVsdDsgY2h1bmtpbmcgaGFuZGxlcyBpdCBmaW5lKS4Kc2V0IC11CmNkICIkKGRpcm5hbWUgIiQwIikiCmlmIFsgJCMgLWVxIDAgXTsgdGhlbgogIHNldCAtLSAtLWJhdGNoLXNpemUgNTAwMDAwCmZpCmV4ZWMgLi4vLi4vcnVuLnNoIHNjZW5hcmlvLTAyLW92ZXJzaXplZC1iYXRjaCBmaXhlZCAiJEAiCg==

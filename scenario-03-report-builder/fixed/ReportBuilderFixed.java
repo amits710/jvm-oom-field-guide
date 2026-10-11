@@ -1,1 +1,123 @@
-aW1wb3J0IGphdmEuaW8uQnVmZmVyZWRPdXRwdXRTdHJlYW07CmltcG9ydCBqYXZhLmlvLklPRXhjZXB0aW9uOwppbXBvcnQgamF2YS5pby5PdXRwdXRTdHJlYW07CmltcG9ydCBqYXZhLm5pby5maWxlLkZpbGVzOwppbXBvcnQgamF2YS5uaW8uZmlsZS5QYXRoOwppbXBvcnQgamF2YS5uaW8uZmlsZS5QYXRoczsKaW1wb3J0IGphdmEudXRpbC56aXAuQ1JDMzI7CgovKioKICogU0NFTkFSSU8gMDMgKGZpeGVkKTogdGhlIHJlcG9ydC1idWlsZGVyLCBzcGlsbGluZyB0byBkaXNrLgogKgogKiBJZGVudGljYWwgd29ya2xvYWQgdG8gdGhlIGJyb2tlbiB2ZXJzaW9uIOKAlCBzYW1lIC0taXRlbXMsIHNhbWUKICogLS1pbnB1dC1ieXRlcywgc2FtZSAtLXN1bW1hcnktYnl0ZXMsIGFuZCBieXRlLWZvci1ieXRlIGlkZW50aWNhbCBzdW1tYXJpZXMKICogKHNhbWUgc2hhcmVkIFN1bW1hcnlDb2RlYykg4oCUIGJ1dCBlYWNoIHN1bW1hcnkgaXMgc3RyZWFtZWQgdG8gYSBmaWxlCiAqIGluY3JlbWVudGFsbHkgaW5zdGVhZCBvZiBiZWluZyByZXRhaW5lZCBpbiBtZW1vcnkuIExpdmUgaGVhcCBzdGF5cyBmbGF0CiAqIHJlZ2FyZGxlc3Mgb2YgaG93IG1hbnkgcmVjb3JkcyBhcnJpdmU7IHRoZSBmaWxlIGhvbGRzIHRoZSByZXBvcnQuCiAqCiAqIFRoaXMgaXMgdGhlIGhvbmVzdCBmaXggZm9yIGFuIHVuYm91bmRlZCByZXBvcnQ6IGRvbid0IGJvdW5kIHRoZSByZXBvcnQsCiAqIHJlbW92ZSB0aGUgbmVlZCB0byBob2xkIGl0LiBJbiBwcm9kdWN0aW9uIHRoaXMgaXMgYSBzdHJlYW1pbmcgd3JpdGVyLCBhbgogKiBhcHBlbmQtb25seSBmaWxlLCBvciBhIGRhdGFiYXNlIHNpbmsg4oCUIGFueXRoaW5nIHdoZXJlICJ0aGUgcmVwb3J0IiBsaXZlcwogKiBzb21ld2hlcmUgY2hlYXBlciB0aGFuIHRoZSBoZWFwLgogKgogKiBPbmUgcmVhbCBsaW1pdGF0aW9uLCBzdGF0ZWQgcGxhaW5seTogc3RyZWFtaW5nIHdvcmtzIHdoZW4gdGhlIG91dHB1dCBjYW4gYmUKICogZW1pdHRlZCBpbmNyZW1lbnRhbGx5LiBJZiB0aGUgZmluYWwgb3V0cHV0IHJlcXVpcmVzIGEgZ2xvYmFsIHNvcnQsCiAqIGRlZHVwbGljYXRpb24sIG9yIHJlb3JkZXJpbmcsIHRoZSBwcm9kdWN0aW9uIGZpeCBpcyBjaHVua2luZywgZXh0ZXJuYWwKICogc29ydGluZywgc3BpbGwgZmlsZXMsIG9yIHBhcnRpdGlvbmVkIG1lcmdpbmcg4oCUIG5vdCBuYWl2ZSBzdHJlYW1pbmcuCiAqCiAqIFRoZSBvdXRwdXQgZmlsZSBpcyBsZWZ0IG9uIGRpc2sgKG5vdCBkZWxldGVkKSBzbyB5b3UgY2FuIGluc3BlY3QgaXQ7IHRoZQogKiBwcmludGVkIHJlY29yZCBjb3VudCwgYnl0ZSBjb3VudCwgYW5kIENSQzMyIGxldCB5b3UgdmVyaWZ5IGl0IGlzIGNvbXBsZXRlLgogKgogKiAgIC4vcnVuLnNoIFstLWl0ZW1zIDMwMDAwMF0gWy0taW5wdXQtYnl0ZXMgMTAyNF0gWy0tc3VtbWFyeS1ieXRlcyAxMDI0XSBbLS1vdXRwdXQgcmVwb3J0LmJpbl0KICovCnB1YmxpYyBjbGFzcyBSZXBvcnRCdWlsZGVyRml4ZWQgewoKICAgIHB1YmxpYyBzdGF0aWMgdm9pZCBtYWluKFN0cmluZ1tdIGFyZ3MpIHRocm93cyBJT0V4Y2VwdGlvbiB7CiAgICAgICAgaW50IGl0ZW1zID0gMzAwXzAwMDsKICAgICAgICBpbnQgaW5wdXRCeXRlcyA9IDEwMjQ7CiAgICAgICAgaW50IHN1bW1hcnlCeXRlcyA9IDEwMjQ7CiAgICAgICAgU3RyaW5nIG91dHB1dEFyZyA9IG51bGw7CiAgICAgICAgZm9yIChpbnQgaSA9IDA7IGkgPCBhcmdzLmxlbmd0aDsgaSsrKSB7CiAgICAgICAgICAgIHN3aXRjaCAoYXJnc1tpXSkgewogICAgICAgICAgICAgICAgY2FzZSAiLS1pdGVtcyI6CiAgICAgICAgICAgICAgICAgICAgaXRlbXMgPSBwb3NpdGl2ZUludChhcmdzLCBpLCAiLS1pdGVtcyIpOwogICAgICAgICAgICAgICAgICAgIGkrKzsKICAgICAgICAgICAgICAgICAgICBicmVhazsKICAgICAgICAgICAgICAgIGNhc2UgIi0taW5wdXQtYnl0ZXMiOgogICAgICAgICAgICAgICAgICAgIGlucHV0Qnl0ZXMgPSBwb3NpdGl2ZUludChhcmdzLCBpLCAiLS1pbnB1dC1ieXRlcyIpOwogICAgICAgICAgICAgICAgICAgIGkrKzsKICAgICAgICAgICAgICAgICAgICBicmVhazsKICAgICAgICAgICAgICAgIGNhc2UgIi0tc3VtbWFyeS1ieXRlcyI6CiAgICAgICAgICAgICAgICAgICAgc3VtbWFyeUJ5dGVzID0gcG9zaXRpdmVJbnQoYXJncywgaSwgIi0tc3VtbWFyeS1ieXRlcyIpOwogICAgICAgICAgICAgICAgICAgIGkrKzsKICAgICAgICAgICAgICAgICAgICBicmVhazsKICAgICAgICAgICAgICAgIGNhc2UgIi0tb3V0cHV0IjoKICAgICAgICAgICAgICAgICAgICBpZiAoaSArIDEgPj0gYXJncy5sZW5ndGgpIHsKICAgICAgICAgICAgICAgICAgICAgICAgdXNhZ2UoIm1pc3NpbmcgdmFsdWUgZm9yIC0tb3V0cHV0Iik7CiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgIG91dHB1dEFyZyA9IGFyZ3NbKytpXTsKICAgICAgICAgICAgICAgICAgICBicmVhazsKICAgICAgICAgICAgICAgIGRlZmF1bHQ6CiAgICAgICAgICAgICAgICAgICAgdXNhZ2UoInVua25vd24gYXJndW1lbnQ6ICIgKyBhcmdzW2ldKTsKICAgICAgICAgICAgfQogICAgICAgIH0KICAgICAgICBQYXRoIG91dCA9IChvdXRwdXRBcmcgIT0gbnVsbCkgPyBQYXRocy5nZXQob3V0cHV0QXJnKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA6IEZpbGVzLmNyZWF0ZVRlbXBGaWxlKCJyZXBvcnQtIiwgIi5iaW4iKTsKICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oIlNUQVJURUQgc2NlbmFyaW8tMDMtcmVwb3J0LWJ1aWxkZXIoZml4ZWQpIGl0ZW1zPSIgKyBpdGVtcwogICAgICAgICAgICAgICAgKyAiIGlucHV0Qnl0ZXM9IiArIGlucHV0Qnl0ZXMgKyAiIHN1bW1hcnlCeXRlcz0iICsgc3VtbWFyeUJ5dGVzCiAgICAgICAgICAgICAgICArICIgb3V0cHV0PSIgKyBvdXQudG9BYnNvbHV0ZVBhdGgoKSk7CgogICAgICAgIENSQzMyIGNyYyA9IG5ldyBDUkMzMigpOwogICAgICAgIGxvbmcgdG90YWxCeXRlcyA9IDA7CiAgICAgICAgaW50IGNvdW50ID0gMDsKICAgICAgICB0cnkgKE91dHB1dFN0cmVhbSB3ID0gbmV3IEJ1ZmZlcmVkT3V0cHV0U3RyZWFtKEZpbGVzLm5ld091dHB1dFN0cmVhbShvdXQpKSkgewogICAgICAgICAgICBmb3IgKGludCBpID0gMDsgaSA8IGl0ZW1zOyBpKyspIHsKICAgICAgICAgICAgICAgIC8vIElucHV0IHNpZGU6IGJvdW5kZWQsIHNhbWUgYXMgdGhlIGJyb2tlbiB2ZXJzaW9uLgogICAgICAgICAgICAgICAgYnl0ZVtdIGlucHV0ID0gbmV3IGJ5dGVbaW5wdXRCeXRlc107CiAgICAgICAgICAgICAgICBpbnB1dFswXSA9IChieXRlKSAoaSAmIDB4RkYpOwoKICAgICAgICAgICAgICAgIC8vIElkZW50aWNhbCBzdW1tYXJ5IGJ5dGVzIHRvIHRoZSBicm9rZW4gdmVyc2lvbiAoc2hhcmVkCiAgICAgICAgICAgICAgICAvLyBjb2RlYykg4oCUIHN0cmVhbWVkIG91dCBhbmQgcmVsZWFzZWQgaW5zdGVhZCBvZiByZXRhaW5lZC4KICAgICAgICAgICAgICAgIGJ5dGVbXSBzdW1tYXJ5ID0gU3VtbWFyeUNvZGVjLm1ha2VTdW1tYXJ5KGksIGlucHV0WzBdLCBzdW1tYXJ5Qnl0ZXMpOwogICAgICAgICAgICAgICAgdy53cml0ZShzdW1tYXJ5KTsKICAgICAgICAgICAgICAgIGNyYy51cGRhdGUoc3VtbWFyeSk7CiAgICAgICAgICAgICAgICB0b3RhbEJ5dGVzICs9IHN1bW1hcnkubGVuZ3RoOwogICAgICAgICAgICAgICAgY291bnQrKzsKICAgICAgICAgICAgICAgIGlmIChjb3VudCAlIDIwXzAwMCA9PSAwKSB7CiAgICAgICAgICAgICAgICAgICAgU3lzdGVtLm91dC5wcmludGxuKCJwcm9jZXNzZWQgIiArIGNvdW50ICsgIiByZWNvcmRzIik7CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICAgICAgU3lzdGVtLm91dC5wcmludGxuKCJDT01QTEVURUQgcmVjb3Jkcz0iICsgY291bnQKICAgICAgICAgICAgICAgICsgIiBieXRlcz0iICsgdG90YWxCeXRlcwogICAgICAgICAgICAgICAgKyAiIGNyYzMyPSIgKyBjcmMuZ2V0VmFsdWUoKQogICAgICAgICAgICAgICAgKyAiIG91dHB1dD0iICsgb3V0LnRvQWJzb2x1dGVQYXRoKCkpOwogICAgfQoKICAgIC8vIC0tLS0tLS0tLS0gQ0xJIHZhbGlkYXRpb246IGJhZCBpbnB1dCBleGl0cyAyIHdpdGggdXNhZ2Ugb24gc3RkZXJyIC0tLS0tLS0tLS0KCiAgICBwcml2YXRlIHN0YXRpYyB2b2lkIHVzYWdlKFN0cmluZyBwcm9ibGVtKSB7CiAgICAgICAgU3lzdGVtLmVyci5wcmludGxuKCJlcnJvcjogIiArIHByb2JsZW0pOwogICAgICAgIFN5c3RlbS5lcnIucHJpbnRsbigidXNhZ2U6IFJlcG9ydEJ1aWxkZXJGaXhlZCBbLS1pdGVtcyBOXSBbLS1pbnB1dC1ieXRlcyBOXSBbLS1zdW1tYXJ5LWJ5dGVzIE5dIFstLW91dHB1dCBQQVRIXSIpOwogICAgICAgIFN5c3RlbS5lcnIucHJpbnRsbigiICBOIG11c3QgYmUgYSBwb3NpdGl2ZSBpbnRlZ2VyIik7CiAgICAgICAgU3lzdGVtLmV4aXQoMik7CiAgICB9CgogICAgLyoqIFBhcnNlcyBhcmdzW2krMV0gYXMgYSBwb3NpdGl2ZSBpbnQ7IGV4aXRzIDIgb24gbWlzc2luZy9pbnZhbGlkL25vbi1wb3NpdGl2ZS4gKi8KICAgIHByaXZhdGUgc3RhdGljIGludCBwb3NpdGl2ZUludChTdHJpbmdbXSBhcmdzLCBpbnQgaSwgU3RyaW5nIG5hbWUpIHsKICAgICAgICBpZiAoaSArIDEgPj0gYXJncy5sZW5ndGgpIHsKICAgICAgICAgICAgdXNhZ2UoIm1pc3NpbmcgdmFsdWUgZm9yICIgKyBuYW1lKTsKICAgICAgICB9CiAgICAgICAgaW50IHY7CiAgICAgICAgdHJ5IHsKICAgICAgICAgICAgdiA9IEludGVnZXIucGFyc2VJbnQoYXJnc1tpICsgMV0pOwogICAgICAgIH0gY2F0Y2ggKE51bWJlckZvcm1hdEV4Y2VwdGlvbiBlKSB7CiAgICAgICAgICAgIHVzYWdlKCJub3QgYSBudW1iZXIgZm9yICIgKyBuYW1lICsgIjogIiArIGFyZ3NbaSArIDFdKTsKICAgICAgICAgICAgdGhyb3cgbmV3IEFzc2VydGlvbkVycm9yKCJ1bnJlYWNoYWJsZSIpOwogICAgICAgIH0KICAgICAgICBpZiAodiA8PSAwKSB7CiAgICAgICAgICAgIHVzYWdlKG5hbWUgKyAiIG11c3QgYmUgcG9zaXRpdmUsIGdvdCAiICsgdik7CiAgICAgICAgfQogICAgICAgIHJldHVybiB2OwogICAgfQp9Cg==
+import java.io.BufferedOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.zip.CRC32;
+
+/**
+ * SCENARIO 03 (fixed): the report-builder, spilling to disk.
+ *
+ * Identical workload to the broken version — same --items, same
+ * --input-bytes, same --summary-bytes, and byte-for-byte identical summaries
+ * (same shared SummaryCodec) — but each summary is streamed to a file
+ * incrementally instead of being retained in memory. Live heap stays flat
+ * regardless of how many records arrive; the file holds the report.
+ *
+ * This is the honest fix for an unbounded report: don't bound the report,
+ * remove the need to hold it. In production this is a streaming writer, an
+ * append-only file, or a database sink — anything where "the report" lives
+ * somewhere cheaper than the heap.
+ *
+ * One real limitation, stated plainly: streaming works when the output can be
+ * emitted incrementally. If the final output requires a global sort,
+ * deduplication, or reordering, the production fix is chunking, external
+ * sorting, spill files, or partitioned merging — not naive streaming.
+ *
+ * The output file is left on disk (not deleted) so you can inspect it; the
+ * printed record count, byte count, and CRC32 let you verify it is complete.
+ *
+ *   ./run.sh [--items 300000] [--input-bytes 1024] [--summary-bytes 1024] [--output report.bin]
+ */
+public class ReportBuilderFixed {
+
+    public static void main(String[] args) throws IOException {
+        int items = 300_000;
+        int inputBytes = 1024;
+        int summaryBytes = 1024;
+        String outputArg = null;
+        for (int i = 0; i < args.length; i++) {
+            switch (args[i]) {
+                case "--items":
+                    items = positiveInt(args, i, "--items");
+                    i++;
+                    break;
+                case "--input-bytes":
+                    inputBytes = positiveInt(args, i, "--input-bytes");
+                    i++;
+                    break;
+                case "--summary-bytes":
+                    summaryBytes = positiveInt(args, i, "--summary-bytes");
+                    i++;
+                    break;
+                case "--output":
+                    if (i + 1 >= args.length) {
+                        usage("missing value for --output");
+                    }
+                    outputArg = args[++i];
+                    break;
+                default:
+                    usage("unknown argument: " + args[i]);
+            }
+        }
+        Path out = (outputArg != null) ? Paths.get(outputArg)
+                                       : Files.createTempFile("report-", ".bin");
+        System.out.println("STARTED scenario-03-report-builder(fixed) items=" + items
+                + " inputBytes=" + inputBytes + " summaryBytes=" + summaryBytes
+                + " output=" + out.toAbsolutePath());
+
+        CRC32 crc = new CRC32();
+        long totalBytes = 0;
+        int count = 0;
+        try (OutputStream w = new BufferedOutputStream(Files.newOutputStream(out))) {
+            for (int i = 0; i < items; i++) {
+                // Input side: bounded, same as the broken version.
+                byte[] input = new byte[inputBytes];
+                input[0] = (byte) (i & 0xFF);
+
+                // Identical summary bytes to the broken version (shared
+                // codec) — streamed out and released instead of retained.
+                byte[] summary = SummaryCodec.makeSummary(i, input[0], summaryBytes);
+                w.write(summary);
+                crc.update(summary);
+                totalBytes += summary.length;
+                count++;
+                if (count % 20_000 == 0) {
+                    System.out.println("processed " + count + " records");
+                }
+            }
+        }
+        System.out.println("COMPLETED records=" + count
+                + " bytes=" + totalBytes
+                + " crc32=" + crc.getValue()
+                + " output=" + out.toAbsolutePath());
+    }
+
+    // ---------- CLI validation: bad input exits 2 with usage on stderr ----------
+
+    private static void usage(String problem) {
+        System.err.println("error: " + problem);
+        System.err.println("usage: ReportBuilderFixed [--items N] [--input-bytes N] [--summary-bytes N] [--output PATH]");
+        System.err.println("  N must be a positive integer");
+        System.exit(2);
+    }
+
+    /** Parses args[i+1] as a positive int; exits 2 on missing/invalid/non-positive. */
+    private static int positiveInt(String[] args, int i, String name) {
+        if (i + 1 >= args.length) {
+            usage("missing value for " + name);
+        }
+        int v;
+        try {
+            v = Integer.parseInt(args[i + 1]);
+        } catch (NumberFormatException e) {
+            usage("not a number for " + name + ": " + args[i + 1]);
+            throw new AssertionError("unreachable");
+        }
+        if (v <= 0) {
+            usage(name + " must be positive, got " + v);
+        }
+        return v;
+    }
+}

@@ -33,7 +33,7 @@ Read it like this:
   production you will see both; the staircase is what matters, not which
   message ends it.
 - The program printed `processed 40000 records` and died at 40K of 300K. The
-  input side was fine — bounded chunks, released each iteration. The killer
+  input side was fine — bounded per-record input, released each iteration. The killer
   was the 40,000 summaries sitting in the report list.
 
 ## Staircase vs. staircase: 01 vs. 03 (and the 02 cliff)
@@ -58,7 +58,7 @@ the leak" and the staircase is back, look at the output side.
 ## Heap-dump clues
 
 Take a heap dump on OOM (`-XX:+HeapDumpOnOutOfMemoryError`) and open it in
-Eclipse MAT or JDK Mission Control:
+Eclipse Memory Analyzer or VisualVM:
 
 - **Dominator tree:** one `ArrayList` of summaries dominates — same as 01 and
   02 at this level. The dominator tree alone can't tell the three apart.

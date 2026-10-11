@@ -1,10 +1,17 @@
 # Scenario 01 — Diagnosis: the unbounded in-memory cache
 
+> [Back to the field guide root](../../README.md)
+
 ## The GC log signature
 
-Run the broken version (`./run.sh` enables GC logging to `gc.log`) and you'll
-see the classic retention signature. Old-gen occupancy climbs monotonically;
-repeated full GCs reclaim very little, leaving the heap close to capacity:
+Run the broken version (`./run.sh` enables GC logging to
+`scenario-01-unbounded-cache-broken-gc.log`) and you'll see the classic
+retention signature. Old-gen occupancy climbs monotonically; repeated full
+GCs reclaim very little, leaving the heap close to capacity.
+
+Representative output from OpenJDK 21 with Parallel GC on Linux. Exact GC
+lines and OutOfMemoryError detail messages can differ by JDK, collector, and
+operating system.
 
 ```
 [0.412s][info][gc] GC(4) Pause Full (Allocation Failure) 61M->58M(64M) 38.204ms
@@ -20,7 +27,11 @@ Read it like this:
   and the collection reclaimed only 3 MB.
 - `Pause Full (Allocation Failure)` repeating back-to-back means the collector
   is desperately trying to make room and finding almost nothing to collect.
-  Healthy pressure looks different: full GCs that actually drop occupancy.
+  Judge health by the trend, not one line: post-GC occupancy should return
+  to a stable baseline, allocation throughput should stay sustainable, and
+  the application should not spend an increasing fraction of time collecting
+  garbage. A collector that repeatedly full-GCs and briefly drops occupancy
+  can still be in severe trouble.
 - The run ends with `java.lang.OutOfMemoryError: Java heap space` (not
   `GC overhead limit exceeded` — that one is HotSpot's safeguard: ~98% of time
   in GC recovering <2% of heap over consecutive collections).
@@ -41,9 +52,12 @@ You won't have a loop printing "map size" in production. What you will have:
    comparable workload intervals, something is accumulating.
 2. **Full GCs free almost nothing.** If your GC logs show reclaimed bytes
    shrinking toward zero while frequency climbs, that's retention, not churn.
-3. **Restarts "fix" it temporarily.** The most damning symptom: the pipeline
-   runs fine for hours or days after a restart, then degrades again. A leak's
-   clock resets on restart; a sizing problem does not.
+3. **Restarts buy time — but that is a clue, not a diagnosis.** The pipeline
+   runs fine for hours or days after a restart, then degrades again. A
+   repeatable post-restart growth curve suggests cumulative retention or
+   unbounded state. Confirm it using the post-GC live-set trend and paths
+   to GC roots — a restart alone cannot tell a leak from an undersized heap
+   fed by steady input.
 4. **Latency degrades before death.** As the heap fills, GC pauses lengthen.
    You'll often see timeouts and backpressure *before* the OOM — the OOM is
    just the final symptom.
@@ -60,9 +74,11 @@ Eclipse MAT or JDK Mission Control:
   *exclude weak/soft references*. A short path through a `static` field is
   the tell: the map is reachable forever by design, and nothing ever removes
   entries.
-- **Histogram:** compare with a dump from startup. The classes whose instance
-  counts grew 100x are your leak's payload — here, `byte[]` and `String`
-  (the keys).
+- **Histogram:** compare with a dump from startup. Repeated histograms can
+  show which object populations continue to grow. Use a heap dump or JFR
+  old-object analysis to determine why those objects remain reachable — a
+  histogram shows instance counts, not object age. Here the growing
+  populations are `byte[]` and `String` (the keys).
 
 ## The 2-minute triage checklist
 
@@ -75,8 +91,10 @@ When a pipeline OOMs and you suspect accumulation:
 - [ ] **Do full GCs reclaim ~nothing?** Repeated full GCs that free very
       little indicate most of the occupied heap is live or otherwise
       unreclaimed — retention, whatever the cause.
-- [ ] **Does a restart buy hours/days?** Yes suggests accumulation that resets
-      on restart; a pure sizing problem behaves the same from a cold start.
+- [ ] **Does a restart buy hours/days?** A repeatable post-restart growth
+      curve suggests cumulative retention or unbounded state — but confirm
+      with the post-GC live-set trend and paths to GC roots before calling
+      it a leak.
 - [ ] **Heap dump → dominator tree → top retainer.** What's holding it?
       Correlate with workload volume before deciding: fix retention or add
       memory.
@@ -88,9 +106,12 @@ When a pipeline OOMs and you suspect accumulation:
 
 ## The fix (what `fixed/` demonstrates)
 
-`LinkedHashMap` in access order with `removeEldestEntry` gives LRU eviction
-with no dependencies; the same 200k-record workload that killed the broken
-version runs clean under the same 64 MB heap. In production, use Caffeine
-(size + TTL + stats) rather than hand-rolling — but the principle is
-identical: **every cache needs an eviction policy, or it's just a leak with
-a nicer name.**
+A bounded cache: the same insertion-order map, but `removeEldestEntry` caps
+it at 1,000 entries, so the identical million-record workload runs clean
+under the same 64 MB heap. Note this is *bounded eviction*, not LRU — keys
+are never revisited in this workload, so LRU behavior would be unobservable.
+The hand-rolled map is also not thread-safe; production caches need
+concurrency control, metrics, and usually weight-based bounds. In
+production, use Caffeine (size + TTL + stats) rather than hand-rolling — but
+the principle is identical: **every cache needs an eviction policy, or it's
+just a leak with a nicer name.**

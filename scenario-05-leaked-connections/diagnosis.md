@@ -24,7 +24,8 @@ Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
 Read it like this:
 
 - The post-GC floor climbs: **15M → 30M → 46M → 58M → 58M**. Each collection
-  reclaims nothing — every byte on the heap is live, held by connections
+  reclaims nothing visible at the log's displayed resolution — almost all
+  occupied heap remained reachable or otherwise unreclaimed, held by connections
   that will never be closed.
 - The program printed `opened 200 connections` as its last progress line (every
   50 connections) before dying between the 200 and 250 mark. The heap
@@ -52,7 +53,7 @@ objects), suspect the lifecycle, not the cache.
 ## Heap-dump clues
 
 Take a heap dump on OOM (`-XX:+HeapDumpOnOutOfMemoryError`) and open it in
-Eclipse MAT or JDK Mission Control:
+Eclipse Memory Analyzer or VisualVM:
 
 - **Histogram:** `LeakedConnections$Connection` instances number in the
   hundreds, each retaining ~256 KB — and the count matches the units of work
@@ -111,8 +112,10 @@ When a pipeline OOMs and you suspect a resource leak:
       before the OOM corroborates the lifecycle story.
 - [ ] **Fix = close the resource, then drop the reference.** try-with-resources
       (or close in finally) *plus* deregistration from any tracking
-      collection. Closing without deregistering still leaks. Then verify the
-      open-count metric goes flat under load before shipping.
+      collection. Closing the connection releases its external resource, but
+      leaving it registered still retains the Java object and anything reachable
+      through it. Then verify the open-count metric goes flat under load before
+      shipping.
 
 ## The fix (what `fixed/` demonstrates)
 

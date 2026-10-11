@@ -12,6 +12,12 @@
 set -u
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"
+case "$ROOT" in
+  *[[:space:]]*)
+    echo "error: repository path contains whitespace: $ROOT" >&2
+    echo "the test suite builds JVM flags by word splitting; move the repo to a path without spaces" >&2
+    exit 2 ;;
+esac
 . "$ROOT/common.sh"
 export OOMFG_TEST=1
 
@@ -89,8 +95,11 @@ check_broken() { # $1=label $2=scenario-dir $3=class $4=start-marker [$5...=prog
   if ! compile_one "$dir" "$ROOT/$scenario/broken/$class.java" $(scenario_extra_src "$scenario"); then
     fail "$label (broken did not compile)"; sed 's/^/      /' "$dir/javac.log"; return
   fi
+  _flags="$(jvm_flags "$dir/gc.log")" || {
+    fail "$label (jvm_flags failed: unsupported collector or bad path)"; return
+  }
   # shellcheck disable=SC2086  # intentional splitting of TIMEOUT and flag list
-  $TIMEOUT java $(jvm_flags "$dir/gc.log") -cp "$dir/classes" "$class" "$@" \
+  $TIMEOUT java $_flags -cp "$dir/classes" "$class" "$@" \
     >"$dir/stdout.log" 2>"$dir/stderr.log"
   code=$?
   if [ "$code" -eq 0 ]; then
@@ -119,8 +128,11 @@ check_fixed() { # $1=label $2=scenario-dir $3=class $4=completion-grep [$5...=pr
   if ! compile_one "$dir" "$ROOT/$scenario/fixed/$class.java" $(scenario_extra_src "$scenario"); then
     fail "$label (fixed did not compile)"; sed 's/^/      /' "$dir/javac.log"; return
   fi
+  _flags="$(jvm_flags "$dir/gc.log")" || {
+    fail "$label (jvm_flags failed: unsupported collector or bad path)"; return
+  }
   # shellcheck disable=SC2086
-  $TIMEOUT java $(jvm_flags "$dir/gc.log") -cp "$dir/classes" "$class" "$@" \
+  $TIMEOUT java $_flags -cp "$dir/classes" "$class" "$@" \
     >"$dir/stdout.log" 2>"$dir/stderr.log"
   code=$?
   if grep -q "OutOfMemoryError" "$dir/stderr.log" "$dir/stdout.log" 2>/dev/null; then
@@ -202,6 +214,20 @@ check_cli_exit2 "cli-02-chunksize-zero" scenario-02-oversized-batch fixed  Overs
 check_cli_exit2 "cli-03-unknown-flag"   scenario-03-report-builder  broken ReportBuilder       --nope
 check_cli_exit2 "cli-04-negative"       scenario-04-threadlocal-leak broken ThreadLocalLeak    --tasks -5
 check_cli_exit2 "cli-05-overflow"       scenario-05-leaked-connections broken LeakedConnections --buffer-kb 3000000
+
+echo "================ runner validation checks ================"
+# An unknown collector must fail loudly, not silently run Parallel GC.
+if OOMFG_GC=ZGCC sh -c '. ./common.sh; jvm_flags /tmp/x.log' >/dev/null 2>&1; then
+  fail "runner-01-unknown-collector (jvm_flags accepted ZGCC)"
+else
+  pass "runner-01-unknown-collector (rejected with error)"
+fi
+# A gc-log path with whitespace must be rejected, not word-split.
+if sh -c '. ./common.sh; jvm_flags "/tmp/has space/gc.log"' >/dev/null 2>&1; then
+  fail "runner-02-whitespace-path (jvm_flags accepted a path with spaces)"
+else
+  pass "runner-02-whitespace-path (rejected with error)"
+fi
 
 echo "================ shared-source checks ================"
 # SummaryCodec must exist and be the single implementation used by both

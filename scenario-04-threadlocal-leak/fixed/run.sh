@@ -1,7 +1,7 @@
 #!/bin/sh
-# Runs the fixed version of scenario 04 under the same 64 MB heap that kills
-# the broken version. It should complete cleanly.
-set -e
+# Runs the fixed version of scenario 04 via the shared root runner, so the JVM flags (-Xms/-Xmx,
+# collector, GC logging) are identical to the other version's.
+# Program arguments are passed through, e.g.: ./run.sh --items 500000
+set -u
 cd "$(dirname "$0")"
-javac -encoding UTF-8 ThreadLocalLeakFixed.java
-java -Xmx64m ThreadLocalLeakFixed
+exec ../../run.sh scenario-04-threadlocal-leak fixed "$@"

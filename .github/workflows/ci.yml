@@ -1,0 +1,43 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    name: "JDK ${{ matrix.java }} on ${{ matrix.os }}"
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        java: [11, 17, 21]
+        include:
+          # macOS job: exercises the gtimeout-missing path in test.sh
+          - os: macos-latest
+            java: 21
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: ${{ matrix.java }}
+      - name: run test suite
+        run: ./test.sh
+
+  test-jdk25:
+    # Best effort: newest LTS/current line. Does not block merges.
+    name: "JDK 25 (best effort)"
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 25
+      - name: run test suite
+        run: ./test.sh

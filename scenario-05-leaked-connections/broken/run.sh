@@ -1,7 +1,1 @@
-#!/bin/sh
-# Reproduces scenario 05 via the shared root runner, so the JVM flags (-Xms/-Xmx,
-# collector, GC logging) are identical to the other version's.
-# Program arguments are passed through, e.g.: ./run.sh --items 500000
-set -u
-cd "$(dirname "$0")"
-exec ../../run.sh scenario-05-leaked-connections broken "$@"
+IyEvYmluL3NoCiMgUmVwcm9kdWNlcyBzY2VuYXJpbyAwNSB2aWEgdGhlIHNoYXJlZCByb290IHJ1bm5lciwgc28gdGhlIEpWTSBmbGFncyAoLVhtcy8tWG14LAojIGNvbGxlY3RvciwgR0MgbG9nZ2luZykgYXJlIGlkZW50aWNhbCB0byB0aGUgb3RoZXIgdmVyc2lvbidzLgojIFByb2dyYW0gYXJndW1lbnRzIGFyZSBwYXNzZWQgdGhyb3VnaCwgZS5nLjogLi9ydW4uc2ggLS1jb25uZWN0aW9ucyAyMDAwMAojIFdpdGggbm8gYXJndW1lbnRzLCB1c2VzIC0tY29ubmVjdGlvbnMgNTAwMDAgKDUwSyB4IDI1NiBLQiA9IH4xMi44IEdCIG9mCiMgcGlubmVkIGJ1ZmZlcnMgdnMuIHRoZSBkZWZhdWx0IDY0IE1CIGhlYXAg4oCUIGRpZXMgZmFzdCkuCnNldCAtdQpjZCAiJChkaXJuYW1lICIkMCIpIgppZiBbICQjIC1lcSAwIF07IHRoZW4KICBzZXQgLS0gLS1jb25uZWN0aW9ucyA1MDAwMApmaQpleGVjIC4uLy4uL3J1bi5zaCBzY2VuYXJpby0wNS1sZWFrZWQtY29ubmVjdGlvbnMgYnJva2VuICIkQCIK

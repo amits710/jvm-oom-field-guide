@@ -1,1 +1,122 @@
-aW1wb3J0IGphdmEudXRpbC5MaW5rZWRIYXNoTWFwOwppbXBvcnQgamF2YS51dGlsLk1hcDsKCi8qKgogKiBTQ0VOQVJJTyAwMSAoZml4ZWQpOiB0aGUgc2FtZSB3b3JrbG9hZCwgd2l0aCBhIGJvdW5kZWQgY2FjaGUuCiAqCiAqIElkZW50aWNhbCB3b3JrbG9hZCB0byB0aGUgYnJva2VuIHZlcnNpb24g4oCUIHNhbWUgLS1pdGVtcywgc2FtZQogKiAtLXBheWxvYWQtYnl0ZXMsIHNhbWUgZGV0ZXJtaW5pc3RpYyBzZXF1ZW50aWFsIGtleXMg4oCUIGJ1dCB0aGUgbWFwIG5vdwogKiBldmljdHM6IGl0IG5ldmVyIGhvbGRzIG1vcmUgdGhhbiBNQVhfRU5UUklFUyByZWNvcmRzLCBzbyB0aGUgc2FtZSBtaWxsaW9uCiAqIHJlY29yZHMgcnVuIGNsZWFuIHVuZGVyIHRoZSBzYW1lIDY0IE1CIGhlYXAgdGhhdCBraWxscyB0aGUgYnJva2VuIHZlcnNpb24uCiAqCiAqIFRoaXMgaXMgYSAqYm91bmRlZCogY2FjaGUsIG5vdCBhbiBMUlUgY2FjaGU6IGtleXMgYXJlIG5ldmVyIHJldmlzaXRlZCBpbgogKiB0aGlzIHdvcmtsb2FkLCBzbyBhY2Nlc3Mtb3JkZXIvTFJVIGJlaGF2aW9yIHdvdWxkIGJlIHVub2JzZXJ2YWJsZSBoZXJlLgogKiBJbnNlcnRpb24gb3JkZXIgKyByZW1vdmVFbGRlc3RFbnRyeSBpcyB0aGUgaG9uZXN0IGRlc2NyaXB0aW9uLgogKgogKiBUd28gY2F2ZWF0cyBjYXJyaWVkIG92ZXIgZnJvbSB0aGUgbGVzc29uLCBzdGF0ZWQgcGxhaW5seToKICogLSBUaGlzIGhhbmQtcm9sbGVkIG1hcCBpcyBOT1QgdGhyZWFkLXNhZmUuIFByb2R1Y3Rpb24gY2FjaGVzIG5lZWQKICogICBjb25jdXJyZW5jeSBjb250cm9sLCBldmljdGlvbiBtZXRyaWNzLCBoaXQtcmF0ZSB0cmFja2luZywgYW5kIHVzdWFsbHkKICogICBzaXplLSBvciB3ZWlnaHQtYmFzZWQgKG5vdCBlbnRyeS1jb3VudCkgYm91bmRzLgogKiAtIEluIHByb2R1Y3Rpb24sIHByZWZlciBhIHJlYWwgY2FjaGUgbGlicmFyeSAoQ2FmZmVpbmUgaXMgdGhlIG1vZGVybgogKiAgIGRlZmF1bHQ7IEd1YXZhJ3MgQ2FjaGVCdWlsZGVyIGlzIHRoZSBjbGFzc2ljKTogc2l6ZSBib3VuZHMsIFRUTC9UVEkKICogICBleHBpcmF0aW9uLCBhc3luYyBldmljdGlvbiwgc3RhdHMuIFRoaXMgaXMganVzdCB0aGUgcHJpbmNpcGxlIHdpdGgKICogICBwbGFpbiBqYXZhYy9qYXZhLgogKgogKiAgIC4vcnVuLnNoIFstLWl0ZW1zIDEwMDAwMDBdIFstLXBheWxvYWQtYnl0ZXMgNDA5Nl0KICovCnB1YmxpYyBjbGFzcyBVbmJvdW5kZWRDYWNoZUZpeGVkIHsKCiAgICBwcml2YXRlIHN0YXRpYyBmaW5hbCBpbnQgTUFYX0VOVFJJRVMgPSAxXzAwMDsKCiAgICAvLyBJbnNlcnRpb24tb3JkZXIgTGlua2VkSGFzaE1hcCArIHJlbW92ZUVsZGVzdEVudHJ5ID0gYm91bmRlZCBjYWNoZSwKICAgIC8vIHplcm8gZGVwZW5kZW5jaWVzLgogICAgcHJpdmF0ZSBzdGF0aWMgZmluYWwgTWFwPFN0cmluZywgYnl0ZVtdPiBDQUNIRSA9CiAgICAgICAgICAgIG5ldyBMaW5rZWRIYXNoTWFwPFN0cmluZywgYnl0ZVtdPigxNiwgMC43NWYsIGZhbHNlKSB7CiAgICAgICAgICAgICAgICBAT3ZlcnJpZGUKICAgICAgICAgICAgICAgIHByb3RlY3RlZCBib29sZWFuIHJlbW92ZUVsZGVzdEVudHJ5KE1hcC5FbnRyeTxTdHJpbmcsIGJ5dGVbXT4gZWxkZXN0KSB7CiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIHNpemUoKSA+IE1BWF9FTlRSSUVTOwogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9OwoKICAgIHB1YmxpYyBzdGF0aWMgdm9pZCBtYWluKFN0cmluZ1tdIGFyZ3MpIHsKICAgICAgICBsb25nIGl0ZW1zID0gMV8wMDBfMDAwOwogICAgICAgIGludCBwYXlsb2FkQnl0ZXMgPSA0MDk2OwogICAgICAgIGZvciAoaW50IGkgPSAwOyBpIDwgYXJncy5sZW5ndGg7IGkrKykgewogICAgICAgICAgICBzd2l0Y2ggKGFyZ3NbaV0pIHsKICAgICAgICAgICAgICAgIGNhc2UgIi0taXRlbXMiOgogICAgICAgICAgICAgICAgICAgIGl0ZW1zID0gcG9zaXRpdmVMb25nKGFyZ3MsIGksICItLWl0ZW1zIik7CiAgICAgICAgICAgICAgICAgICAgaSsrOwogICAgICAgICAgICAgICAgICAgIGJyZWFrOwogICAgICAgICAgICAgICAgY2FzZSAiLS1wYXlsb2FkLWJ5dGVzIjoKICAgICAgICAgICAgICAgICAgICBwYXlsb2FkQnl0ZXMgPSBwb3NpdGl2ZUludChhcmdzLCBpLCAiLS1wYXlsb2FkLWJ5dGVzIik7CiAgICAgICAgICAgICAgICAgICAgaSsrOwogICAgICAgICAgICAgICAgICAgIGJyZWFrOwogICAgICAgICAgICAgICAgZGVmYXVsdDoKICAgICAgICAgICAgICAgICAgICB1c2FnZSgidW5rbm93biBhcmd1bWVudDogIiArIGFyZ3NbaV0pOwogICAgICAgICAgICB9CiAgICAgICAgfQogICAgICAgIFN5c3RlbS5vdXQucHJpbnRsbigiU1RBUlRFRCBzY2VuYXJpby0wMS11bmJvdW5kZWQtY2FjaGUoZml4ZWQpIGl0ZW1zPSIgKyBpdGVtcwogICAgICAgICAgICAgICAgKyAiIHBheWxvYWRCeXRlcz0iICsgcGF5bG9hZEJ5dGVzICsgIiBtYXhFbnRyaWVzPSIgKyBNQVhfRU5UUklFUyk7CgogICAgICAgIGxvbmcgY2hlY2tzdW0gPSAwOwogICAgICAgIGZvciAobG9uZyBpID0gMDsgaSA8IGl0ZW1zOyBpKyspIHsKICAgICAgICAgICAgU3RyaW5nIGtleSA9ICJyZWNvcmQtIiArIGk7CiAgICAgICAgICAgIGJ5dGVbXSBwYXlsb2FkID0gbmV3IGJ5dGVbcGF5bG9hZEJ5dGVzXTsKICAgICAgICAgICAgcGF5bG9hZFswXSA9IChieXRlKSAoaSAmIDB4RkYpOwogICAgICAgICAgICBDQUNIRS5wdXQoa2V5LCBwYXlsb2FkKTsKICAgICAgICAgICAgY2hlY2tzdW0gKz0gcGF5bG9hZFswXSAmIDB4RkY7IC8vIHByb3ZlcyBldmVyeSByZWNvcmQgd2FzIHJlYWxseSBwcm9jZXNzZWQKICAgICAgICAgICAgaWYgKChpICsgMSkgJSAyNTBfMDAwID09IDApIHsKICAgICAgICAgICAgICAgIFN5c3RlbS5vdXQucHJpbnRsbigicHJvY2Vzc2VkICIgKyAoaSArIDEpICsgIiByZWNvcmRzLCBjYWNoZSBzaXplOiAiICsgQ0FDSEUuc2l6ZSgpKTsKICAgICAgICAgICAgfQogICAgICAgIH0KICAgICAgICBTeXN0ZW0ub3V0LnByaW50bG4oIkNPTVBMRVRFRCByZWNvcmRzPSIgKyBpdGVtcwogICAgICAgICAgICAgICAgKyAiIGJ5dGVzPSIgKyAoaXRlbXMgKiBwYXlsb2FkQnl0ZXMpCiAgICAgICAgICAgICAgICArICIgY2hlY2tzdW09IiArIGNoZWNrc3VtCiAgICAgICAgICAgICAgICArICIgY2FjaGVTaXplPSIgKyBDQUNIRS5zaXplKCkgKyAiIChib3VuZGVkIGF0ICIgKyBNQVhfRU5UUklFUyArICIpIik7CiAgICB9CgogICAgLy8gLS0tLS0tLS0tLSBDTEkgdmFsaWRhdGlvbjogYmFkIGlucHV0IGV4aXRzIDIgd2l0aCB1c2FnZSBvbiBzdGRlcnIgLS0tLS0tLS0tLQoKICAgIHByaXZhdGUgc3RhdGljIHZvaWQgdXNhZ2UoU3RyaW5nIHByb2JsZW0pIHsKICAgICAgICBTeXN0ZW0uZXJyLnByaW50bG4oImVycm9yOiAiICsgcHJvYmxlbSk7CiAgICAgICAgU3lzdGVtLmVyci5wcmludGxuKCJ1c2FnZTogVW5ib3VuZGVkQ2FjaGVGaXhlZCBbLS1pdGVtcyBOXSBbLS1wYXlsb2FkLWJ5dGVzIE5dIik7CiAgICAgICAgU3lzdGVtLmVyci5wcmludGxuKCIgIE4gbXVzdCBiZSBhIHBvc2l0aXZlIGludGVnZXIiKTsKICAgICAgICBTeXN0ZW0uZXhpdCgyKTsKICAgIH0KCiAgICAvKiogUGFyc2VzIGFyZ3NbaSsxXSBhcyBhIHBvc2l0aXZlIGxvbmc7IGV4aXRzIDIgb24gbWlzc2luZy9pbnZhbGlkL25vbi1wb3NpdGl2ZS4gKi8KICAgIHByaXZhdGUgc3RhdGljIGxvbmcgcG9zaXRpdmVMb25nKFN0cmluZ1tdIGFyZ3MsIGludCBpLCBTdHJpbmcgbmFtZSkgewogICAgICAgIGlmIChpICsgMSA+PSBhcmdzLmxlbmd0aCkgewogICAgICAgICAgICB1c2FnZSgibWlzc2luZyB2YWx1ZSBmb3IgIiArIG5hbWUpOwogICAgICAgIH0KICAgICAgICBsb25nIHY7CiAgICAgICAgdHJ5IHsKICAgICAgICAgICAgdiA9IExvbmcucGFyc2VMb25nKGFyZ3NbaSArIDFdKTsKICAgICAgICB9IGNhdGNoIChOdW1iZXJGb3JtYXRFeGNlcHRpb24gZSkgewogICAgICAgICAgICB1c2FnZSgibm90IGEgbnVtYmVyIGZvciAiICsgbmFtZSArICI6ICIgKyBhcmdzW2kgKyAxXSk7CiAgICAgICAgICAgIHRocm93IG5ldyBBc3NlcnRpb25FcnJvcigidW5yZWFjaGFibGUiKTsKICAgICAgICB9CiAgICAgICAgaWYgKHYgPD0gMCkgewogICAgICAgICAgICB1c2FnZShuYW1lICsgIiBtdXN0IGJlIHBvc2l0aXZlLCBnb3QgIiArIHYpOwogICAgICAgIH0KICAgICAgICByZXR1cm4gdjsKICAgIH0KCiAgICAvKiogUGFyc2VzIGFyZ3NbaSsxXSBhcyBhIHBvc2l0aXZlIGludDsgZXhpdHMgMiBvbiBtaXNzaW5nL2ludmFsaWQvbm9uLXBvc2l0aXZlLiAqLwogICAgcHJpdmF0ZSBzdGF0aWMgaW50IHBvc2l0aXZlSW50KFN0cmluZ1tdIGFyZ3MsIGludCBpLCBTdHJpbmcgbmFtZSkgewogICAgICAgIGlmIChpICsgMSA+PSBhcmdzLmxlbmd0aCkgewogICAgICAgICAgICB1c2FnZSgibWlzc2luZyB2YWx1ZSBmb3IgIiArIG5hbWUpOwogICAgICAgIH0KICAgICAgICBpbnQgdjsKICAgICAgICB0cnkgewogICAgICAgICAgICB2ID0gSW50ZWdlci5wYXJzZUludChhcmdzW2kgKyAxXSk7CiAgICAgICAgfSBjYXRjaCAoTnVtYmVyRm9ybWF0RXhjZXB0aW9uIGUpIHsKICAgICAgICAgICAgdXNhZ2UoIm5vdCBhIG51bWJlciBmb3IgIiArIG5hbWUgKyAiOiAiICsgYXJnc1tpICsgMV0pOwogICAgICAgICAgICB0aHJvdyBuZXcgQXNzZXJ0aW9uRXJyb3IoInVucmVhY2hhYmxlIik7CiAgICAgICAgfQogICAgICAgIGlmICh2IDw9IDApIHsKICAgICAgICAgICAgdXNhZ2UobmFtZSArICIgbXVzdCBiZSBwb3NpdGl2ZSwgZ290ICIgKyB2KTsKICAgICAgICB9CiAgICAgICAgcmV0dXJuIHY7CiAgICB9Cn0K
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+/**
+ * SCENARIO 01 (fixed): the same workload, with a bounded cache.
+ *
+ * Identical workload to the broken version — same --items, same
+ * --payload-bytes, same deterministic sequential keys — but the map now
+ * evicts: it never holds more than MAX_ENTRIES records, so the same million
+ * records run clean under the same 64 MB heap that kills the broken version.
+ *
+ * This is a *bounded* cache, not an LRU cache: keys are never revisited in
+ * this workload, so access-order/LRU behavior would be unobservable here.
+ * Insertion order + removeEldestEntry is the honest description.
+ *
+ * Two caveats carried over from the lesson, stated plainly:
+ * - This hand-rolled map is NOT thread-safe. Production caches need
+ *   concurrency control, eviction metrics, hit-rate tracking, and usually
+ *   size- or weight-based (not entry-count) bounds.
+ * - In production, prefer a real cache library (Caffeine is the modern
+ *   default; Guava's CacheBuilder is the classic): size bounds, TTL/TTI
+ *   expiration, async eviction, stats. This is just the principle with
+ *   plain javac/java.
+ *
+ *   ./run.sh [--items 1000000] [--payload-bytes 4096]
+ */
+public class UnboundedCacheFixed {
+
+    private static final int MAX_ENTRIES = 1_000;
+
+    // Insertion-order LinkedHashMap + removeEldestEntry = bounded cache,
+    // zero dependencies.
+    private static final Map<String, byte[]> CACHE =
+            new LinkedHashMap<String, byte[]>(16, 0.75f, false) {
+                @Override
+                protected boolean removeEldestEntry(Map.Entry<String, byte[]> eldest) {
+                    return size() > MAX_ENTRIES;
+                }
+            };
+
+    public static void main(String[] args) {
+        long items = 1_000_000;
+        int payloadBytes = 4096;
+        for (int i = 0; i < args.length; i++) {
+            switch (args[i]) {
+                case "--items":
+                    items = positiveLong(args, i, "--items");
+                    i++;
+                    break;
+                case "--payload-bytes":
+                    payloadBytes = positiveInt(args, i, "--payload-bytes");
+                    i++;
+                    break;
+                default:
+                    usage("unknown argument: " + args[i]);
+            }
+        }
+        System.out.println("STARTED scenario-01-unbounded-cache(fixed) items=" + items
+                + " payloadBytes=" + payloadBytes + " maxEntries=" + MAX_ENTRIES);
+
+        long checksum = 0;
+        for (long i = 0; i < items; i++) {
+            String key = "record-" + i;
+            byte[] payload = new byte[payloadBytes];
+            payload[0] = (byte) (i & 0xFF);
+            CACHE.put(key, payload);
+            checksum += payload[0] & 0xFF; // proves every record was really processed
+            if ((i + 1) % 250_000 == 0) {
+                System.out.println("processed " + (i + 1) + " records, cache size: " + CACHE.size());
+            }
+        }
+        System.out.println("COMPLETED records=" + items
+                + " bytes=" + (items * payloadBytes)
+                + " checksum=" + checksum
+                + " cacheSize=" + CACHE.size() + " (bounded at " + MAX_ENTRIES + ")");
+    }
+
+    // ---------- CLI validation: bad input exits 2 with usage on stderr ----------
+
+    private static void usage(String problem) {
+        System.err.println("error: " + problem);
+        System.err.println("usage: UnboundedCacheFixed [--items N] [--payload-bytes N]");
+        System.err.println("  N must be a positive integer");
+        System.exit(2);
+    }
+
+    /** Parses args[i+1] as a positive long; exits 2 on missing/invalid/non-positive. */
+    private static long positiveLong(String[] args, int i, String name) {
+        if (i + 1 >= args.length) {
+            usage("missing value for " + name);
+        }
+        long v;
+        try {
+            v = Long.parseLong(args[i + 1]);
+        } catch (NumberFormatException e) {
+            usage("not a number for " + name + ": " + args[i + 1]);
+            throw new AssertionError("unreachable");
+        }
+        if (v <= 0) {
+            usage(name + " must be positive, got " + v);
+        }
+        return v;
+    }
+
+    /** Parses args[i+1] as a positive int; exits 2 on missing/invalid/non-positive. */
+    private static int positiveInt(String[] args, int i, String name) {
+        if (i + 1 >= args.length) {
+            usage("missing value for " + name);
+        }
+        int v;
+        try {
+            v = Integer.parseInt(args[i + 1]);
+        } catch (NumberFormatException e) {
+            usage("not a number for " + name + ": " + args[i + 1]);
+            throw new AssertionError("unreachable");
+        }
+        if (v <= 0) {
+            usage(name + " must be positive, got " + v);
+        }
+        return v;
+    }
+}

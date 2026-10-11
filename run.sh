@@ -94,13 +94,16 @@ case "$MODE" in
   diagnose)
     OUTDIR="$ROOT/generated-output"
     mkdir -p "$OUTDIR" || { echo "cannot create $OUTDIR" >&2; exit 2; }
-    DUMP="$OUTDIR/${SCENARIO}-heapdump.hprof"
+    # Timestamped filenames: HotSpot refuses to overwrite an existing HPROF,
+    # so repeated diagnose runs would silently fail to write a new dump.
+    STAMP="$(date +%Y%m%d-%H%M%S)-$$"
+    DUMP="$OUTDIR/${SCENARIO}-${STAMP}-heapdump.hprof"
     # Never use test mode here: we want the real OOM and the real dump.
     OOMFG_TEST=0
     OOMFG_EXTRA_FLAGS="-XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=$DUMP"
     if [ "${OOMFG_JFR:-0}" = "1" ]; then
-      OOMFG_EXTRA_FLAGS="$OOMFG_EXTRA_FLAGS -XX:+FlightRecorder -XX:StartFlightRecording=filename=$OUTDIR/${SCENARIO}.jfr,maxsize=50m"
-      echo "diagnose: JFR recording to $OUTDIR/${SCENARIO}.jfr (bounded 50m)" >&2
+      OOMFG_EXTRA_FLAGS="$OOMFG_EXTRA_FLAGS -XX:+FlightRecorder -XX:StartFlightRecording=filename=$OUTDIR/${SCENARIO}-${STAMP}.jfr,maxsize=50m"
+      echo "diagnose: JFR recording to $OUTDIR/${SCENARIO}-${STAMP}.jfr (bounded 50m)" >&2
     fi
     export OOMFG_EXTRA_FLAGS OOMFG_TEST
     echo "diagnose: heap dump will be written to $DUMP" >&2

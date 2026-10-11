@@ -1,1 +1,27 @@
-IyBUaGlzIGZpbGUgZW5hYmxlcyBHaXRIdWIncyAiQ2l0ZSB0aGlzIHJlcG9zaXRvcnkiIGJ1dHRvbi4KIyBTZWUgaHR0cHM6Ly9jaXRhdGlvbi1maWxlLWZvcm1hdC5naXRodWIuaW8vIGZvciB0aGUgZm9ybWF0IHJlZmVyZW5jZS4KY2ZmLXZlcnNpb246IDEuMi4wCnRpdGxlOiAiSlZNIEhlYXAgT09NIEZpZWxkIEd1aWRlIgptZXNzYWdlOiAiSWYgeW91IHVzZSB0aGlzIHJlcG9zaXRvcnkgaW4geW91ciB3b3JrLCBwbGVhc2UgY2l0ZSBpdCBhcyBmb2xsb3dzLiIKdHlwZTogc29mdHdhcmUKbGljZW5zZTogQXBhY2hlLTIuMAojIHZlcnNpb246IGludGVudGlvbmFsbHkgb21pdHRlZCB1bnRpbCB2MS4wLjAgaXMgdGFnZ2VkCmF1dGhvcnM6CiAgLSBmYW1pbHktbmFtZXM6ICJTb25hciIKICAgIGdpdmVuLW5hbWVzOiAiQW1pdCIKdXJsOiAiaHR0cHM6Ly9naXRodWIuY29tL2FtaXRzNzEwL2p2bS1vb20tZmllbGQtZ3VpZGUiCnJlcG9zaXRvcnktY29kZTogImh0dHBzOi8vZ2l0aHViLmNvbS9hbWl0czcxMC9qdm0tb29tLWZpZWxkLWd1aWRlIgphYnN0cmFjdDogPi0KICBGaXZlIHJlcHJvZHVjaWJsZSBKYXZhIGhlYXAgT3V0T2ZNZW1vcnlFcnJvciBmYWlsdXJlIHBhdHRlcm5zIGZvciBkYXRhCiAgcGlwZWxpbmVzIGFuZCBiYWNrZW5kIHNlcnZpY2VzLiBFYWNoIHNjZW5hcmlvIHBhaXJzIGEgYnJva2VuIHJlcHJvZHVjdGlvbgogIHdpdGggYSBkaWFnbm9zaXMgZ3VpZGUgKEdDLWxvZyBzaWduYXR1cmUsIGhlYXAtZHVtcCBjbHVlcywgdHJpYWdlCiAgY2hlY2tsaXN0KSBhbmQgYSBmaXhlZCB2ZXJzaW9uIHJ1bm5pbmcgdGhlIGlkZW50aWNhbCB3b3JrbG9hZCB1bmRlcgogIGlkZW50aWNhbCBKVk0gZmxhZ3MuCmtleXdvcmRzOgogIC0gamF2YQogIC0ganZtCiAgLSBvdXRvZm1lbW9yeWVycm9yCiAgLSBnYXJiYWdlLWNvbGxlY3Rpb24KICAtIGhlYXAtZHVtcAogIC0gbWVtb3J5LWxlYWsKICAtIGRhdGEtZW5naW5lZXJpbmcK
+# This file enables GitHub's "Cite this repository" button.
+# See https://citation-file-format.github.io/ for the format reference.
+cff-version: 1.2.0
+title: "JVM Heap OOM Field Guide"
+message: "If you use this repository in your work, please cite it as follows."
+type: software
+license: Apache-2.0
+# version: intentionally omitted until v1.0.0 is tagged
+authors:
+  - family-names: "Sonar"
+    given-names: "Amit"
+url: "https://github.com/amits710/jvm-oom-field-guide"
+repository-code: "https://github.com/amits710/jvm-oom-field-guide"
+abstract: >-
+  Five reproducible Java heap OutOfMemoryError failure patterns for data
+  pipelines and backend services. Each scenario pairs a broken reproduction
+  with a diagnosis guide (GC-log signature, heap-dump clues, triage
+  checklist) and a fixed version running the identical workload under
+  identical JVM flags.
+keywords:
+  - java
+  - jvm
+  - outofmemoryerror
+  - garbage-collection
+  - heap-dump
+  - memory-leak
+  - data-engineering

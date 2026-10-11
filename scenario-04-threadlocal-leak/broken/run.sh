@@ -1,7 +1,1 @@
-#!/bin/sh
-# Reproduces scenario 04 via the shared root runner, so the JVM flags (-Xms/-Xmx,
-# collector, GC logging) are identical to the other version's.
-# Program arguments are passed through, e.g.: ./run.sh --items 500000
-set -u
-cd "$(dirname "$0")"
-exec ../../run.sh scenario-04-threadlocal-leak broken "$@"
+IyEvYmluL3NoCiMgUmVwcm9kdWNlcyBzY2VuYXJpbyAwNCB2aWEgdGhlIHNoYXJlZCByb290IHJ1bm5lciwgc28gdGhlIEpWTSBmbGFncyAoLVhtcy8tWG14LAojIGNvbGxlY3RvciwgR0MgbG9nZ2luZykgYXJlIGlkZW50aWNhbCB0byB0aGUgb3RoZXIgdmVyc2lvbidzLgojIFByb2dyYW0gYXJndW1lbnRzIGFyZSBwYXNzZWQgdGhyb3VnaCwgZS5nLjogLi9ydW4uc2ggLS10YXNrcyAxMDAwMAojIFdpdGggbm8gYXJndW1lbnRzLCB1c2VzIC0tdGFza3MgNTAwMCAoZW5vdWdoIHBlci10aHJlYWQgYWNjdW11bGF0aW9uIHRvIE9PTQojIHRoZSBicm9rZW4gdmVyc2lvbiBvbiB0aGUgZGVmYXVsdCA2NCBNQiBoZWFwKS4Kc2V0IC11CmNkICIkKGRpcm5hbWUgIiQwIikiCmlmIFsgJCMgLWVxIDAgXTsgdGhlbgogIHNldCAtLSAtLXRhc2tzIDUwMDAKZmkKZXhlYyAuLi8uLi9ydW4uc2ggc2NlbmFyaW8tMDQtdGhyZWFkbG9jYWwtbGVhayBicm9rZW4gIiRAIgo=

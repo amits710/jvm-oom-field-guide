@@ -1,14 +1,13 @@
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
 /**
  * SCENARIO 05 (fixed): the leaked connection, closed properly.
  *
- * Same workload as the broken version — 1,000 connections opened, one per
- * unit of work — but each connection is opened in try-with-resources and
+ * Identical workload to the broken version — same --connections, same
+ * --buffer-kb — but each connection is opened in try-with-resources and
  * deregisters itself on close. Live memory stays at roughly one connection's
- * buffer (~256 KB) regardless of how many units of work run.
+ * buffer regardless of how many units of work run.
  *
  * The principle: every resource acquisition needs a matching release on
  * every path, and the release must also drop the bookkeeping reference.
@@ -16,19 +15,22 @@ import java.util.Set;
  * connection pool with leak detection, and treating "connections open"
  * metrics as an alert, not a dashboard decoration.
  *
- *   javac LeakedConnectionsFixed.java && java -Xmx64m LeakedConnectionsFixed
+ *   ./run.sh [--connections 100000] [--buffer-kb 256]
  */
 public class LeakedConnectionsFixed {
 
     static final class Connection implements AutoCloseable {
-        private static final Set<Connection> openConnections =
-                Collections.synchronizedSet(new HashSet<>());
+        // Plain HashSet: this demonstration is single-threaded, so there is
+        // no reason for synchronization theater. (A production registry
+        // shared across threads would need real concurrency control.)
+        private static final Set<Connection> openConnections = new HashSet<>();
 
-        private final byte[] buffer = new byte[256 * 1024]; // ~256 KB per connection
+        private final byte[] buffer;
         private final long id;
 
-        Connection(long id) {
+        Connection(long id, int bufferBytes) {
             this.id = id;
+            this.buffer = new byte[bufferBytes];
             openConnections.add(this);
         }
 
@@ -46,18 +48,29 @@ public class LeakedConnectionsFixed {
         }
     }
 
-    private static final int CONNECTIONS = 1_000; // same order of work as the broken run
-
     public static void main(String[] args) {
-        for (long i = 0; i < CONNECTIONS; i++) {
-            try (Connection conn = new Connection(i)) { // closed at the end of every iteration
+        int connections = 100_000;
+        int bufferKb = 256;
+        for (int i = 0; i < args.length; i++) {
+            switch (args[i]) {
+                case "--connections": connections = Integer.parseInt(args[++i]); break;
+                case "--buffer-kb":   bufferKb     = Integer.parseInt(args[++i]); break;
+                default: throw new IllegalArgumentException("unknown arg: " + args[i]);
+            }
+        }
+        System.out.println("STARTED scenario-05-leaked-connections(fixed) connections=" + connections
+                + " bufferKb=" + bufferKb);
+
+        for (long i = 0; i < connections; i++) {
+            try (Connection conn = new Connection(i, bufferKb * 1024)) { // closed at the end of every iteration
                 conn.use();
             }
-            if ((i + 1) % 100 == 0) {
+            if ((i + 1) % 10_000 == 0) {
                 System.out.println("processed " + (i + 1) + " connections, still open: "
                         + Connection.openCount());
             }
         }
-        System.out.println("all " + CONNECTIONS + " connections processed and closed, heap survived.");
+        System.out.println("COMPLETED connections=" + connections
+                + " open=" + Connection.openCount());
     }
 }
